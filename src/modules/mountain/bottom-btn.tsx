@@ -2,7 +2,7 @@ const BottomBtn: React.FC = () => {
   return (
     <>
       <svg
-        className="active:opacity-[0.8]"
+        className="active:opacity-[0.8] active:scale-[1.02] transition-transform"
         width="321"
         height="82"
         viewBox="0 0 321 82"

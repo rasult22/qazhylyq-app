@@ -11,10 +11,12 @@ function App(): ReactElement {
 
   return (
     <div>
-      <div className="space-y-2 flex flex-wrap space-x-2">
+      <div className="pb-[79px]">
         <ModuleMountain />
       </div>
-      <ModuleBottomNav></ModuleBottomNav>
+      <div className="fixed bottom-0">
+        <ModuleBottomNav></ModuleBottomNav>
+      </div>
     </div>
   )
 }

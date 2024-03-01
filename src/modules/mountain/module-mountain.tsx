@@ -88,11 +88,11 @@ const LongBtn: React.FC<{
           className={`
         ${
           direction === 'BOTTOM' ? 'rotate-180' : ''
-        } absolute h-[20%] top-[15%]`}
+        } absolute h-[20%] top-[10%]`}
           src={arrowUp}
           alt=""
         />
-        <span className="absolute top-[43%] -rotate-90">
+        <span className="absolute top-[40%] -rotate-90 text-center">
           {direction === 'TOP' ? 'БАРУ' : 'ҚАЙТУ'}
         </span>
         <div
