@@ -1,21 +1,52 @@
+import { NavLink } from 'react-router-dom'
+
 const ModuleBottomNav: React.FC = () => {
   const active = true
-
   return (
     <>
       <div className="bg-[#fff] text-[#858C94] rounded-t-lg shadow-custom border-t w-[100vw] flex items-center justify-between px-[36px] py-[13px]">
-        <div className="bg-[#A2815D] text-white flex items-center justify-center w-[52px] h-[52px] rounded-full">
-          <Kaaba></Kaaba>
-        </div>
-        <div className="bg-[#A2815D] text-white flex items-center justify-center w-[52px] h-[52px] rounded-full">
-          <Mountain></Mountain>
-        </div>
-        <div className="bg-[#A2815D] text-white flex items-center justify-center w-[52px] h-[52px] rounded-full">
-          <Dua></Dua>
-        </div>
-        <div className="bg-[#A2815D] text-white flex items-center justify-center w-[52px] h-[52px] rounded-full">
-          <Info></Info>
-        </div>
+        <NavLink
+          to="/"
+          className={({ isActive }) => {
+            return isActive
+              ? 'bg-[#A2815D] transition-all rounded-full text-white'
+              : ''
+          }}
+        >
+          <div className="flex items-center justify-center w-[52px] h-[52px] rounded-full">
+            <Kaaba></Kaaba>
+          </div>
+        </NavLink>
+        <NavLink
+          to="/mountain"
+          className={({ isActive }) => {
+            return isActive ? 'bg-[#A2815D] rounded-full text-white' : ''
+          }}
+        >
+          <div className="flex items-center justify-center w-[52px] h-[52px] rounded-full">
+            <Mountain></Mountain>
+          </div>
+        </NavLink>
+        <NavLink
+          to="/dua"
+          className={({ isActive }) => {
+            return isActive ? 'bg-[#A2815D] rounded-full text-white' : ''
+          }}
+        >
+          <div className="flex items-center justify-center w-[52px] h-[52px] rounded-full">
+            <Dua></Dua>
+          </div>
+        </NavLink>
+        <NavLink
+          to="/info"
+          className={({ isActive }) => {
+            return isActive ? 'bg-[#A2815D] rounded-full text-white' : ''
+          }}
+        >
+          <div className="flex items-center justify-center w-[52px] h-[52px] rounded-full">
+            <Info></Info>
+          </div>
+        </NavLink>
       </div>
     </>
   )
