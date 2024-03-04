@@ -3,7 +3,9 @@ import TopBtn from './top-btn'
 import BottomBtn from './bottom-btn'
 import arrowUp from './svgs/arrow-up.svg'
 import arrowUpLong from './svgs/arrow-up-long.svg'
+import { useSystem } from '../../store/system'
 const ModuleMountain: React.FC = () => {
+  const { showPlayerModal } = useSystem()
   const items = [
     {
       direction: 'TOP',
@@ -37,8 +39,10 @@ const ModuleMountain: React.FC = () => {
 
   const onBtnClick = (num: number) => {
     console.log('onBtnClick')
+    showPlayerModal()
   }
   const onGreenBtnClick = (num: number) => {
+    showPlayerModal()
     console.log('onGreenBtnClick')
   }
   return (

@@ -1,15 +1,11 @@
 import left from './svg/left.svg'
-import prev from './svg/prev.svg'
-import next from './svg/next.svg'
-import pause from './svg/pause.svg'
-import play from './svg/play.svg'
-import { useState } from 'react'
 import AudioPlayer from 'react-h5-audio-player'
 import 'react-h5-audio-player/lib/styles.css'
 import audio from '../../../assets/audio.mp3'
+import { useSystem } from '../../store/system'
 
 const ModulePlayerModal: React.FC = () => {
-  const [btn, setBtn] = useState<'play' | 'pause'>('play')
+  const { playerModalIsOpen, closePlayerModal } = useSystem()
 
   const arabicContent =
     'اَللّٰهُمَّ اِيمَانًا بِكَ وَتَصدِيقًا بِكِتابِكَ وَوَفاءً بِعَهْدِكَ وَاتِّبَاعًا لِسُنَّةِ نَبِيِّكَ وَحَبِيبِكَ مُحَمَّدٍ صَلَى اَللهُ تَعَالَى عَلَيْهِ وَسَلَّمَ.'
@@ -19,10 +15,16 @@ const ModulePlayerModal: React.FC = () => {
 
   return (
     <>
-      <div className="fixed z-50 top-0 w-full h-full bg-white px-6 overflow-auto">
+      <div
+        className={`${
+          playerModalIsOpen
+            ? 'translate-x-0'
+            : 'translate-y-full -bottom-[-100%]'
+        } fixed transition-transform duration-300 z-50 top-0 w-full h-full bg-white px-6 overflow-auto`}
+      >
         {/* HEADER */}
         <div className="flex bg-white sticky top-0 justify-between  py-4">
-          <div className="">
+          <div onClick={closePlayerModal} className="">
             <img src={left} alt="" />
           </div>
           <div className="text-[#7E7E7E] font-semibold uppercase">1-бару</div>
