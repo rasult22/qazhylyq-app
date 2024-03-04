@@ -6,6 +6,7 @@ import play from './svg/play.svg'
 import { useState } from 'react'
 import AudioPlayer from 'react-h5-audio-player'
 import 'react-h5-audio-player/lib/styles.css'
+import audio from '../../../assets/audio.mp3'
 
 const ModulePlayerModal: React.FC = () => {
   const [btn, setBtn] = useState<'play' | 'pause'>('play')
@@ -34,7 +35,7 @@ const ModulePlayerModal: React.FC = () => {
         </div>
 
         <div className="py-4">
-          <AudioPlayer />
+          <AudioPlayer showSkipControls={false} src={audio} />
         </div>
 
         <div className="my-2 w-full text-[#202020] min-h-[245px] text-[15px] leading-[20px] bg-[#D9D9D9] shadow-inner rounded-[10px]  p-4 text-left">
