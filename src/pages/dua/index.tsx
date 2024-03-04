@@ -3,7 +3,7 @@ import UICell from '../../ui/cell/ui-cell'
 const DuaPage = () => {
   return (
     <>
-      <div className="px-8 space-y-4">
+      <div className="px-4 space-y-4">
         <UICell level={99}>
           САПАРҒА ШЫҒАРДА <br /> ОҚЫЛАТЫН ДҰҒА
         </UICell>
