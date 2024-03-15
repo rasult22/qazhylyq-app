@@ -18,7 +18,7 @@ const UICell: React.FC<UICellProps> = ({
       style={{
         backgroundColor: `rgb(141,103,61,0.${level})`
       }}
-      className={`flex items-center text-[#F9F7F4] w-full text-left shadow-lg active:opacity-[0.9] transition-all active:scale-[1.01] font-bold py-[14px] px-5 rounded-[16px] ${className}`}
+      className={`flex items-center uppercase text-[#F9F7F4] w-full text-left shadow-lg active:opacity-[0.9] transition-all active:scale-[1.01] font-bold py-[14px] px-5 rounded-[16px] ${className}`}
       onClick={onClick}
     >
       {children}
