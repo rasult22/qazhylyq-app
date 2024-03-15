@@ -1,7 +1,8 @@
-const BottomBtn: React.FC = () => {
+const BottomBtn: React.FC<{ onClick: () => void }> = ({ onClick }) => {
   return (
     <>
       <svg
+        onClick={onClick}
         className="active:opacity-[0.8] active:scale-[1.02] transition-transform"
         width="321"
         height="82"

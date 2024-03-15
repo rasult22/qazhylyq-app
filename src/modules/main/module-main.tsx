@@ -2,24 +2,26 @@ import React from 'react'
 import UIButton from '../../ui/button/ui-btn'
 import kaaba from './kaaba.svg'
 import arrows from './arrows.svg'
+import { useSystem } from '../../store/system'
 
 const ModuleMain: React.FC = () => {
+  const { showPlayerModal } = useSystem()
   return (
     <div>
       <div className="mt-[-110%]">
         <svg height="1130" width="100%">
-          <Circle7 />
-          <Circle6 />
-          <Circle5 />
-          <Circle4 />
-          <Circle3 />
-          <Circle2 />
-          <Circle1 />
+          <Circle7 onClick={() => showPlayerModal()} />
+          <Circle6 onClick={() => showPlayerModal()} />
+          <Circle5 onClick={() => showPlayerModal()} />
+          <Circle4 onClick={() => showPlayerModal()} />
+          <Circle3 onClick={() => showPlayerModal()} />
+          <Circle2 onClick={() => showPlayerModal()} />
+          <Circle1 onClick={() => showPlayerModal()} />
         </svg>
       </div>
       <div className="px-6">
         <div className="flex space-x-[11px] items-stretch">
-          <UIButton>
+          <UIButton onClick={() => showPlayerModal()}>
             <svg
               width="20"
               height="20"
@@ -35,27 +37,47 @@ const ModuleMain: React.FC = () => {
               />
             </svg>
           </UIButton>
-          <UIButton className="w-full">Таупқа бастау дұғасы</UIButton>
+          <UIButton onClick={() => showPlayerModal()} className="w-full">
+            Таупқа бастау дұғасы
+          </UIButton>
         </div>
-        <UIButton className="mt-[18px] w-full">
+        <UIButton
+          onClick={() => showPlayerModal()}
+          className="mt-[18px] w-full"
+        >
           Тауап намазынан кейін оқы. дұға
         </UIButton>
       </div>
       <div className="relative flex justify-center pt-10 pb-10">
         <img src={arrows} alt="" />
-        <UIButton className="w-[65%] absolute top-[28px] left-[80px]">
+        <UIButton
+          onClick={() => showPlayerModal()}
+          className="w-[65%] absolute top-[28px] left-[80px]"
+        >
           Шам және Йемен
         </UIButton>
-        <UIButton className="w-[75%] absolute top-[85px] right-[60px]">
+        <UIButton
+          onClick={() => showPlayerModal()}
+          className="w-[75%] absolute top-[85px] right-[60px]"
+        >
           Йемен және Хажар ул-әсуад
         </UIButton>
-        <UIButton className="w-[75%] absolute bottom-[142px] right-[45px]">
+        <UIButton
+          onClick={() => showPlayerModal()}
+          className="w-[75%] absolute bottom-[142px] right-[45px]"
+        >
           Ирак-Шам
         </UIButton>
-        <UIButton className="w-[75%] absolute bottom-[85px] right-[40px]">
+        <UIButton
+          onClick={() => showPlayerModal()}
+          className="w-[75%] absolute bottom-[85px] right-[40px]"
+        >
           Ибраһим мақамы
         </UIButton>
-        <UIButton className="w-[75%] absolute bottom-[30px] right-[40px]">
+        <UIButton
+          onClick={() => showPlayerModal()}
+          className="w-[75%] absolute bottom-[30px] right-[40px]"
+        >
           МҮЛТӘЗӘМ
         </UIButton>
       </div>

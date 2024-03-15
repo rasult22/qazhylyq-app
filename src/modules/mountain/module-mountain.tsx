@@ -46,8 +46,8 @@ const ModuleMountain: React.FC = () => {
     console.log('onGreenBtnClick')
   }
   return (
-    <div className="flex flex-col items-center relative space-y-8">
-      <TopBtn />
+    <div className="flex flex-col py-4 items-center relative space-y-8">
+      <TopBtn onClick={() => onBtnClick(1)} />
       <span className="absolute text-[#7E7E7E] uppercase -left-[55px] -rotate-90 bottom-[250px]">
         Жасыл шамдар
       </span>
@@ -64,7 +64,7 @@ const ModuleMountain: React.FC = () => {
           )
         })}
       </div>
-      <BottomBtn />
+      <BottomBtn onClick={() => onBtnClick(1)} />
     </div>
   )
 }
