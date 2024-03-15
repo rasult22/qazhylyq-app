@@ -10,7 +10,7 @@ import DuaPage from './pages/dua'
 import DuaMekkahPage from './pages/dua/mekkah'
 import DuaArafatPage from './pages/dua/arafat'
 import DuaMadinaPage from './pages/dua/madina'
-import DuaMinaPage from './pages/dua/madina'
+import DuaMinaPage from './pages/dua/mina'
 
 import ModuleBottomNav from './modules/bottom-nav/module-bottom-nav'
 import ModulePlayerModal from './modules/player-modal/module-player-modal'

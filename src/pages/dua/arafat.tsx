@@ -1,26 +1,23 @@
+import { useNavigate } from 'react-router-dom'
+import ModuleHeader from '../../modules/header/module-header'
 import UICell from '../../ui/cell/ui-cell'
 
 const DuaArafatPage = () => {
+  const navigate = useNavigate()
   return (
     <>
-      <div className="px-4 space-y-4">
-        <UICell level={99}>
-          САПАРҒА ШЫҒАРДА <br /> ОҚЫЛАТЫН ДҰҒА
-        </UICell>
-        <UICell level={9}>
-          САПАРҒА ШЫҒАРДА <br /> ОҚЫЛАТЫН ДҰҒА
-        </UICell>
+      <ModuleHeader
+        onClick={() => {
+          navigate('/dua', {
+            replace: true
+          })
+        }}
+      />
+      <div className="px-4 space-y-4 pt-2 pb-[80px]">
+        <UICell level={99}>Арафатқа барғанда оқылатын дұға</UICell>
+        <UICell level={9}>Арафат дұғасы</UICell>
         <UICell level={8}>
-          САПАРҒА ШЫҒАРДА <br /> ОҚЫЛАТЫН ДҰҒА
-        </UICell>
-        <UICell level={7}>
-          САПАРҒА ШЫҒАРДА <br /> ОҚЫЛАТЫН ДҰҒА
-        </UICell>
-        <UICell level={6}>
-          САПАРҒА ШЫҒАРДА <br /> ОҚЫЛАТЫН ДҰҒА
-        </UICell>
-        <UICell level={5} isLink>
-          САПАРҒА ШЫҒАРДА <br /> ОҚЫЛАТЫН ДҰҒА
+          Арафаттан Мұздалифаға барар кезде оқылатын дұға
         </UICell>
       </div>
     </>
