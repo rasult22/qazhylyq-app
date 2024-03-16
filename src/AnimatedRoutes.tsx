@@ -8,9 +8,14 @@ import DuaMadinaPage from './pages/dua/madina'
 import App from './App'
 import DuaMinaPage from './pages/dua/mina'
 import { AnimatePresence } from 'framer-motion'
+import { initSafeArea } from './utils/safeArea'
+import { useEffect } from 'react'
 
 const AnimatedRoutes: React.FC = () => {
   const location = useLocation()
+  useEffect(() => {
+    initSafeArea()
+  }, [])
   return (
     <>
       <AnimatePresence>

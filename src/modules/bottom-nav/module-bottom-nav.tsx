@@ -4,7 +4,7 @@ const ModuleBottomNav: React.FC = () => {
   const active = true
   return (
     <>
-      <div className="bg-[#fff] text-[#858C94] rounded-t-lg shadow-custom border-t w-[100vw] flex items-center justify-between px-[36px] py-[13px]">
+      <div className="bg-[#fff] pb-inset-bottom text-[#858C94] rounded-t-lg shadow-custom border-t w-[100vw] flex items-center justify-between px-[36px] py-[13px]">
         <NavLink
           to="/"
           className={({ isActive }) => {

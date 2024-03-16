@@ -6,6 +6,12 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+:root {
+  --inset-top: 0px;
+  --inset-bottom: 0px;
+  --inset-top-expand: 0px;
+  --inset-bottom-expand: 0px;
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

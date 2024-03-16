@@ -3,9 +3,18 @@ import AudioPlayer from 'react-h5-audio-player'
 import 'react-h5-audio-player/lib/styles.css'
 import audio from '../../../assets/audio.mp3'
 import { useSystem } from '../../store/system'
+import { useEffect } from 'react'
 
 const ModulePlayerModal: React.FC = () => {
   const { playerModalIsOpen, closePlayerModal } = useSystem()
+
+  useEffect(() => {
+    if (playerModalIsOpen) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = 'auto'
+    }
+  }, [playerModalIsOpen])
 
   const arabicContent =
     'اَللّٰهُمَّ اِيمَانًا بِكَ وَتَصدِيقًا بِكِتابِكَ وَوَفاءً بِعَهْدِكَ وَاتِّبَاعًا لِسُنَّةِ نَبِيِّكَ وَحَبِيبِكَ مُحَمَّدٍ صَلَى اَللهُ تَعَالَى عَلَيْهِ وَسَلَّمَ.'
@@ -18,9 +27,9 @@ const ModulePlayerModal: React.FC = () => {
       <div
         className={`${
           playerModalIsOpen
-            ? 'translate-x-0'
+            ? 'translate-x-0 '
             : 'translate-y-full -bottom-[-100%]'
-        } fixed transition-transform duration-300 z-50 top-0 w-full h-full bg-white px-6 overflow-auto`}
+        } fixed transition-transform duration-300 z-50 top-0 pt-inset-top w-full h-full bg-white px-6 overflow-auto`}
       >
         {/* HEADER */}
         <div className="flex bg-white sticky top-0 justify-between  py-4">
