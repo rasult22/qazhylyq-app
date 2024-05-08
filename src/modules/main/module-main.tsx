@@ -2,21 +2,35 @@ import React from 'react'
 import UIButton from '../../ui/button/ui-btn'
 import kaaba from './kaaba.svg'
 import arrows from './arrows.svg'
+import {
+  tavaf_begin,
+  tavaf_end,
+  ibrahim,
+  iraq_and_sham,
+  sham_and_yemen,
+  yemen_and_hajar,
+  multazam
+} from '../../audios/buttons'
 import { useSystem } from '../../store/system'
-
+import circles from '../../audios/circles'
 const ModuleMain: React.FC = () => {
-  const { showPlayerModal } = useSystem()
+  const { showPlayerModal, setCurrentPrayer } = useSystem()
+
+  const onCircleClick = (n: number) => {
+    setCurrentPrayer(circles[n])
+    showPlayerModal()
+  }
   return (
     <div>
       <div className="mt-[-110%]">
         <svg height="1130" width="100%">
-          <Circle7 onClick={() => showPlayerModal()} />
-          <Circle6 onClick={() => showPlayerModal()} />
-          <Circle5 onClick={() => showPlayerModal()} />
-          <Circle4 onClick={() => showPlayerModal()} />
-          <Circle3 onClick={() => showPlayerModal()} />
-          <Circle2 onClick={() => showPlayerModal()} />
-          <Circle1 onClick={() => showPlayerModal()} />
+          <Circle7 onClick={() => onCircleClick(6)} />
+          <Circle6 onClick={() => onCircleClick(5)} />
+          <Circle5 onClick={() => onCircleClick(4)} />
+          <Circle4 onClick={() => onCircleClick(3)} />
+          <Circle3 onClick={() => onCircleClick(2)} />
+          <Circle2 onClick={() => onCircleClick(1)} />
+          <Circle1 onClick={() => onCircleClick(0)} />
         </svg>
       </div>
       <div className="px-6">
@@ -37,12 +51,21 @@ const ModuleMain: React.FC = () => {
               />
             </svg>
           </UIButton>
-          <UIButton onClick={() => showPlayerModal()} className="w-full">
+          <UIButton
+            onClick={() => {
+              setCurrentPrayer(tavaf_begin)
+              showPlayerModal()
+            }}
+            className="w-full"
+          >
             Таупқа бастау дұғасы
           </UIButton>
         </div>
         <UIButton
-          onClick={() => showPlayerModal()}
+          onClick={() => {
+            setCurrentPrayer(tavaf_end)
+            showPlayerModal()
+          }}
           className="mt-[18px] w-full"
         >
           Тауап намазынан кейін оқы. дұға
@@ -51,31 +74,46 @@ const ModuleMain: React.FC = () => {
       <div className="relative flex justify-center pt-10 pb-10">
         <img src={arrows} alt="" />
         <UIButton
-          onClick={() => showPlayerModal()}
+          onClick={() => {
+            setCurrentPrayer(sham_and_yemen)
+            showPlayerModal()
+          }}
           className="w-[65%] absolute top-[28px] left-[80px]"
         >
           Шам және Йемен
         </UIButton>
         <UIButton
-          onClick={() => showPlayerModal()}
+          onClick={() => {
+            setCurrentPrayer(yemen_and_hajar)
+            showPlayerModal()
+          }}
           className="w-[75%] absolute top-[85px] right-[60px]"
         >
           Йемен және Хажар ул-әсуад
         </UIButton>
         <UIButton
-          onClick={() => showPlayerModal()}
+          onClick={() => {
+            setCurrentPrayer(iraq_and_sham)
+            showPlayerModal()
+          }}
           className="w-[75%] absolute bottom-[142px] right-[45px]"
         >
           Ирак-Шам
         </UIButton>
         <UIButton
-          onClick={() => showPlayerModal()}
+          onClick={() => {
+            setCurrentPrayer(ibrahim)
+            showPlayerModal()
+          }}
           className="w-[75%] absolute bottom-[85px] right-[40px]"
         >
           Ибраһим мақамы
         </UIButton>
         <UIButton
-          onClick={() => showPlayerModal()}
+          onClick={() => {
+            setCurrentPrayer(multazam)
+            showPlayerModal()
+          }}
           className="w-[75%] absolute bottom-[30px] right-[40px]"
         >
           МҮЛТӘЗӘМ
@@ -116,6 +154,9 @@ const Circle1: React.FC<{ completed?: boolean; onClick?: () => void }> = ({
           href={kaaba}
         />
         <text
+          onClick={() => {
+            onClick()
+          }}
           x="50%"
           y="59.2%"
           className="text-[16px] font-medium"
