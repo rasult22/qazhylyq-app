@@ -1,43 +1,51 @@
-name: UI CI
+name: Deploy
 
 on:
-  pull_request:
-    branches:
-      - main
   push:
     branches:
       - main
 
 jobs:
-  lint:
-    runs-on: ubuntu-22.04
-    name: Lint
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: '18'
-      - run: yarn
-      - run: yarn lint
   build:
-    runs-on: ubuntu-22.04
-    needs: lint
     name: Build
+    runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - name: Checkout repo
+        uses: actions/checkout@v2
+
+      - name: Setup Node
+        uses: actions/setup-node@v1
         with:
-          node-version: '18'
-      - run: yarn
-      - run: yarn build
-  test:
-    runs-on: ubuntu-22.04
+          node-version: 18
+
+      - name: Install dependencies
+        uses: bahmutov/npm-install@v1
+
+      - name: Build project
+        run: npm run build
+
+      - name: Upload production-ready build files
+        uses: actions/upload-artifact@v2
+        with:
+          name: production-files
+          path: ./dist
+
+  deploy:
+    name: Deploy
     needs: build
-    name: Test
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - name: Download artifact
+        uses: actions/download-artifact@v2
         with:
-          node-version: '18'
-      - run: yarn
-      - run: yarn test
+          name: production-files
+          path: ./dist
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
