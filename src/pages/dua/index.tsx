@@ -1,22 +1,43 @@
 import { useNavigate } from 'react-router-dom'
 import UICell from '../../ui/cell/ui-cell'
+import { useSystem } from '../../store/system'
+import {
+  travel_begin,
+  qurban,
+  throwing_stone_shaitan,
+  when_entering_car
+} from '../../audios/list'
 
 const DuaPage = () => {
+  const { showPlayerModal, setCurrentPrayer } = useSystem()
   const navigate = useNavigate()
   return (
     <>
       <div className="px-4 space-y-4 pt-4 pb-[90px]">
-        <UICell level={99}>
+        <UICell
+          onClick={() => {
+            setCurrentPrayer(travel_begin)
+            showPlayerModal()
+          }}
+          level={99}
+        >
           САПАРҒА ШЫҒАРДА <br /> ОҚЫЛАТЫН ДҰҒА
         </UICell>
-        <UICell level={9}>КӨЛІККЕ МІНЕРДЕ ОҚЫЛАТЫН ДҰҒА</UICell>
-        <UICell level={8}>Мекке Мүкәррама дұғалары</UICell>
+        <UICell
+          onClick={() => {
+            setCurrentPrayer(when_entering_car)
+            showPlayerModal()
+          }}
+          level={9}
+        >
+          КӨЛІККЕ МІНЕРДЕ ОҚЫЛАТЫН ДҰҒА
+        </UICell>
         <UICell
           onClick={() => {
             navigate('/dua/mekkah')
           }}
           isLink
-          level={7}
+          level={8}
         >
           Мекке Мүкәррама дұғалары
         </UICell>
@@ -25,7 +46,7 @@ const DuaPage = () => {
             navigate('/dua/mina')
           }}
           isLink
-          level={6}
+          level={7}
         >
           Минада оқылатын дұғалар
         </UICell>
@@ -33,14 +54,30 @@ const DuaPage = () => {
           onClick={() => {
             navigate('/dua/arafat')
           }}
-          level={5}
+          level={6}
           isLink
         >
           арафат дұғалары
         </UICell>
         <UICell level={5}>Мұздалифа уақфасында оқылатын дұға</UICell>
-        <UICell level={5}>Шайтанға тас лақтырарда оқылатын дұға</UICell>
-        <UICell level={5}>Құрбандық шаларда оқылатын дұға</UICell>
+        <UICell
+          onClick={() => {
+            setCurrentPrayer(throwing_stone_shaitan)
+            showPlayerModal()
+          }}
+          level={5}
+        >
+          Шайтанға тас лақтырарда оқылатын дұға
+        </UICell>
+        <UICell
+          onClick={() => {
+            setCurrentPrayer(qurban)
+            showPlayerModal()
+          }}
+          level={5}
+        >
+          Құрбандық шаларда оқылатын дұға
+        </UICell>
         <UICell level={5}>Шаш аларда оқылатын дұға</UICell>
         <UICell
           onClick={() => {
