@@ -5,6 +5,40 @@ import mountain_4_audio from '../../assets/mountain-4.mp3'
 import mountain_5_audio from '../../assets/mountain-5.mp3'
 import mountain_6_audio from '../../assets/mountain-6.mp3'
 import mountain_7_audio from '../../assets/mountain-7.mp3'
+import safa_audio from '../../assets/safa.mp3'
+import marua_audio from '../../assets/marua.mp3'
+import green_area_audio from '../../assets/green_area.mp3'
+
+export const safa = {
+  audio_url: safa_audio,
+  title: 'Отсутсвует',
+  title_ru: 'Отсутсвует',
+  title_tt: `Отсутсвует`,
+  prayer_text: `Отсутсвует`,
+  translation_text: 'Отсутсвует',
+  translation_text_ru: `Отсутсвует`,
+  translation_text_tt: 'Отсутсвует'
+}
+export const green_area = {
+  audio_url: green_area_audio,
+  title: 'Отсутсвует',
+  title_ru: 'Отсутсвует',
+  title_tt: `Отсутсвует`,
+  prayer_text: `Отсутсвует`,
+  translation_text: 'Отсутсвует',
+  translation_text_ru: `Отсутсвует`,
+  translation_text_tt: 'Отсутсвует'
+}
+export const marua = {
+  audio_url: marua_audio,
+  title: 'Отсутсвует',
+  title_ru: 'Отсутсвует',
+  title_tt: `Отсутсвует`,
+  prayer_text: `Отсутсвует`,
+  translation_text: 'Отсутсвует',
+  translation_text_ru: `Отсутсвует`,
+  translation_text_tt: 'Отсутсвует'
+}
 
 export const mountain_1 = {
   audio_url: mountain_1_audio,

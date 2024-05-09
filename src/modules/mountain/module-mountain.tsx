@@ -4,13 +4,16 @@ import BottomBtn from './bottom-btn'
 import arrowUp from './svgs/arrow-up.svg'
 import arrowUpLong from './svgs/arrow-up-long.svg'
 import {
+  green_area,
+  marua,
   mountain_1,
   mountain_2,
   mountain_3,
   mountain_4,
   mountain_5,
   mountain_6,
-  mountain_7
+  mountain_7,
+  safa
 } from '../../audios/mountain'
 import { useSystem } from '../../store/system'
 const ModuleMountain: React.FC = () => {
@@ -74,11 +77,17 @@ const ModuleMountain: React.FC = () => {
     showPlayerModal()
   }
   const onGreenBtnClick = (num: number) => {
-    onBtnClick(num)
+    setCurrentPrayer(green_area)
+    showPlayerModal()
   }
   return (
     <div className="flex flex-col py-4 items-center relative space-y-8">
-      <TopBtn onClick={() => onBtnClick(1)} />
+      <TopBtn
+        onClick={() => {
+          setCurrentPrayer(marua)
+          showPlayerModal()
+        }}
+      />
       <div className="flex space-x-[16px] text-[#7E7E7E] relative px-8">
         <span className="absolute text-[#7E7E7E] uppercase -left-[45px] -rotate-90 bottom-[25vh]">
           Жасыл шамдар
@@ -95,7 +104,12 @@ const ModuleMountain: React.FC = () => {
           )
         })}
       </div>
-      <BottomBtn onClick={() => onBtnClick(1)} />
+      <BottomBtn
+        onClick={() => {
+          setCurrentPrayer(safa)
+          showPlayerModal()
+        }}
+      />
     </div>
   )
 }

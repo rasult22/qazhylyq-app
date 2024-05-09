@@ -2,6 +2,18 @@ import qurban_audio from '../../assets/qurban.mp3'
 import travel_begin_audio from '../../assets/travel_begin.mp3'
 import when_entering_car_audio from '../../assets/when_entering_car.mp3'
 import throwing_stone_shaitan_audio from '../../assets/throwing_stone_shaitan.mp3'
+import hairhut_audio from '../../assets/haircut.mp3'
+
+export const hairhut = {
+  audio_url: hairhut_audio,
+  title: 'Отсутсвует',
+  title_ru: 'Отсутсвует',
+  title_tt: `Отсутсвует`,
+  prayer_text: `Отсутсвует`,
+  translation_text: `Отсутсвует`,
+  translation_text_ru: `Отсутсвует`,
+  translation_text_tt: `Отсутсвует`
+}
 export const qurban = {
   audio_url: qurban_audio,
   title: 'Отсутсвует',

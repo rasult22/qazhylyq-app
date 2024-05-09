@@ -5,7 +5,8 @@ import {
   travel_begin,
   qurban,
   throwing_stone_shaitan,
-  when_entering_car
+  when_entering_car,
+  hairhut
 } from '../../audios/list'
 
 const DuaPage = () => {
@@ -78,7 +79,15 @@ const DuaPage = () => {
         >
           Құрбандық шаларда оқылатын дұға
         </UICell>
-        <UICell level={5}>Шаш аларда оқылатын дұға</UICell>
+        <UICell
+          onClick={() => {
+            setCurrentPrayer(hairhut)
+            showPlayerModal()
+          }}
+          level={5}
+        >
+          Шаш аларда оқылатын дұға
+        </UICell>
         <UICell
           onClick={() => {
             navigate('/dua/madina')
