@@ -19,7 +19,7 @@ const DuaMekkahPage = () => {
     <>
       <ModuleHeader
         onClick={() => {
-          navigate('/dua', {
+          navigate('/qazhylyq-app/dua', {
             replace: true
           })
         }}

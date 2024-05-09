@@ -35,7 +35,7 @@ const DuaPage = () => {
         </UICell>
         <UICell
           onClick={() => {
-            navigate('/dua/mekkah')
+            navigate('/qazhylyq-app/dua/mekkah')
           }}
           isLink
           level={8}
@@ -44,7 +44,7 @@ const DuaPage = () => {
         </UICell>
         <UICell
           onClick={() => {
-            navigate('/dua/mina')
+            navigate('/qazhylyq-app/dua/mina')
           }}
           isLink
           level={7}
@@ -53,7 +53,7 @@ const DuaPage = () => {
         </UICell>
         <UICell
           onClick={() => {
-            navigate('/dua/arafat')
+            navigate('/qazhylyq-app/dua/arafat')
           }}
           level={6}
           isLink
@@ -90,7 +90,7 @@ const DuaPage = () => {
         </UICell>
         <UICell
           onClick={() => {
-            navigate('/dua/madina')
+            navigate('/qazhylyq-app/dua/madina')
           }}
           isLink
           level={5}
