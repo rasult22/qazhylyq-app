@@ -8,7 +8,8 @@ import {
   bye_kaahbah_muaz,
   mekkah_enter,
   see_kaabah_muaz,
-  zhannat_salem
+  zhannat_salem,
+  at_multazam
 } from '../../audios/mekkah'
 
 const DuaMekkahPage = () => {
@@ -62,7 +63,8 @@ const DuaMekkahPage = () => {
         </UICell>
         <UICell
           onClick={() => {
-            //
+            setCurrentPrayer(at_multazam)
+            showPlayerModal()
           }}
           level={6}
         >
