@@ -6,7 +6,7 @@ import { useEffect, useRef } from 'react'
 
 const ModulePlayerModal: React.FC = () => {
   const { playerModalIsOpen, closePlayerModal, currentPrayer } = useSystem()
-  const playerRef = useRef()
+  const playerRef = useRef(null)
   useEffect(() => {
     if (playerModalIsOpen) {
       document.body.style.overflow = 'hidden'
