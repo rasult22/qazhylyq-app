@@ -2,11 +2,27 @@ import left from './svg/left.svg'
 import AudioPlayer from 'react-h5-audio-player'
 import 'react-h5-audio-player/lib/styles.css'
 import { useSystem } from '../../store/system'
-import { useEffect, useRef } from 'react'
+import { useCallback, useEffect, useRef, useState } from 'react'
 
+const FONT_SIZE = 15
 const ModulePlayerModal: React.FC = () => {
   const { playerModalIsOpen, closePlayerModal, currentPrayer } = useSystem()
+  const [playbackSpeed, setPlaybackSpeed] = useState(1)
   const playerRef = useRef(null)
+  const [fontNumber, setFontNumber] = useState(0)
+  const [fontNumber2, setFontNumber2] = useState(0)
+  const speeds = [0.5,0.8,1,1.3, 1.7, 2, 2.5]
+
+  const changeSpeed = useCallback(() => {
+    const index = speeds.findIndex(x=> x === playbackSpeed)
+    const speed = speeds[index + 1] || speeds[0]
+
+    if (playerRef.current) {
+      playerRef.current.audio.current.playbackRate = speed
+      setPlaybackSpeed(speed)
+    }
+  }, [playerRef, speeds, setPlaybackSpeed])
+
   useEffect(() => {
     if (playerModalIsOpen) {
       document.body.style.overflow = 'hidden'
@@ -25,7 +41,7 @@ const ModulePlayerModal: React.FC = () => {
         } fixed transition-transform duration-300 z-50 top-0 pt-inset-top w-full h-full bg-white px-6 overflow-auto`}
       >
         {/* HEADER */}
-        <div className="flex bg-white sticky top-0 justify-between  py-4">
+        <div className="flex bg-white z-[5] sticky top-0 justify-between  py-4">
           <div
             onClick={() => {
               if (playerRef.current) {
@@ -33,7 +49,7 @@ const ModulePlayerModal: React.FC = () => {
               }
               closePlayerModal()
             }}
-            className=""
+            className="w-[32px] h-[24px] flex justify-center ml-[-10px]"
           >
             <img src={left} alt="" />
           </div>
@@ -43,12 +59,26 @@ const ModulePlayerModal: React.FC = () => {
           <div className="opacity-0">left</div>
         </div>
         {/* HEADER ENDS */}
-
-        <div className="mt-2 w-full text-[#202020] min-h-[245px] text-[15px] leading-[30px] bg-[#D9D9D9] shadow-inner rounded-[10px]  p-4 text-right">
-          {currentPrayer ? currentPrayer.prayer_text : ''}
+        <div className='relative'>
+          <div style={{
+            fontSize: 15 + (fontNumber)
+          }} className="mt-2 leading-[150%] overflow-auto w-full text-[#202020] min-h-[245px] text-[15px] bg-[#D9D9D9] shadow-inner rounded-[10px]  p-4 text-right">
+            {currentPrayer ? currentPrayer.prayer_text : ''}
+          </div>
+          <div className='absolute right-3 -bottom-3 items-center flex bg-white p-1 rounded-full border border-[#ECEAEA]'>
+            <IconMinus  onClick={() => {
+              let val = fontNumber - 1 
+              setFontNumber(val < 0 ? 0 : val)
+            }} />
+            <div className='leading-[100%] mx-2'>{fontNumber}</div>
+            <IconPlus onClick={() => {
+              let val = fontNumber + 1 
+              setFontNumber(val > 8 ? 8 : val)
+            }}/>
+          </div>
         </div>
 
-        <div className="py-4">
+        <div className="py-4 relative">
           <AudioPlayer
             ref={playerRef}
             showSkipControls={false}
@@ -56,14 +86,48 @@ const ModulePlayerModal: React.FC = () => {
             autoPlayAfterSrcChange={false}
             src={currentPrayer ? currentPrayer.audio_url : ''}
           />
+          <div className='flex absolute bottom-8 right-4 text-[#202020] text-[20px]'>
+            <button onClick={() => changeSpeed()}>{playbackSpeed.toFixed(1)}x</button>
+          </div>
         </div>
-
-        <div className="my-2 w-full text-[#202020] min-h-[245px] text-[15px] leading-[20px] bg-[#D9D9D9] shadow-inner rounded-[10px]  p-4 text-left">
-          {currentPrayer ? currentPrayer.translation_text : ''}
+        <div className='relative'>
+          <div style={{
+            fontSize: 15 + (fontNumber2)
+          }}  className="my-2 leading-[120%] w-full relative text-[#202020] min-h-[245px] text-[15px] leading-[20px] bg-[#D9D9D9] shadow-inner rounded-[10px]  p-4 text-left">
+            {currentPrayer ? currentPrayer.translation_text : ''}
+          </div>
+          <div className='absolute right-3 -bottom-3 items-center flex bg-white p-1 rounded-full border border-[#ECEAEA]'>
+            <IconMinus onClick={() => {
+              let val = fontNumber2 - 1 
+              setFontNumber2(val < 0 ? 0 : val)
+            }} />
+            <div className='leading-[100%] mx-2'>{fontNumber2}</div>
+            <IconPlus onClick={() => {
+              let val = fontNumber2 + 1 
+              setFontNumber2(val > 8 ? 8 : val)
+            }} />
+          </div>
         </div>
       </div>
+    
     </>
   )
 }
 
 export default ModulePlayerModal
+
+
+const IconMinus: React.FC<{onClick: () => void}> = ({onClick}) => {
+  return <svg onClick={onClick} width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="10.5299" cy="10.5001" rx="10.1282" ry="10.1087" fill="#C3B8AC"/>
+        <path d="M6.47864 10.5H14.5812" stroke="#88816E" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
+      </svg>
+}
+
+const IconPlus: React.FC<{onClick: () => void}> = ({onClick}) => {
+  return <svg onClick={onClick} width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <ellipse cx="10.4701" cy="10.5001" rx="10.1282" ry="10.1087" fill="#C3B8AC"/>
+  <path d="M10.4702 6.45654V14.5435" stroke="#88816E" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
+  <path d="M6.41882 10.5H14.5214" stroke="#88816E" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
+</svg>
+}
