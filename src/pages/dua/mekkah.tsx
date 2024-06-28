@@ -9,7 +9,8 @@ import {
   mekkah_enter,
   see_kaabah_muaz,
   zhannat_salem,
-  at_multazam
+  at_multazam,
+  hadisha_salem
 } from '../../audios/mekkah'
 
 const DuaMekkahPage = () => {
@@ -70,7 +71,15 @@ const DuaMekkahPage = () => {
         >
           Мүлтазамда оқылатын дұға
         </UICell>
-        <UICell level={5}>Хадиша анамызға сәлем беру</UICell>
+        <UICell
+          onClick={() => {
+            setCurrentPrayer(hadisha_salem)
+            showPlayerModal()
+          }}
+          level={5}
+        >
+          Хадиша анамызға сәлем беру
+        </UICell>
         <UICell
           onClick={() => {
             setCurrentPrayer(zhannat_salem)
