@@ -5,7 +5,6 @@ import arrowUp from './svgs/arrow-up.svg'
 import arrowUpLong from './svgs/arrow-up-long.svg'
 import {
   green_area,
-  marua,
   mountain_1,
   mountain_2,
   mountain_3,
@@ -13,7 +12,7 @@ import {
   mountain_5,
   mountain_6,
   mountain_7,
-  safa
+  safa_and_marua
 } from '../../audios/mountain'
 import { useSystem } from '../../store/system'
 const ModuleMountain: React.FC = () => {
@@ -84,7 +83,7 @@ const ModuleMountain: React.FC = () => {
     <div className="flex flex-col py-4 items-center relative space-y-8">
       <TopBtn
         onClick={() => {
-          setCurrentPrayer(marua)
+          setCurrentPrayer(safa_and_marua)
           showPlayerModal()
         }}
       />
@@ -106,7 +105,7 @@ const ModuleMountain: React.FC = () => {
       </div>
       <BottomBtn
         onClick={() => {
-          setCurrentPrayer(safa)
+          setCurrentPrayer(safa_and_marua)
           showPlayerModal()
         }}
       />
