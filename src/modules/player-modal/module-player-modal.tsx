@@ -62,7 +62,7 @@ const ModulePlayerModal: React.FC = () => {
         <div className='relative'>
           <div style={{
             fontSize: 15 + (fontNumber)
-          }} className="mt-2 leading-[150%] overflow-auto w-full text-[#202020] min-h-[245px] text-[15px] bg-[#D9D9D9] shadow-inner rounded-[10px]  p-4 text-right">
+          }} className="mt-2 leading-[150%] overflow-auto w-full text-[#202020] min-h-[245px] text-[15px] bg-[#D9D9D9] shadow-inner rounded-[10px]  p-4 text-right max-h-[70vh]">
             {currentPrayer ? currentPrayer.prayer_text : ''}
           </div>
           <div className='absolute right-3 -bottom-3 items-center flex bg-white p-1 rounded-full border border-[#ECEAEA]'>
@@ -93,7 +93,7 @@ const ModulePlayerModal: React.FC = () => {
         <div className='relative'>
           <div style={{
             fontSize: 15 + (fontNumber2)
-          }}  className="my-2 leading-[120%] w-full relative text-[#202020] min-h-[245px] text-[15px] leading-[20px] bg-[#D9D9D9] shadow-inner rounded-[10px]  p-4 text-left">
+          }}  className="my-2 leading-[120%] w-full relative text-[#202020] min-h-[245px] text-[15px] leading-[20px] overflow-auto bg-[#D9D9D9] shadow-inner rounded-[10px]  p-4 text-left max-h-[75vh]">
             {currentPrayer ? currentPrayer.translation_text : ''}
           </div>
           <div className='absolute right-3 -bottom-3 items-center flex bg-white p-1 rounded-full border border-[#ECEAEA]'>
