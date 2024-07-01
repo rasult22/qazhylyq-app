@@ -6,7 +6,8 @@ import {
   qurban,
   throwing_stone_shaitan,
   when_entering_car,
-  hairhut
+  hairhut,
+  at_muzdalifa
 } from '../../audios/list'
 
 const DuaPage = () => {
@@ -60,7 +61,10 @@ const DuaPage = () => {
         >
           арафат дұғалары
         </UICell>
-        <UICell level={5}>Мұздалифа уақфасында оқылатын дұға</UICell>
+        <UICell onClick={() => {
+          setCurrentPrayer(at_muzdalifa)
+          showPlayerModal()
+        }} level={5}>Мұздалифа уақфасында оқылатын дұға</UICell>
         <UICell
           onClick={() => {
             setCurrentPrayer(throwing_stone_shaitan)
