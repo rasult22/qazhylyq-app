@@ -2,7 +2,7 @@ import tavaf_begin_audio from '../../assets/tavaf_begin.mp3'
 import tavaf_end_audio from '../../assets/tavaf_end.mp3'
 import sham_and_yemen_audio from '../../assets/sham_and_yemen.mp3'
 import yemen_and_hajar_audio from '../../assets/yemen_and_hajar.mp3'
-import iraq_and_sham_audio from '../../assets/iraq_and_sham.mp3'
+import iraq_and_sham_audio from '../../assets/iraq_and_sham.mp4'
 import ibrahim_audio from '../../assets/ibrahim.mp3'
 import multazam_audio from '../../assets/multazam.mp3'
 export const tavaf_begin = {
