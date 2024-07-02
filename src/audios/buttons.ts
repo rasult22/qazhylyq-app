@@ -39,16 +39,6 @@ export const tavaf_end = {
 ۋا، اللا! ءبىزدى مۇسىلمان كۇيىمىزدە جانىمىزدى الىپ، مۇسىلمان قىلىپ ءتىرىلت. كەمشىلىكسىز، كۇناسىز تاقۋا قۇلدارىڭنىڭ اراسىنا قوس.`
 }
 
-// {
-//      audio_url: tavaf_begin,
-//     title: '1 - айналым',
-//     title_ru: '1 - круг',
-//     title_tt: ``,
-//     prayer_text: ``,
-//     translation_text: '',
-//     translation_text_ru: ``,
-//     translation_text_tt: ''
-//   }
 export const sham_and_yemen = {
   audio_url: sham_and_yemen_audio,
   title: 'Шам - Йемен',
