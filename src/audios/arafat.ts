@@ -1,3 +1,4 @@
+import arafat_audio from '../../assets/arafat.mp4'
 import arafat_arrival_audio from '../../assets/arafat_arrival.mp3'
 import arafat_to_muzdalifa_audio from '../../assets/arafat_to_muzdalifa.mp3'
 export const arafat_arrival = {
@@ -14,7 +15,7 @@ export const arafat_arrival = {
 ۋا، اللا! شاقىرۋىڭدى قابىل الىپ كەلىپ تۇرمىن. امىرىڭە بوي ۇسىنىپ، ءامىرىڭدى ورىنداۋعا كەلدىم. سەنىڭ ەش سەرىگىڭ جوق. بارلىق ماداق پەن نىعمەت، ءشۇباسىز، ساعان ءتان، مۇلىك تە سەنىكى. سەنىڭ ەش سەرىگىڭ جوق.`
 }
 export const arafat = {
-  audio_url: 'arafat_audio',
+  audio_url: arafat_audio,
   title: 'Арафат дұғасы',
   title_ru: 'Дуа во время стояния на Арафате',
   title_tt: `ارافات دۇعاسى`,
