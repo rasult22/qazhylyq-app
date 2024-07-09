@@ -11,14 +11,14 @@ const ModulePlayerModal: React.FC = () => {
   const playerRef = useRef(null)
   const [fontNumber, setFontNumber] = useState(0)
   const [fontNumber2, setFontNumber2] = useState(0)
-  const speeds = [0.5,0.8,1,1.3, 1.7, 2, 2.5]
+  const speeds = [0.5, 0.8, 1, 1.3, 1.7, 2, 2.5]
 
   const changeSpeed = useCallback(() => {
-    const index = speeds.findIndex(x=> x === playbackSpeed)
+    const index = speeds.findIndex((x) => x === playbackSpeed)
     const speed = speeds[index + 1] || speeds[0]
 
     if (playerRef.current) {
-      playerRef.current.audio.current.playbackRate = speed
+      ;(playerRef.current as any).audio.current.playbackRate = speed
       setPlaybackSpeed(speed)
     }
   }, [playerRef, speeds, setPlaybackSpeed])
@@ -59,22 +59,29 @@ const ModulePlayerModal: React.FC = () => {
           <div className="opacity-0">left</div>
         </div>
         {/* HEADER ENDS */}
-        <div className='relative'>
-          <div style={{
-            fontSize: 15 + (fontNumber)
-          }} className="mt-2 leading-[150%] overflow-auto w-full text-[#202020] min-h-[245px] text-[15px] bg-[#D9D9D9] shadow-inner rounded-[10px]  p-4 text-right max-h-[70vh]">
+        <div className="relative">
+          <div
+            style={{
+              fontSize: 15 + fontNumber
+            }}
+            className="mt-2 leading-[150%] overflow-auto w-full text-[#202020] min-h-[245px] text-[15px] bg-[#D9D9D9] shadow-inner rounded-[10px]  p-4 text-right max-h-[70vh]"
+          >
             {currentPrayer ? currentPrayer.prayer_text : ''}
           </div>
-          <div className='absolute right-3 -bottom-3 items-center flex bg-white p-1 rounded-full border border-[#ECEAEA]'>
-            <IconMinus  onClick={() => {
-              let val = fontNumber - 1 
-              setFontNumber(val < 0 ? 0 : val)
-            }} />
-            <div className='leading-[100%] mx-2'>{fontNumber}</div>
-            <IconPlus onClick={() => {
-              let val = fontNumber + 1 
-              setFontNumber(val > 8 ? 8 : val)
-            }}/>
+          <div className="absolute right-3 -bottom-3 items-center flex bg-white p-1 rounded-full border border-[#ECEAEA]">
+            <IconMinus
+              onClick={() => {
+                let val = fontNumber - 1
+                setFontNumber(val < 0 ? 0 : val)
+              }}
+            />
+            <div className="leading-[100%] mx-2">{fontNumber}</div>
+            <IconPlus
+              onClick={() => {
+                let val = fontNumber + 1
+                setFontNumber(val > 8 ? 8 : val)
+              }}
+            />
           </div>
         </div>
 
@@ -86,48 +93,103 @@ const ModulePlayerModal: React.FC = () => {
             autoPlayAfterSrcChange={false}
             src={currentPrayer ? currentPrayer.audio_url : ''}
           />
-          <div className='flex absolute bottom-8 right-4 text-[#202020] text-[20px]'>
-            <button onClick={() => changeSpeed()}>{playbackSpeed.toFixed(1)}x</button>
+          <div className="flex absolute bottom-8 right-4 text-[#202020] text-[20px]">
+            <button onClick={() => changeSpeed()}>
+              {playbackSpeed.toFixed(1)}x
+            </button>
           </div>
         </div>
-        <div className='relative'>
-          <div style={{
-            fontSize: 15 + (fontNumber2)
-          }}  className="my-2 leading-[120%] w-full relative text-[#202020] min-h-[245px] text-[15px] leading-[20px] overflow-auto bg-[#D9D9D9] shadow-inner rounded-[10px]  p-4 text-left max-h-[75vh]">
+        <div className="relative">
+          <div
+            style={{
+              fontSize: 15 + fontNumber2
+            }}
+            className="my-2 leading-[120%] w-full relative text-[#202020] min-h-[245px] text-[15px] leading-[20px] overflow-auto bg-[#D9D9D9] shadow-inner rounded-[10px]  p-4 text-left max-h-[75vh]"
+          >
             {currentPrayer ? currentPrayer.translation_text : ''}
           </div>
-          <div className='absolute right-3 -bottom-3 items-center flex bg-white p-1 rounded-full border border-[#ECEAEA]'>
-            <IconMinus onClick={() => {
-              let val = fontNumber2 - 1 
-              setFontNumber2(val < 0 ? 0 : val)
-            }} />
-            <div className='leading-[100%] mx-2'>{fontNumber2}</div>
-            <IconPlus onClick={() => {
-              let val = fontNumber2 + 1 
-              setFontNumber2(val > 8 ? 8 : val)
-            }} />
+          <div className="absolute right-3 -bottom-3 items-center flex bg-white p-1 rounded-full border border-[#ECEAEA]">
+            <IconMinus
+              onClick={() => {
+                let val = fontNumber2 - 1
+                setFontNumber2(val < 0 ? 0 : val)
+              }}
+            />
+            <div className="leading-[100%] mx-2">{fontNumber2}</div>
+            <IconPlus
+              onClick={() => {
+                let val = fontNumber2 + 1
+                setFontNumber2(val > 8 ? 8 : val)
+              }}
+            />
           </div>
         </div>
       </div>
-    
     </>
   )
 }
 
 export default ModulePlayerModal
 
-
-const IconMinus: React.FC<{onClick: () => void}> = ({onClick}) => {
-  return <svg onClick={onClick} width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <ellipse cx="10.5299" cy="10.5001" rx="10.1282" ry="10.1087" fill="#C3B8AC"/>
-        <path d="M6.47864 10.5H14.5812" stroke="#88816E" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
-      </svg>
+const IconMinus: React.FC<{ onClick: () => void }> = ({ onClick }) => {
+  return (
+    <svg
+      onClick={onClick}
+      width="21"
+      height="21"
+      viewBox="0 0 21 21"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <ellipse
+        cx="10.5299"
+        cy="10.5001"
+        rx="10.1282"
+        ry="10.1087"
+        fill="#C3B8AC"
+      />
+      <path
+        d="M6.47864 10.5H14.5812"
+        stroke="#88816E"
+        strokeWidth="1.6"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  )
 }
 
-const IconPlus: React.FC<{onClick: () => void}> = ({onClick}) => {
-  return <svg onClick={onClick} width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <ellipse cx="10.4701" cy="10.5001" rx="10.1282" ry="10.1087" fill="#C3B8AC"/>
-  <path d="M10.4702 6.45654V14.5435" stroke="#88816E" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
-  <path d="M6.41882 10.5H14.5214" stroke="#88816E" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
-</svg>
+const IconPlus: React.FC<{ onClick: () => void }> = ({ onClick }) => {
+  return (
+    <svg
+      onClick={onClick}
+      width="21"
+      height="21"
+      viewBox="0 0 21 21"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <ellipse
+        cx="10.4701"
+        cy="10.5001"
+        rx="10.1282"
+        ry="10.1087"
+        fill="#C3B8AC"
+      />
+      <path
+        d="M10.4702 6.45654V14.5435"
+        stroke="#88816E"
+        strokeWidth="1.6"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M6.41882 10.5H14.5214"
+        stroke="#88816E"
+        strokeWidth="1.6"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  )
 }
