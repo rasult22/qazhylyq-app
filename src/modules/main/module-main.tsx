@@ -120,9 +120,9 @@ const ModuleMain: React.FC = () => {
             setCurrentPrayer(sham_and_yemen)
             showPlayerModal()
           }}
-          className="w-[80%] max-w-[320px] max-h-[70px] absolute top-[10px] left-[49px] normal-case"
+          className="w-[85%] max-w-[320px] max-h-[70px] absolute top-[10px] left-[49px] normal-case"
         >
-          {t`Йемен бұрышы және Хажар ул-әсуад арасында оқылатын дұға`}
+          {t`Шам бұрышы және Йемен бұрышы арасында оқылатын дұға`}
         </UIButton>
         <UIButton
           completed={completedIds.includes(yemen_and_hajar.id)}
@@ -133,7 +133,7 @@ const ModuleMain: React.FC = () => {
           }}
           className="w-[80%] absolute top-[80px] right-[45px] normal-case"
         >
-          {t`Шам бұрышы және Йемен бұрышы арасында оқылатын дұға`}
+          {t`Йемен бұрышы және Хажар ул-әсуад арасында оқылатын дұға`}
         </UIButton>
         <UIButton
           completed={completedIds.includes(iraq_and_sham.id)}
