@@ -41,7 +41,7 @@ const DuaPage = () => {
             showPlayerModal()
           }}
         >
-          {t`КӨЛІККЕ МІНЕРДЕ ОҚЫЛАТЫН ДҰҒА`}
+          {t`КӨЛІККЕ МІНЕРДЕ ОҚЫЛАТЫН ДҰҒА`}
         </UICell>
         <UICell
           onClick={() => {

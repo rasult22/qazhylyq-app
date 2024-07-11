@@ -16,12 +16,12 @@ msgstr ""
 
 #: src/pages/dua/arafat.tsx:31
 msgid "Арафатқа барғанда оқылатын дұға"
-msgstr ""
+msgstr "ارافاتقا بارعاندا وقىلاتىن دۇعا"
 
 #: src/audios/arafat.ts:22
 #: src/pages/dua/arafat.tsx:39
 msgid "Арафат дұғасы"
-msgstr ""
+msgstr "ارافات دۇعاسى"
 
 #: src/pages/dua/arafat.tsx:47
 msgid "Арафаттан Мұздалифаға барар кезде оқылатын дұға"
@@ -29,111 +29,125 @@ msgstr ""
 
 #: src/pages/dua/index.tsx:27
 msgid "тәлбия"
-msgstr ""
+msgstr "ءتالبيا"
 
+#: src/audios/list.ts:67
 #: src/pages/dua/index.tsx:35
 msgid "САПАРҒА ШЫҒАРДА ОҚЫЛАТЫН ДҰҒА"
-msgstr ""
+msgstr "ساپارعا شىعاردا وقىلاتىن دۇعا"
 
 #: src/pages/dua/index.tsx:44
 msgid "КӨЛІККЕ МІНЕРДЕ ОҚЫЛАТЫН ДҰҒА"
-msgstr ""
+msgstr "كولىككە مىنەردە وقىلاتىن دۇعا"
 
 #: src/pages/dua/index.tsx:52
 msgid "Мекке Мүкәррама дұғалары"
-msgstr ""
+msgstr "مەككە مۇكارراما دۇعالارى"
 
 #: src/pages/dua/index.tsx:61
 msgid "Минада оқылатын дұғалар"
-msgstr ""
+msgstr "مينادا وقىلاتىن دۇعالار"
 
 #: src/pages/dua/index.tsx:69
 msgid "арафат дұғалары"
-msgstr ""
+msgstr "ارافات دۇعالارى"
 
+#: src/audios/list.ts:12
 #: src/pages/dua/index.tsx:78
 msgid "Мұздалифа уақфасында оқылатын дұға"
-msgstr ""
+msgstr "مۇزداليفا ۋاقفاسىندا وقىلاتىن دۇعا"
 
+#: src/audios/list.ts:99
 #: src/pages/dua/index.tsx:86
 msgid "Шайтанға тас лақтырарда оқылатын дұға"
-msgstr ""
+msgstr "شايتانعا تاس لاقتىراردا وقىلاتىن دۇعا"
 
+#: src/audios/list.ts:51
 #: src/pages/dua/index.tsx:95
 msgid "Құрбандық шаларда оқылатын дұға"
-msgstr ""
+msgstr "قۇرباندىق شالاردا وقىلاتىن دۇعا"
 
+#: src/audios/list.ts:37
 #: src/pages/dua/index.tsx:103
 msgid "Шаш аларда оқылатын дұға"
-msgstr ""
+msgstr "شاش الاردا وقىلاتىن دۇعا"
 
 #: src/pages/dua/index.tsx:112
 msgid "Мәдина мүнәууара дұғалары"
-msgstr ""
+msgstr "ءمادينا ءمۇناۋۋارا دۇعالارى"
 
+#: src/audios/medina.ts:14
 #: src/pages/dua/madina.tsx:36
 msgid "Мәдина мүнәууараға кірерде оқылатын дұға"
-msgstr ""
+msgstr "ءمادينا مۇناۋۋاراعا كىرەردە وقىلاتىن دۇعا"
 
+#: src/audios/medina.ts:28
 #: src/pages/dua/madina.tsx:44
 msgid "Пайғамбарымызға (с.а.у.) сәлем беру"
-msgstr ""
+msgstr "پايعامبارىمىزعا (س.ا.ۋ.) سالەم بەرۋ"
 
 #: src/pages/dua/madina.tsx:52
 msgid "Хазірет Әбу Бәкірге  (р.а.) сәлем беру"
-msgstr ""
+msgstr "ءابۋ باكىرگە (ر.ا.) سالەم بەرۋ"
 
 #: src/pages/dua/madina.tsx:60
 msgid "Хазірет Омарға  (р.а.) сәлем беру"
-msgstr ""
+msgstr "ومارعا (ر.ا.) سالەم بەرۋ"
 
+#: src/audios/medina.ts:191
 #: src/pages/dua/madina.tsx:68
 msgid "Бақи жұртына сәлем беру"
-msgstr ""
+msgstr "باقي جۇرتىنا سالەم بەرۋ"
 
 #: src/pages/dua/madina.tsx:76
 msgid "Хазірет Османға  (р.а.) сәлем беру"
-msgstr ""
+msgstr "وسمانعا (ر.ا.) سالەم بەرۋ"
 
+#: src/audios/medina.ts:267
 #: src/pages/dua/madina.tsx:84
 msgid "Ұхұд шейіттеріне сәлем беру"
-msgstr ""
+msgstr "ۇحۇد شەيىتتەرىنە سالەم بەرۋ"
 
+#: src/audios/medina.ts:316
 #: src/pages/dua/madina.tsx:92
 msgid "Пайғамбарымызбен (с.а.у.) қоштасардағы дұға"
-msgstr ""
+msgstr "پايعامبارىمىزبەن (س.ا.ۋ.) قوشتاسارداعى دۇعا"
 
 #: src/pages/dua/mekkah.tsx:36
 msgid "Мекке Мүкәррамаға кірерде оқылатын дұға"
-msgstr ""
+msgstr "مەككە مۇكارراماعا كىرەردە وقىلاتىن دۇعا"
 
 #: src/pages/dua/mekkah.tsx:44
 msgid "әл-Харамға кірерде оқылатын дұға"
-msgstr ""
+msgstr "ءال-حارامعا كىرەردە وقىلاتىن دۇعا"
 
+#: src/audios/mekkah.ts:100
 #: src/pages/dua/mekkah.tsx:52
 msgid "Қағба муаззаманы көргенде оқылатын дұға"
-msgstr ""
+msgstr "قاعبا مۋاززامانى كورگەندە وقىلاتىن دۇعا"
 
 #: src/pages/dua/mekkah.tsx:60
 msgid "әл-Харамнан шығарда оқылатын дұға"
-msgstr ""
+msgstr "ءال-حارامنان شىعاردا وقىلاتىن دۇعا"
 
+#: src/audios/mekkah.ts:49
 #: src/pages/dua/mekkah.tsx:68
 msgid "Мүлтазамда оқылатын дұға"
-msgstr ""
+msgstr "ءمۇلتازامدا وقىلاتىن دۇعا"
 
+#: src/audios/mekkah.ts:14
 #: src/pages/dua/mekkah.tsx:76
 msgid "Хадиша анамызға сәлем беру"
-msgstr ""
+msgstr "حاديشا انامىزعا سالەم بەرۋ"
 
+#: src/audios/mekkah.ts:115
 #: src/pages/dua/mekkah.tsx:84
 msgid "Жәннәт ул-мұғаллаға сәлем беру"
-msgstr ""
+msgstr "ءجاننات ۋل-مۇعاللاعا سالەم بەرۋ"
 
 #: src/pages/dua/mekkah.tsx:92
 msgid "ҚАҒБА МУАЗЗАМАМЕН ҚОШТАСАРДА ОҚЫЛАТЫН ДҰҒА"
-msgstr ""
+msgstr "قاعبا مۋاززامامەن قوشتاساردا وقىلاتىن دۇعا"
 
 #: src/pages/dua/mina.tsx:31
 msgid "Минаға жеткенде оқылатын дұға"
@@ -143,9 +157,10 @@ msgstr ""
 msgid "Минадан Арафатқа шығар кезде оқылатын дұға"
 msgstr ""
 
+#: src/audios/mina.ts:25
 #: src/pages/dua/mina.tsx:47
 msgid "Мұздалифадан кейін Минада оқылатын дұға"
-msgstr ""
+msgstr "مۇزداليفادان كەيىن مينادا وقىلاتىن دۇعا"
 
 #: src/modules/mountain/module-mountain.tsx:82
 msgid "Жасыл шамдар"
@@ -159,48 +174,171 @@ msgstr ""
 msgid "ҚАЙТУ"
 msgstr ""
 
-#: src/modules/main/module-main.tsx:97
+#: src/modules/main/module-main.tsx:99
 msgid "Таупқа бастау дұғасы"
 msgstr ""
 
-#: src/modules/main/module-main.tsx:107
+#: src/modules/main/module-main.tsx:111
 msgid "Тауап намазынан кейін оқылатын дұға"
 msgstr ""
 
-#: src/modules/main/module-main.tsx:119
+#: src/modules/main/module-main.tsx:136
 msgid "Йемен бұрышы және Хажар ул-әсуад арасында оқылатын дұға"
-msgstr ""
+msgstr "يەمەن بۇرىشى مەن ءحاجار ۋل-ءاسۋاد اراسىندا وقىلاتىن دۇعا"
 
-#: src/modules/main/module-main.tsx:128
+#: src/modules/main/module-main.tsx:125
 msgid "Шам бұрышы және Йемен бұрышы арасында оқылатын дұға"
-msgstr ""
+msgstr "شام بۇرىشى مەن يەمەن بۇرىشى اراسىندا وقىلاتىن دۇعا"
 
-#: src/modules/main/module-main.tsx:137
+#: src/audios/buttons.ts:77
+#: src/modules/main/module-main.tsx:147
 msgid "Ирак бұрышы мен Шам бұрышы арасында оқылатын дұға"
-msgstr ""
+msgstr "يراك بۇرىشى مەن شام بۇرىشى اراسىندا وقىلاتىن دۇعا"
 
-#: src/modules/main/module-main.tsx:146
+#: src/audios/buttons.ts:89
+#: src/modules/main/module-main.tsx:158
 msgid "Ибраһим мақамы тұсында оқылатын дұға"
-msgstr ""
+msgstr "يبراھيم ماقامى تۇسىندا وقىلاتىن دۇعا"
 
-#: src/modules/main/module-main.tsx:155
+#: src/audios/buttons.ts:104
+#: src/modules/main/module-main.tsx:169
 msgid "Мүлтәзамда оқылатын дұға"
-msgstr ""
+msgstr "ءمۇلتازام تۇسىندا وقىلاتىن دۇعا"
 
-#: src/modules/main/module-main.tsx:202
-#: src/modules/main/module-main.tsx:237
-#: src/modules/main/module-main.tsx:272
-#: src/modules/main/module-main.tsx:307
-#: src/modules/main/module-main.tsx:342
-#: src/modules/main/module-main.tsx:377
-#: src/modules/main/module-main.tsx:412
+#: src/modules/main/module-main.tsx:216
+#: src/modules/main/module-main.tsx:251
+#: src/modules/main/module-main.tsx:286
+#: src/modules/main/module-main.tsx:321
+#: src/modules/main/module-main.tsx:356
+#: src/modules/main/module-main.tsx:391
+#: src/modules/main/module-main.tsx:426
 msgid "айналым"
 msgstr ""
 
 #: src/audios/arafat.ts:8
-msgid "Арафатқа барғанда  оқылатын дұға"
-msgstr ""
+msgid "Арафатқа барғанда оқылатын дұға"
+msgstr "ارافاتقا بارعاندا وقىلاتىن دۇعا"
 
 #: src/audios/arafat.ts:150
 msgid "Арафаттан Мұздалифаға барар жолда оқылатын дұға"
+msgstr "ارافاتتان مۇزداليفاعا بارار جولدا وقىلاتىن دۇعا"
+
+#: src/audios/buttons.ts:13
+msgid "ТАУАПҚА БАСТАУ ДҰҒАСЫ"
+msgstr "تاۋاپقا باستاۋ دۇعاسى"
+
+#: src/audios/buttons.ts:26
+msgid "ТАУАП НАМАЗЫНАН СОҢ ОҚЫЛАТЫН ДҰҒА"
+msgstr "تاۋاپ نامازىنان سوڭ وقىلاتىن دۇعا"
+
+#: src/audios/buttons.ts:49
+msgid "Шам бұрышы мен Иемен бұрышы арасында оқылатын дұға"
+msgstr "شام بۇرىشى مەن يەمەن بۇرىشى اراسىندا وقىلاتىن دۇعا"
+
+#: src/audios/buttons.ts:63
+msgid "Иемен бұрышы мен Хәжар ул-әсуад арасында оқылатын дұға"
+msgstr "يەمەن بۇرىشى مەن ءحاجار ۋل-ءاسۋاد اراسىندا وقىلاتىن دۇعا"
+
+#: src/audios/circles.ts:13
+msgid "1 - айналым"
 msgstr ""
+
+#: src/audios/circles.ts:32
+msgid "2 - айналым"
+msgstr ""
+
+#: src/audios/circles.ts:49
+msgid "3 - айналым"
+msgstr ""
+
+#: src/audios/circles.ts:66
+msgid "4 - айналым"
+msgstr ""
+
+#: src/audios/circles.ts:83
+msgid "5 - айналым"
+msgstr ""
+
+#: src/audios/circles.ts:100
+msgid "6 - айналым"
+msgstr ""
+
+#: src/audios/circles.ts:117
+msgid "7 - айналым"
+msgstr ""
+
+#: src/audios/list.ts:83
+msgid "КӨЛІККЕ МІНЕРДЕ ОҚЫЛАТЫН ДҰҒА"
+msgstr "كولىككە مىنەردە وقىلاتىن دۇعا"
+
+#: src/audios/medina.ts:130
+msgid "Әбу Бәкірге  (р.а.) сәлем беру"
+msgstr "ءابۋ باكىرگە (ر.ا.) سالەم بەرۋ"
+
+#: src/audios/medina.ts:161
+msgid "Омарға  (р.а.) сәлем беру"
+msgstr "ومارعا (ر.ا.) سالەم بەرۋ"
+
+#: src/audios/medina.ts:232
+msgid "Османға  (р.а.) сәлем беру"
+msgstr "وسمانعا (ر.ا.) سالەم بەرۋ"
+
+#: src/audios/mekkah.ts:38
+msgid "ӘЛ-ХАРАМҒА КІРЕРДЕ ОҚЫЛАТЫН ДҰҒА"
+msgstr "ءال-حارامعا كىرەردە وقىلاتىن دۇعا"
+
+#: src/audios/mekkah.ts:65
+msgid "Әл-Харамнан шығарда оқылатын дұға"
+msgstr "ءال-حارامنان شىعاردا وقىلاتىن دۇعا"
+
+#: src/audios/mekkah.ts:76
+msgid "Қағба муаззамамен қоштасарда оқылатын дұға"
+msgstr "قاعبا مۋاززامامەن قوشتاساردا وقىلاتىن دۇعا"
+
+#: src/audios/mekkah.ts:89
+msgid "МЕККЕ МҮКӘРРАМАҒА КІРЕРДЕ ОҚЫЛАТЫН ДҰҒА"
+msgstr "مەككە مۇكارراماعا كىرەردە وقىلاتىن دۇعا"
+
+#: src/audios/mina.ts:9
+msgid "Минаға барғанда оқылатын дұға"
+msgstr "ميناعا بارعاندا وقىلاتىن دۇعا"
+
+#: src/audios/mina.ts:45
+msgid "Минадан Арафатқа бара жатқанда оқылатын дұға"
+msgstr "مينادان ارافاتقا بارا جاتقاندا وقىلاتىن دۇعا"
+
+#: src/audios/mountain.ts:15
+msgid "ЖАСЫЛ ШАМДАР БОЙЫМЕН ОҚЫЛАТЫН ДҰҒА"
+msgstr "جاسىل شامدار بويىمەن وقىلاتىن دۇعا"
+
+#: src/audios/mountain.ts:27
+msgid "САФА МЕН МӘРУАҒА ӘР ШЫҚҚАНДА ОҚЫЛАТЫН ДҰҒА"
+msgstr "سافا مەن مارۋاعا ءار شىققاندا وقىلاتىن دۇعا"
+
+#: src/audios/mountain.ts:39
+msgid "САҒИДЫҢ БІРІНШІ  АЙНАЛЫМЫНДА ОҚЫЛАТЫН ДҰҒА"
+msgstr "ساعيدىڭ ءبىرىنشى اينالىمىندا وقىلاتىن دۇعا"
+
+#: src/audios/mountain.ts:63
+msgid "САҒИДЫҢ ЕКІНШІ  АЙНАЛЫМЫНДА ОҚЫЛАТЫН ДҰҒА"
+msgstr "ساعيدىڭ ەكىنشى اينالىمىندا وقىلاتىن دۇعا"
+
+#: src/audios/mountain.ts:89
+msgid "САҒИДЫҢ ҮШІНШІ  АЙНАЛЫМЫНДА ОҚЫЛАТЫН ДҰҒА"
+msgstr "ساعيدىڭ ءۇشىنشى اينالىمىندا وقىلاتىن دۇعا"
+
+#: src/audios/mountain.ts:112
+msgid "САҒИДЫҢ ТӨРТІНШІ АЙНАЛЫМЫНДА ОҚЫЛАТЫН ДҰҒА"
+msgstr "ساعيدىڭ ءتورتىنشى اينالىمىندا وقىلاتىن دۇعا"
+
+#: src/audios/mountain.ts:135
+msgid "САҒИДЫҢ БЕСІНШІ  АЙНАЛЫМЫНДА ОҚЫЛАТЫН ДҰҒА"
+msgstr "ساعيدىڭ بەسىنشى اينالىمىندا وقىلاتىن دۇعا"
+
+#: src/audios/mountain.ts:160
+msgid "САҒИДЫҢ АЛТЫНШЫ  АЙНАЛЫМЫНДА ОҚЫЛАТЫН ДҰҒА"
+msgstr "ساعيدىڭ التىنشى اينالىمىندا وقىلاتىن دۇعا"
+
+#: src/audios/mountain.ts:185
+msgid "САҒИДЫҢ ЖЕТІНШІ  АЙНАЛЫМЫНДА ОҚЫЛАТЫН ДҰҒА"
+msgstr "ساعيدىڭ جەتىنشى اينالىمىندا وقىلاتىن دۇعا"

@@ -229,7 +229,7 @@ export const baqi_salaam = {
 export const usman_salaam = {
   id: 'usman_salaam',
   audio_url: usman_salaam_audio,
-  title: t`Османға  (р.а.) сәлем беру`,
+  title: t`Хазірет Османға  (р.а.) сәлем беру`,
   title_ru: 'Приветствие Усмана (р.а.)',
   title_tt: `وسمانعا (ر.ا.) سالەم بەرۋ`,
   prayer_text: `اَلسَّلَامُ‭ ‬عَلَيْكَ‭ ‬يَا‭ ‬عُثْمَانُ‭ ‬بْنِ‭ ‬عَفَّانَ‭ ‬رَضِىَ‭ ‬اللهُ‭ ‬عَنْهُ،
