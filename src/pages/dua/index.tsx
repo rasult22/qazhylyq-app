@@ -17,20 +17,28 @@ const DuaPage = () => {
     <>
       <div className="px-4 space-y-4 pt-4 pb-[90px]">
         <UICell
+          accent
           onClick={() => {
             setCurrentPrayer(travel_begin)
             showPlayerModal()
           }}
-          level={99}
+        >
+          тәлбия
+        </UICell>
+        <UICell
+          onClick={() => {
+            setCurrentPrayer(travel_begin)
+            showPlayerModal()
+          }}
         >
           САПАРҒА ШЫҒАРДА <br /> ОҚЫЛАТЫН ДҰҒА
         </UICell>
         <UICell
+          accent
           onClick={() => {
             setCurrentPrayer(when_entering_car)
             showPlayerModal()
           }}
-          level={9}
         >
           КӨЛІККЕ МІНЕРДЕ ОҚЫЛАТЫН ДҰҒА
         </UICell>
@@ -39,16 +47,15 @@ const DuaPage = () => {
             navigate('/qazhylyq-app/dua/mekkah')
           }}
           isLink
-          level={8}
         >
           Мекке Мүкәррама дұғалары
         </UICell>
         <UICell
+          accent
           onClick={() => {
             navigate('/qazhylyq-app/dua/mina')
           }}
           isLink
-          level={7}
         >
           Минада оқылатын дұғалар
         </UICell>
@@ -56,30 +63,33 @@ const DuaPage = () => {
           onClick={() => {
             navigate('/qazhylyq-app/dua/arafat')
           }}
-          level={6}
           isLink
         >
           арафат дұғалары
         </UICell>
-        <UICell onClick={() => {
-          setCurrentPrayer(at_muzdalifa)
-          showPlayerModal()
-        }} level={5}>Мұздалифа уақфасында оқылатын дұға</UICell>
+        <UICell
+          accent
+          onClick={() => {
+            setCurrentPrayer(at_muzdalifa)
+            showPlayerModal()
+          }}
+        >
+          Мұздалифа уақфасында оқылатын дұға
+        </UICell>
         <UICell
           onClick={() => {
             setCurrentPrayer(throwing_stone_shaitan)
             showPlayerModal()
           }}
-          level={5}
         >
           Шайтанға тас лақтырарда оқылатын дұға
         </UICell>
         <UICell
+          accent
           onClick={() => {
             setCurrentPrayer(qurban)
             showPlayerModal()
           }}
-          level={5}
         >
           Құрбандық шаларда оқылатын дұға
         </UICell>
@@ -88,16 +98,15 @@ const DuaPage = () => {
             setCurrentPrayer(hairhut)
             showPlayerModal()
           }}
-          level={5}
         >
           Шаш аларда оқылатын дұға
         </UICell>
         <UICell
+          accent
           onClick={() => {
             navigate('/qazhylyq-app/dua/madina')
           }}
           isLink
-          level={5}
         >
           Мәдина мүнәууара дұғалары
         </UICell>
