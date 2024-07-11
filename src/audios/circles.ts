@@ -7,6 +7,7 @@ import circle1_audio6 from '../../assets/circle-6.mp3'
 import circle1_audio7 from '../../assets/circle-7.mp3'
 const circles = [
   {
+    id: 'circle1_audio1',
     audio_url: circle1_audio1,
     title: '1 - айналым',
     title_ru: '1 - круг',
@@ -25,6 +26,7 @@ const circles = [
 ۋا، اللا! دىنىمە، دۇنيەمە جانە اقىرەتىمە ءتيىستى بارلىق ىستەرىمدە سەنەن كەشىرىم، اماندىق تىلەيمىن. ۋا، مەيىرىمدىلەردىڭ ەڭ مەيىرىمدىسى! مەيىرىمىڭمەن جۇماعىڭا كىرگىزىپ، توزاعىڭنان قاشىق قىلا كور. پايعامبارىمىز مۇحاممەدكە (س.ا.ۋ.) جانە ونىڭ وتباسى مەن ساحابالارىنا اللانىڭ يگىلىگىمەن سالەمى بولسىن!`
   },
   {
+    id: 'circle1_audio2',
     audio_url: circle1_audio2,
     title: '2 - айналым',
     title_ru: '2 - круг',
@@ -41,6 +43,7 @@ const circles = [
 ۋا، اللا! قۇلدارىڭ قايتا تىرىلەتىن كۇندە ازابىڭنان ساقتا. ۋا، اللا! جۇماعىڭا ەسەپ-قيساپسىز كىرگىزە كور.`
   },
   {
+    id: 'circle1_audio3',
     audio_url: circle1_audio3,
     title: '3 - айналым',
     title_ru: '3 - круг',
@@ -57,6 +60,7 @@ const circles = [
 ۋا، اللا، توزاق وتىنان، قابىر ازابىنان، ءدادجالدىڭ فيتناسىنان، ءومىر مەن ءولىم فيتناسىنان (شايتاننىڭ ازعىرۋىنان) ساعان سىيىنامىن.`
   },
   {
+    id: 'circle1_audio4',
     audio_url: circle1_audio4,
     title: '4 - айналым',
     title_ru: '4 - круг',
@@ -73,6 +77,7 @@ const circles = [
 ۋا، اللا! رىزىعىڭا قاناعاتىمدى ارتتىر، بەرگەنىڭنىڭ بەرەكەسىن ارتتىر. جوعالتقاندارىمنان دا جاقسىسىن بەرە كور.`
   },
   {
+    id: 'circle1_audio5',
     audio_url: circle1_audio5,
     title: '5 - айналым',
     title_ru: '5 - круг',
@@ -89,6 +94,7 @@ const circles = [
 ءۋا، اللا! سەنەن ءجانناتىڭدى، نىعمەتىڭدى سۇرايمىن. جۇماعىڭا جاقىنداتار ءسوز، ءىس، امال سۇرايمىن.`
   },
   {
+    id: 'circle1_audio6',
     audio_url: circle1_audio6,
     title: '6 - айналым',
     title_ru: '6 - круг',
@@ -105,6 +111,7 @@ const circles = [
 ۋا، اللا! سەنىڭ ءۇيىڭ قاسيەتتى، ءوزىڭ اسقان جومارتسىڭ. ۋا، اللا! سەن ۇلىسىڭ، مەيىرىمدىسىڭ، كەشىرىمدىسىڭ! كەشىرگەندى جاقسى كورەسىڭ، مەنى دە كەشە كور!`
   },
   {
+    id: 'circle1_audio7',
     audio_url: circle1_audio7,
     title: '7 - айналым',
     title_ru: '7 - круг',
@@ -116,6 +123,7 @@ const circles = [
   }
 ]
 export type Prayer = {
+  id: string
   audio_url: string
   title: string
   title_ru: string

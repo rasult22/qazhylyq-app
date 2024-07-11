@@ -6,6 +6,7 @@ import iraq_and_sham_audio from '../../assets/iraq_and_sham.mp4'
 import ibrahim_audio from '../../assets/ibrahim.mp3'
 import multazam_audio from '../../assets/multazam.mp3'
 export const tavaf_begin = {
+  id: 'tavaf_begin',
   audio_url: tavaf_begin_audio,
   title: 'ТАУАПҚА БАСТАУ ДҰҒАСЫ',
   title_ru: 'ДУА ПЕРЕД НАЧАЛОМ ТАВАФА',
@@ -18,6 +19,7 @@ export const tavaf_begin = {
     'ۋا، اللا! وزىڭە يمان كەلتىرىپ، كىتابىڭدى راستاپ، ساعان بەرگەن ۋادەمىزدى ورىنداۋ ءۇشىن ءارى سۇيىكتى پايعامبارىڭ مۇحاممەدتىڭ (س.ا.ۋ.) سۇننەتىنە مويىنسۇنىپ قۇزىرىڭا كەلىپ وتىرمىن. اللانىڭ يگىلىگى مەن سالەمى پايعامبارىمىز مۇحاممەدكە (س.ا.ۋ.) بولسىن.'
 }
 export const tavaf_end = {
+  id: 'tavaf_end',
   audio_url: tavaf_end_audio,
   title: 'ТАУАП НАМАЗЫНАН СОҢ ОҚЫЛАТЫН ДҰҒА',
   title_ru: 'ДУА ПОСЛЕ НАМАЗА-ТАВАФА',
@@ -40,6 +42,7 @@ export const tavaf_end = {
 }
 
 export const sham_and_yemen = {
+  id: 'sham_and_yemen',
   audio_url: sham_and_yemen_audio,
   title: 'Шам - Йемен',
   title_ru: 'Шам - Йемен',
@@ -53,6 +56,7 @@ export const sham_and_yemen = {
 ۋا، كىتاپتى (قۇران كارىمدى) تۇسىرگەن، ەسەپتى جىلدام الاتىن اللا. ۋا، اللا! دۇشپان اسكەرىن كۇيرەت. ولاردى تالقانداپ، بىزگە جاردەم ەت، ولاردى سىلكىلە. ۋا، قيىندىقتا قالعانعا جاردەم بەرگەن، مۇڭايعاننىڭ قايعىسىن سەيىلتكەن اللا. ءبىزدى قايعى-مۇڭنان، قيىندىقتان قۇتقارا كور. سەن ءبىزدىڭ جانە بارلىق مۇسىلمانداردىڭ باسىنا كەلگەندەردى كورەسىڭ. ۋا، اللا! كۇنامىزدى جاسىر، قورقىنىشىمىزدى سەيىلت. ۋا، جومارتتاردىڭ ەڭ جومارتى، مەيىرىمدىلەردىڭ ەڭ مەيىرىمدىسى.`
 }
 export const yemen_and_hajar = {
+  id: 'yemen_and_hajar',
   audio_url: yemen_and_hajar_audio,
   title: 'Йемен - Хажар ул-әсуад',
   title_ru: 'Йемен - Хаджару’ль-Асвад',
@@ -66,6 +70,7 @@ export const yemen_and_hajar = {
 ۋا، اللا! دىنىمە، دۇنيەمە جانە اقىرەتىمە ءتيىستى بارلىق ىستەرىمدە سەنەن كەشىرىم، اماندىق تىلەيمىن. ۋا، مەيىرىمدىلەردىڭ ەڭ مەيىرىمدىسى! مەيىرىمىڭمەن جۇماعىڭا كىرگىزىپ، توزاعىڭنان قاشىق قىلا كور. پايعامبارىمىز مۇحاممەدكە (س.ا.ۋ.) جانە ونىڭ وتباسى مەن ساحابالارىنا اللانىڭ يگىلىگى مەن سالەمى بولسىن!`
 }
 export const iraq_and_sham = {
+  id: 'iraq_and_sham',
   audio_url: iraq_and_sham_audio,
   title: 'Ирак - Шам',
   title_ru: 'Ирак - Шам',
@@ -77,6 +82,7 @@ export const iraq_and_sham = {
   translation_text_tt: `اللانى بۇكىل كەمشىلىك اتاۋلىدان پاكتەيمىن. ماداق وعان ءتان. اللادان باسقا قۇداي جوق. اللا ۇلى. بارلىق كۇش پەن قۇدىرەت شەكسىز قۇدىرەت يەسى اللاعا ءتان.`
 }
 export const ibrahim = {
+  id: 'ibrahim',
   audio_url: ibrahim_audio,
   title: 'Ибраһим мақамы',
   title_ru: 'Макам Ибрахима',
@@ -91,6 +97,7 @@ export const ibrahim = {
 }
 
 export const multazam = {
+  id: 'multazam',
   audio_url: multazam_audio,
   title: 'Мүлтәзәм',
   title_ru: 'Мультазам',

@@ -6,6 +6,7 @@ import hairhut_audio from '../../assets/haircut.mp3'
 import at_muzdalifa_audio from '../../assets/at_muzdalifa.mp4'
 
 export const at_muzdalifa = {
+  id: 'at_muzdalifa',
   audio_url: at_muzdalifa_audio,
   title: 'Мұздалифа уақфасында оқылатын дұға',
   title_ru: 'Дуа во время стояния на Муздалифе',
@@ -30,6 +31,7 @@ export const at_muzdalifa = {
 ۋا، اللا! مەنى قۋىلعان شايتاننان، ءتۇرلى كەساپاتتان قورعاي كور. ماعان جەتەتىندەي رىزىق بەرىپ، بەرگەنىڭدى بەرەكەلى قىل. ۋا، راببىم! مەنى ساعان كەلگەندەردىڭ ەڭ ىزگىلەرىنەن قىل. ۋا، كۇللى الەمنىڭ راببى! ساعان قاۋىشقانعا دەيىن مەنى تۋرا جولدان اداستىرا كورمە.`
 }
 export const hairhut = {
+  id: 'hairhut',
   audio_url: hairhut_audio,
   title: 'Шаш аларда оқылатын дұға',
   title_ru: 'Дуа при обривании головы',
@@ -43,6 +45,7 @@ export const hairhut = {
 ءبىزدى تۋرا جولعا سالعان اللاعا ماداق. بىزگە نىعمەتتەرىن جايعان اللاعا ماداق. ۋا، اللا! بۇكىل بولمىسىم ءوزىڭنىڭ جولىڭا قۇربان بولسىن. قۇلشىلىعىمدى قابىل قىل، كۇنالارىمدى كەشە كور. ۋا، كەشىرىمى مول راببىم! مەنى جانە قاجىلىعىن وتەپ، شاشىن الدىرعان نە قىسقارتقان بارشا مۇسىلمانداردى كەشىرە كور! ءامين.`
 }
 export const qurban = {
+  id: 'qurban',
   audio_url: qurban_audio,
   title: 'Құрбандық шаларда оқылатын дұға',
   title_ru: 'Дуа во время жертвоприношения',
@@ -58,6 +61,7 @@ export const qurban = {
 مەنىڭ نامازىم دا، وزگە قۇلشىلىقتارىم دا، تىرشىلىگىم دە، ءولىمىم دە كۇللى الەمنىڭ راببىسى ءبىر اللاعا ارنالادى. ونىڭ سەرىگى جوق. ماعان، بەرىلگەن پارمەن، مىنە، وسى. مەن مۇسىلمانداردىڭ العاشقىسىمىن.`
 }
 export const travel_begin = {
+  id: 'travel_begin',
   audio_url: travel_begin_audio,
   title: 'САПАРҒА ШЫҒАРДА ОҚЫЛАТЫН ДҰҒА',
   title_ru: 'ДУА, ЧИТАЕМАЯ ПРИ ПОЕЗДКЕ',
@@ -73,6 +77,7 @@ export const travel_begin = {
 ۋا، اللا! ءوزىمدى، ءدىنىمدى، وتباسىمدى، تۋىستارىمدى جانە دۇنيە مەن اقىرەتتە بەرەتىن نىعمەتتەرىڭنىڭ بارلىعىن ساعان امانات ەتتىم. ۋا، سىيى مول راببىم! ءبىزدى ءارتۇرلى جامانشىلىقتان ساقتاي كور.`
 }
 export const when_entering_car = {
+  id: 'when_entering_car',
   audio_url: when_entering_car_audio,
   title: 'КӨЛІККЕ МІНЕРДЕ ОҚЫЛАТЫН ДҰҒА',
   title_ru: 'ДУА, КОТОРАЯ ЧИТАЕТСЯ ПРИ ПОСАДКЕ В ТРАНСПОРТ',
@@ -88,6 +93,7 @@ export const when_entering_car = {
 }
 
 export const throwing_stone_shaitan = {
+  id: 'throwing_stone_shaitan',
   audio_url: throwing_stone_shaitan_audio,
   title: 'Шайтанға тас лақтырарда оқылатын дұға',
   title_ru: 'Дуа при побивании шайтана камнями',

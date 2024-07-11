@@ -3,6 +3,7 @@ import mina_after_muzdalifa_audio from '../../assets/mina_after_muzdalifa.mp3'
 import mina_to_arafat_audio from '../../assets/mina_to_arafat.mp3'
 
 export const mina_arrival = {
+  id: 'mina_arrival',
   audio_url: mina_arrival_audio,
   title: 'Минаға барғанда оқылатын дұға',
   title_ru: 'Дуа по прибытии в Мину',
@@ -18,6 +19,7 @@ export const mina_arrival = {
 ۋا، راببىم! زيانعا ۇشىراۋدان، كۇنادان، جاقسىلىقتان ماقرۇم قالۋدان، ءدىنىم مەن دۇنيەمە قاتىستى بارلىق قيىنشىلىقتان ساعان سيىنامىن. ۋا، مەيىرىمدىلەردىڭ ەڭ مەيىرىمدىسى! اللانىڭ يگىلىگى مەن سالەمى پايعامبارىمىز مۇحاممەدكە جانە ونىڭ جانۇياسى مەن ساحابالارىنا بولسىن.`
 }
 export const mina_after_muzdalifa = {
+  id: 'mina_after_muzdalifa',
   audio_url: mina_after_muzdalifa_audio,
   title: 'Мұздалифадан кейін Минада оқылатын дұға',
   title_ru: 'Дуа после Муздалифы в Мине',
@@ -37,6 +39,7 @@ export const mina_after_muzdalifa = {
 ۋا، اللا! زيانعا ۇشىراۋدان، كۇنا جاساۋدان، (جاقسىلىعىڭنان) ماقرۇم قالۋدان، اقىلىم ازايىپ، ءدىنىمنىڭ السىرەۋىنەن ساعان سيىنامىن. ۋا، راببىم! شايتاننىڭ ازعىرۋىنان، ماعان جاقىنداۋىنان ساعان سيىنامىن.`
 }
 export const mina_to_arafat = {
+  id: 'mina_to_arafat',
   audio_url: mina_to_arafat_audio,
   title: 'Минадан Арафатқа бара жатқанда оқылатын дұға',
   title_ru: 'Дуа по пути от Мины к Арафату',

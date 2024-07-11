@@ -2,6 +2,7 @@ import arafat_audio from '../../assets/arafat.mp4'
 import arafat_arrival_audio from '../../assets/arafat_arrival.mp3'
 import arafat_to_muzdalifa_audio from '../../assets/arafat_to_muzdalifa.mp3'
 export const arafat_arrival = {
+  id: 'arafat_arrival',
   audio_url: arafat_arrival_audio,
   title: 'Арафатқа барғанда  оқылатын дұға',
   title_ru: 'Дуа при поднятии на Арафат',
@@ -15,6 +16,7 @@ export const arafat_arrival = {
 ۋا، اللا! شاقىرۋىڭدى قابىل الىپ كەلىپ تۇرمىن. امىرىڭە بوي ۇسىنىپ، ءامىرىڭدى ورىنداۋعا كەلدىم. سەنىڭ ەش سەرىگىڭ جوق. بارلىق ماداق پەن نىعمەت، ءشۇباسىز، ساعان ءتان، مۇلىك تە سەنىكى. سەنىڭ ەش سەرىگىڭ جوق.`
 }
 export const arafat = {
+  id: 'arafat',
   audio_url: arafat_audio,
   title: 'Арафат дұғасы',
   title_ru: 'Дуа во время стояния на Арафате',
@@ -142,6 +144,7 @@ export const arafat = {
 ۋا، اللا (پايعامبارىمىز) مۇحاممەدكە جانە ونىڭ وتباسىنا يبراھيم پايعامبارعا جانە وتباسىنا مەيىرىمدىلىك تانىتقانىڭداي مەيىرىمدىلىك كورسەت. ەش كۇمانسىز، سەن حاميد جانە ءماجيدسىڭ. ۋا، اللا (پايعامبارىمىز) مۇحاممەدتى جانە ونىڭ وتباسىن، يبراھيم پايعامباردى جانە وتباسىن مۇباراك قىلعانىڭداي مۇباراك قىل. ەش كۇمانسىز، سەن حاميد جانە ءماجيدسىڭ.`
 }
 export const arafat_to_muzdalifa = {
+  id: 'arafat_to_muzdalifa',
   audio_url: arafat_to_muzdalifa_audio,
   title: 'Арафаттан Мұздалифаға барар жолда оқылатын дұға',
   title_ru: 'Дуа по пути от Арафата к Муздалифе',

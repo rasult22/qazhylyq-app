@@ -8,6 +8,7 @@ import uhud_warriors_salaam_audio from '../../assets/uhud_warriors_salaam.mp3'
 import prophet_bye_audio from '../../assets/prophet_bye.mp3'
 
 export const madina_enter = {
+  id: 'madina_enter',
   audio_url: madina_enter_audio,
   title: 'Мәдина мүнәууараға кірерде оқылатын дұға',
   title_ru: 'Дуа при входе в Медину',
@@ -21,6 +22,7 @@ export const madina_enter = {
 ۋا، اللا! راحمەت ەسىكتەرىڭدى ايقارا اشا كور. راسۋلىڭدى زيارات ەتۋىمدى ءناسىپ ەتكەيسىڭ. ىزگى قۇلدارىڭا بەرگەن جاقسىلىقتارىڭدى ماعان بۇيىرتىپ، پايعامبارىمىزدىڭ (س.ا.ۋ.) شاپاعاتىنا جەتكىزگەيسىڭ.`
 }
 export const prophet_salaam = {
+  id: 'prophet_salaam',
   audio_url: prophet_salaam_audio,
   title: 'Пайғамбарымызға (с.а.у.) сәлем беру',
   title_ru: 'Приветствие Пророку (с.а.в.)',
@@ -122,6 +124,7 @@ export const prophet_salaam = {
 `
 }
 export const abubakr_salaam = {
+  id: 'abubakr_salaam',
   audio_url: abubakr_salaam_audio,
   title: 'Әбу Бәкірге  (р.а.) сәлем беру',
   title_ru: 'Приветствие Абу Бакра  (р.а.)',
@@ -152,6 +155,7 @@ export const abubakr_salaam = {
 `
 }
 export const umar_salaam = {
+  id: 'umar_salaam',
   audio_url: umar_salaam_audio,
   title: 'Омарға  (р.а.) сәлем беру',
   title_ru: 'Приветствие Умара (р.а.)',
@@ -181,6 +185,7 @@ export const umar_salaam = {
 
 // BUG WITH TEXT
 export const baqi_salaam = {
+  id: 'baqi_salaam',
   audio_url: baqi_salaam_audio,
   title: 'Бақи жұртына сәлем беру',
   title_ru: 'Дуа на кладбище Баки',
@@ -221,6 +226,7 @@ export const baqi_salaam = {
 `
 }
 export const usman_salaam = {
+  id: 'usman_salaam',
   audio_url: usman_salaam_audio,
   title: 'Османға  (р.а.) сәлем беру',
   title_ru: 'Приветствие Усмана (р.а.)',
@@ -255,6 +261,7 @@ export const usman_salaam = {
 }
 
 export const uhud_warriors_salaam = {
+  id: 'uhud_warriors_salaam',
   audio_url: uhud_warriors_salaam_audio,
   title: 'Ұхұд шейіттеріне сәлем беру',
   title_ru: 'Приветствие павшим в битве при Ухуде',
@@ -303,6 +310,7 @@ export const uhud_warriors_salaam = {
 سالەم سەندەرگە، سابىرلى، قايراتتى بولعاندار. اللا سەندەرگە جۇماعىندا قانداي كۇشتى نىعمەتتەر دايىنداعان دەسەڭشى!`
 }
 export const prophet_bye = {
+  id: 'prophet_bye',
   audio_url: prophet_bye_audio,
   title: 'Пайғамбарымызбен (с.а.у.) қоштасардағы дұға',
   title_ru: 'Дуа при прощании с Пророком (с.а.в.)',
