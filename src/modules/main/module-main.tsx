@@ -164,7 +164,7 @@ const ModuleMain: React.FC = () => {
             setCurrentPrayer(multazam)
             showPlayerModal()
           }}
-          className="w-[75%] absolute bottom-[25px] right-[40px] normal-case"
+          className="w-[75%] absolute bottom-[20px] right-[40px] normal-case"
         >
           {t`Мүлтәзамда оқылатын дұға`}
         </UIButton>

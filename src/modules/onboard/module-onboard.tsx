@@ -1,12 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import logo from './logo.png'
 import { motion, AnimatePresence } from 'framer-motion'
-import { t, useLocale } from 'ttag'
+import { t } from 'ttag'
 
 const ModuleOnboard: React.FC = () => {
-  const locale = localStorage.getItem('locale') || 'kk-KZ'
-  useLocale(locale)
-
   const [isOpen, setIsOpen] = useState(true)
   useEffect(() => {
     setTimeout(() => {
