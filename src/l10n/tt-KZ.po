@@ -14,6 +14,7 @@ msgstr ""
 msgid "Тіл ауыстыру"
 msgstr ""
 
+#: src/audios/arafat.ts:8
 #: src/pages/dua/arafat.tsx:31
 msgid "Арафатқа барғанда оқылатын дұға"
 msgstr "ارافاتقا بارعاندا وقىلاتىن دۇعا"
@@ -35,10 +36,6 @@ msgstr "ءتالبيا"
 #: src/pages/dua/index.tsx:35
 msgid "САПАРҒА ШЫҒАРДА ОҚЫЛАТЫН ДҰҒА"
 msgstr "ساپارعا شىعاردا وقىلاتىن دۇعا"
-
-#: src/pages/dua/index.tsx:44
-msgid "КӨЛІККЕ МІНЕРДЕ ОҚЫЛАТЫН ДҰҒА"
-msgstr "كولىككە مىنەردە وقىلاتىن دۇعا"
 
 #: src/pages/dua/index.tsx:52
 msgid "Мекке Мүкәррама дұғалары"
@@ -99,6 +96,7 @@ msgstr "ومارعا (ر.ا.) سالەم بەرۋ"
 msgid "Бақи жұртына сәлем беру"
 msgstr "باقي جۇرتىنا سالەم بەرۋ"
 
+#: src/audios/medina.ts:232
 #: src/pages/dua/madina.tsx:76
 msgid "Хазірет Османға  (р.а.) сәлем беру"
 msgstr "وسمانعا (ر.ا.) سالەم بەرۋ"
@@ -215,10 +213,6 @@ msgstr "ءمۇلتازام تۇسىندا وقىلاتىن دۇعا"
 msgid "айналым"
 msgstr ""
 
-#: src/audios/arafat.ts:8
-msgid "Арафатқа барғанда оқылатын дұға"
-msgstr "ارافاتقا بارعاندا وقىلاتىن دۇعا"
-
 #: src/audios/arafat.ts:150
 msgid "Арафаттан Мұздалифаға барар жолда оқылатын дұға"
 msgstr "ارافاتتان مۇزداليفاعا بارار جولدا وقىلاتىن دۇعا"
@@ -268,6 +262,7 @@ msgid "7 - айналым"
 msgstr ""
 
 #: src/audios/list.ts:83
+#: src/pages/dua/index.tsx:44
 msgid "КӨЛІККЕ МІНЕРДЕ ОҚЫЛАТЫН ДҰҒА"
 msgstr "كولىككە مىنەردە وقىلاتىن دۇعا"
 
@@ -278,10 +273,6 @@ msgstr "ءابۋ باكىرگە (ر.ا.) سالەم بەرۋ"
 #: src/audios/medina.ts:161
 msgid "Омарға  (р.а.) сәлем беру"
 msgstr "ومارعا (ر.ا.) سالەم بەرۋ"
-
-#: src/audios/medina.ts:232
-msgid "Османға  (р.а.) сәлем беру"
-msgstr "وسمانعا (ر.ا.) سالەم بەرۋ"
 
 #: src/audios/mekkah.ts:38
 msgid "ӘЛ-ХАРАМҒА КІРЕРДЕ ОҚЫЛАТЫН ДҰҒА"
