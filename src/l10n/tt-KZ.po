@@ -6,6 +6,201 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: src/modules/onboard/module-onboard.tsx:29
+#: src/modules/onboard/module-onboard.tsx:32
 msgid "Қажылық және ұмра дұғалары"
+msgstr ""
+
+#: src/pages/info/index.tsx:17
+msgid "Тіл ауыстыру"
+msgstr ""
+
+#: src/pages/dua/arafat.tsx:31
+msgid "Арафатқа барғанда оқылатын дұға"
+msgstr ""
+
+#: src/audios/arafat.ts:22
+#: src/pages/dua/arafat.tsx:39
+msgid "Арафат дұғасы"
+msgstr ""
+
+#: src/pages/dua/arafat.tsx:47
+msgid "Арафаттан Мұздалифаға барар кезде оқылатын дұға"
+msgstr ""
+
+#: src/pages/dua/index.tsx:27
+msgid "тәлбия"
+msgstr ""
+
+#: src/pages/dua/index.tsx:35
+msgid "САПАРҒА ШЫҒАРДА ОҚЫЛАТЫН ДҰҒА"
+msgstr ""
+
+#: src/pages/dua/index.tsx:44
+msgid "КӨЛІККЕ МІНЕРДЕ ОҚЫЛАТЫН ДҰҒА"
+msgstr ""
+
+#: src/pages/dua/index.tsx:52
+msgid "Мекке Мүкәррама дұғалары"
+msgstr ""
+
+#: src/pages/dua/index.tsx:61
+msgid "Минада оқылатын дұғалар"
+msgstr ""
+
+#: src/pages/dua/index.tsx:69
+msgid "арафат дұғалары"
+msgstr ""
+
+#: src/pages/dua/index.tsx:78
+msgid "Мұздалифа уақфасында оқылатын дұға"
+msgstr ""
+
+#: src/pages/dua/index.tsx:86
+msgid "Шайтанға тас лақтырарда оқылатын дұға"
+msgstr ""
+
+#: src/pages/dua/index.tsx:95
+msgid "Құрбандық шаларда оқылатын дұға"
+msgstr ""
+
+#: src/pages/dua/index.tsx:103
+msgid "Шаш аларда оқылатын дұға"
+msgstr ""
+
+#: src/pages/dua/index.tsx:112
+msgid "Мәдина мүнәууара дұғалары"
+msgstr ""
+
+#: src/pages/dua/madina.tsx:36
+msgid "Мәдина мүнәууараға кірерде оқылатын дұға"
+msgstr ""
+
+#: src/pages/dua/madina.tsx:44
+msgid "Пайғамбарымызға (с.а.у.) сәлем беру"
+msgstr ""
+
+#: src/pages/dua/madina.tsx:52
+msgid "Хазірет Әбу Бәкірге  (р.а.) сәлем беру"
+msgstr ""
+
+#: src/pages/dua/madina.tsx:60
+msgid "Хазірет Омарға  (р.а.) сәлем беру"
+msgstr ""
+
+#: src/pages/dua/madina.tsx:68
+msgid "Бақи жұртына сәлем беру"
+msgstr ""
+
+#: src/pages/dua/madina.tsx:76
+msgid "Хазірет Османға  (р.а.) сәлем беру"
+msgstr ""
+
+#: src/pages/dua/madina.tsx:84
+msgid "Ұхұд шейіттеріне сәлем беру"
+msgstr ""
+
+#: src/pages/dua/madina.tsx:92
+msgid "Пайғамбарымызбен (с.а.у.) қоштасардағы дұға"
+msgstr ""
+
+#: src/pages/dua/mekkah.tsx:36
+msgid "Мекке Мүкәррамаға кірерде оқылатын дұға"
+msgstr ""
+
+#: src/pages/dua/mekkah.tsx:44
+msgid "әл-Харамға кірерде оқылатын дұға"
+msgstr ""
+
+#: src/pages/dua/mekkah.tsx:52
+msgid "Қағба муаззаманы көргенде оқылатын дұға"
+msgstr ""
+
+#: src/pages/dua/mekkah.tsx:60
+msgid "әл-Харамнан шығарда оқылатын дұға"
+msgstr ""
+
+#: src/pages/dua/mekkah.tsx:68
+msgid "Мүлтазамда оқылатын дұға"
+msgstr ""
+
+#: src/pages/dua/mekkah.tsx:76
+msgid "Хадиша анамызға сәлем беру"
+msgstr ""
+
+#: src/pages/dua/mekkah.tsx:84
+msgid "Жәннәт ул-мұғаллаға сәлем беру"
+msgstr ""
+
+#: src/pages/dua/mekkah.tsx:92
+msgid "ҚАҒБА МУАЗЗАМАМЕН ҚОШТАСАРДА ОҚЫЛАТЫН ДҰҒА"
+msgstr ""
+
+#: src/pages/dua/mina.tsx:31
+msgid "Минаға жеткенде оқылатын дұға"
+msgstr ""
+
+#: src/pages/dua/mina.tsx:39
+msgid "Минадан Арафатқа шығар кезде оқылатын дұға"
+msgstr ""
+
+#: src/pages/dua/mina.tsx:47
+msgid "Мұздалифадан кейін Минада оқылатын дұға"
+msgstr ""
+
+#: src/modules/mountain/module-mountain.tsx:82
+msgid "Жасыл шамдар"
+msgstr ""
+
+#: src/modules/mountain/module-mountain.tsx:152
+msgid "БАРУ"
+msgstr ""
+
+#: src/modules/mountain/module-mountain.tsx:152
+msgid "ҚАЙТУ"
+msgstr ""
+
+#: src/modules/main/module-main.tsx:97
+msgid "Таупқа бастау дұғасы"
+msgstr ""
+
+#: src/modules/main/module-main.tsx:107
+msgid "Тауап намазынан кейін оқылатын дұға"
+msgstr ""
+
+#: src/modules/main/module-main.tsx:119
+msgid "Йемен бұрышы және Хажар ул-әсуад арасында оқылатын дұға"
+msgstr ""
+
+#: src/modules/main/module-main.tsx:128
+msgid "Шам бұрышы және Йемен бұрышы арасында оқылатын дұға"
+msgstr ""
+
+#: src/modules/main/module-main.tsx:137
+msgid "Ирак бұрышы мен Шам бұрышы арасында оқылатын дұға"
+msgstr ""
+
+#: src/modules/main/module-main.tsx:146
+msgid "Ибраһим мақамы тұсында оқылатын дұға"
+msgstr ""
+
+#: src/modules/main/module-main.tsx:155
+msgid "Мүлтәзамда оқылатын дұға"
+msgstr ""
+
+#: src/modules/main/module-main.tsx:202
+#: src/modules/main/module-main.tsx:237
+#: src/modules/main/module-main.tsx:272
+#: src/modules/main/module-main.tsx:307
+#: src/modules/main/module-main.tsx:342
+#: src/modules/main/module-main.tsx:377
+#: src/modules/main/module-main.tsx:412
+msgid "айналым"
+msgstr ""
+
+#: src/audios/arafat.ts:8
+msgid "Арафатқа барғанда  оқылатын дұға"
+msgstr ""
+
+#: src/audios/arafat.ts:150
+msgid "Арафаттан Мұздалифаға барар жолда оқылатын дұға"
 msgstr ""

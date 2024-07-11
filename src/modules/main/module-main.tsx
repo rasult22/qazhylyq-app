@@ -88,7 +88,9 @@ const ModuleMain: React.FC = () => {
             </svg>
           </UIButton>
           <UIButton
+            completed={completedIds.includes(tavaf_begin.id)}
             onClick={() => {
+              addCompleteId(tavaf_begin.id)
               setCurrentPrayer(tavaf_begin)
               showPlayerModal()
             }}
@@ -98,7 +100,9 @@ const ModuleMain: React.FC = () => {
           </UIButton>
         </div>
         <UIButton
+          completed={completedIds.includes(tavaf_end.id)}
           onClick={() => {
+            addCompleteId(tavaf_end.id)
             setCurrentPrayer(tavaf_end)
             showPlayerModal()
           }}
@@ -110,7 +114,9 @@ const ModuleMain: React.FC = () => {
       <div className="relative flex justify-center pt-10 pb-10 mt-5">
         <img className="w-[361px]" src={arrows} alt="" />
         <UIButton
+          completed={completedIds.includes(sham_and_yemen.id)}
           onClick={() => {
+            addCompleteId(sham_and_yemen.id)
             setCurrentPrayer(sham_and_yemen)
             showPlayerModal()
           }}
@@ -119,7 +125,9 @@ const ModuleMain: React.FC = () => {
           {t`Йемен бұрышы және Хажар ул-әсуад арасында оқылатын дұға`}
         </UIButton>
         <UIButton
+          completed={completedIds.includes(yemen_and_hajar.id)}
           onClick={() => {
+            addCompleteId(yemen_and_hajar.id)
             setCurrentPrayer(yemen_and_hajar)
             showPlayerModal()
           }}
@@ -128,7 +136,9 @@ const ModuleMain: React.FC = () => {
           {t`Шам бұрышы және Йемен бұрышы арасында оқылатын дұға`}
         </UIButton>
         <UIButton
+          completed={completedIds.includes(iraq_and_sham.id)}
           onClick={() => {
+            addCompleteId(iraq_and_sham.id)
             setCurrentPrayer(iraq_and_sham)
             showPlayerModal()
           }}
@@ -137,7 +147,9 @@ const ModuleMain: React.FC = () => {
           {t`Ирак бұрышы мен Шам бұрышы арасында оқылатын дұға`}
         </UIButton>
         <UIButton
+          completed={completedIds.includes(ibrahim.id)}
           onClick={() => {
+            addCompleteId(ibrahim.id)
             setCurrentPrayer(ibrahim)
             showPlayerModal()
           }}
@@ -146,7 +158,9 @@ const ModuleMain: React.FC = () => {
           {t`Ибраһим мақамы тұсында оқылатын дұға`}
         </UIButton>
         <UIButton
+          completed={completedIds.includes(multazam.id)}
           onClick={() => {
+            addCompleteId(multazam.id)
             setCurrentPrayer(multazam)
             showPlayerModal()
           }}
