@@ -3,6 +3,7 @@ import AudioPlayer from 'react-h5-audio-player'
 import 'react-h5-audio-player/lib/styles.css'
 import { useSystem } from '../../store/system'
 import { useCallback, useEffect, useRef, useState } from 'react'
+import { gettext } from 'ttag'
 
 const FONT_SIZE = 15
 const ModulePlayerModal: React.FC = () => {
@@ -54,7 +55,7 @@ const ModulePlayerModal: React.FC = () => {
             <img src={left} alt="" />
           </div>
           <div className="text-[#7E7E7E] font-semibold uppercase">
-            {currentPrayer ? currentPrayer.title : ''}
+            {currentPrayer ? gettext(currentPrayer.title) : ''}
           </div>
           <div className="opacity-0">left</div>
         </div>
@@ -66,7 +67,7 @@ const ModulePlayerModal: React.FC = () => {
             }}
             className="mt-2 leading-[150%] overflow-auto w-full text-[#202020] min-h-[245px] text-[15px] bg-[#D9D9D9] shadow-inner rounded-[10px]  p-4 text-right max-h-[70vh]"
           >
-            {currentPrayer ? currentPrayer.prayer_text : ''}
+            {currentPrayer ? gettext(currentPrayer.prayer_text) : ''}
           </div>
           <div className="absolute right-3 -bottom-3 items-center flex bg-white p-1 rounded-full border border-[#ECEAEA]">
             <IconMinus

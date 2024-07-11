@@ -149,11 +149,11 @@ msgstr "قاعبا مۋاززامامەن قوشتاساردا وقىلاتىن 
 
 #: src/pages/dua/mina.tsx:31
 msgid "Минаға жеткенде оқылатын дұға"
-msgstr ""
+msgstr "ميناعا بارعاندا وقىلاتىن دۇعا"
 
 #: src/pages/dua/mina.tsx:39
 msgid "Минадан Арафатқа шығар кезде оқылатын дұға"
-msgstr ""
+msgstr "مينادان ارافاتقا بارا جاتقاندا وقىلاتىن دۇعا"
 
 #: src/audios/mina.ts:25
 #: src/pages/dua/mina.tsx:47

@@ -96,7 +96,7 @@ const ModuleMain: React.FC = () => {
             }}
             className="w-full normal-case"
           >
-            {t`Таупқа бастау дұғасы`}
+            {t`Тауапқа бастау дұғасы`}
           </UIButton>
         </div>
         <UIButton

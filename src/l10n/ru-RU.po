@@ -154,11 +154,11 @@ msgstr "Дуа при прощании с Каабой"
 
 #: src/pages/dua/mina.tsx:31
 msgid "Минаға жеткенде оқылатын дұға"
-msgstr ""
+msgstr "Дуа по прибытии в Мину"
 
 #: src/pages/dua/mina.tsx:39
 msgid "Минадан Арафатқа шығар кезде оқылатын дұға"
-msgstr ""
+msgstr "Дуа по пути от Мины к Арафату"
 
 #: src/audios/mina.ts:25
 #: src/pages/dua/mina.tsx:47
@@ -167,7 +167,7 @@ msgstr "Дуа после Муздалифы в Мине"
 
 #: src/modules/mountain/module-mountain.tsx:82
 msgid "Жасыл шамдар"
-msgstr ""
+msgstr "ЗЕЛЕНЫЕ ЛАМПЫ"
 
 #: src/modules/mountain/module-mountain.tsx:152
 msgid "БАРУ"
@@ -178,12 +178,12 @@ msgid "ҚАЙТУ"
 msgstr ""
 
 #: src/modules/main/module-main.tsx:99
-msgid "Таупқа бастау дұғасы"
-msgstr ""
+msgid "Тауапқа бастау дұғасы"
+msgstr "ДУА ПЕРЕД НАЧАЛОМ ТАВАФА"
 
 #: src/modules/main/module-main.tsx:111
 msgid "Тауап намазынан кейін оқылатын дұға"
-msgstr ""
+msgstr "ДУА ПОСЛЕ НАМАЗА-ТАВАФА"
 
 #: src/modules/main/module-main.tsx:136
 msgid "Йемен бұрышы және Хажар ул-әсуад арасында оқылатын дұға"
