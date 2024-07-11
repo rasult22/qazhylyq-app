@@ -30,7 +30,7 @@ const ModuleLangSelect: React.FC = () => {
                       localStorage.setItem('init_lang_selected', 'true')
                     }
                     localStorage.setItem('locale', l.val)
-                    window.location.reload()
+                    window.location.href = '/qazhylyq-app'
                   }}
                   key={l.val}
                 >
