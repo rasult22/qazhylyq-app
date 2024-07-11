@@ -12,6 +12,7 @@ import {
   umar_salaam,
   usman_salaam
 } from '../../audios/medina'
+import { t } from 'ttag'
 
 const DuaMadinaPage = () => {
   const { setCurrentPrayer, showPlayerModal } = useSystem()
@@ -31,72 +32,64 @@ const DuaMadinaPage = () => {
             setCurrentPrayer(madina_enter)
             showPlayerModal()
           }}
-          level={99}
         >
-          Мәдина мүнәууараға кірерде оқылатын дұға
+          {t`Мәдина мүнәууараға кірерде оқылатын дұға`}
         </UICell>
         <UICell
           onClick={() => {
             setCurrentPrayer(prophet_salaam)
             showPlayerModal()
           }}
-          level={9}
         >
-          Пайғамбарымызға (с.а.у.) сәлем беру
+          {t`Пайғамбарымызға (с.а.у.) сәлем беру`}
         </UICell>
         <UICell
           onClick={() => {
             setCurrentPrayer(abubakr_salaam)
             showPlayerModal()
           }}
-          level={8}
         >
-          Хазірет Әбу Бәкірге  (р.а.) сәлем беру
+          {t`Хазірет Әбу Бәкірге  (р.а.) сәлем беру`}
         </UICell>
         <UICell
           onClick={() => {
             setCurrentPrayer(umar_salaam)
             showPlayerModal()
           }}
-          level={7}
         >
-          Хазірет Омарға  (р.а.) сәлем беру
+          {t`Хазірет Омарға  (р.а.) сәлем беру`}
         </UICell>
         <UICell
           onClick={() => {
             setCurrentPrayer(baqi_salaam)
             showPlayerModal()
           }}
-          level={6}
         >
-          Бақи жұртына сәлем беру
+          {t`Бақи жұртына сәлем беру`}
         </UICell>
         <UICell
           onClick={() => {
             setCurrentPrayer(usman_salaam)
             showPlayerModal()
           }}
-          level={5}
         >
-          Хазірет Османға  (р.а.) сәлем беру
+          {t`Хазірет Османға  (р.а.) сәлем беру`}
         </UICell>
         <UICell
           onClick={() => {
             setCurrentPrayer(uhud_warriors_salaam)
             showPlayerModal()
           }}
-          level={5}
         >
-          Ұхұд шейіттеріне сәлем беру
+          {t`Ұхұд шейіттеріне сәлем беру`}
         </UICell>
         <UICell
           onClick={() => {
             setCurrentPrayer(prophet_bye)
             showPlayerModal()
           }}
-          level={5}
         >
-          Пайғамбарымызбен (с.а.у.) қоштасардағы дұға
+          {t`Пайғамбарымызбен (с.а.у.) қоштасардағы дұға`}
         </UICell>
       </div>
     </>

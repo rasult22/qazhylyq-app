@@ -9,6 +9,7 @@ import {
   hairhut,
   at_muzdalifa
 } from '../../audios/list'
+import { t } from 'ttag'
 
 const DuaPage = () => {
   const { showPlayerModal, setCurrentPrayer } = useSystem()
@@ -23,7 +24,7 @@ const DuaPage = () => {
             showPlayerModal()
           }}
         >
-          тәлбия
+          {t`тәлбия`}
         </UICell>
         <UICell
           onClick={() => {
@@ -31,7 +32,7 @@ const DuaPage = () => {
             showPlayerModal()
           }}
         >
-          САПАРҒА ШЫҒАРДА <br /> ОҚЫЛАТЫН ДҰҒА
+          {t`САПАРҒА ШЫҒАРДА ОҚЫЛАТЫН ДҰҒА`}
         </UICell>
         <UICell
           accent
@@ -40,7 +41,7 @@ const DuaPage = () => {
             showPlayerModal()
           }}
         >
-          КӨЛІККЕ МІНЕРДЕ ОҚЫЛАТЫН ДҰҒА
+          {t`КӨЛІККЕ МІНЕРДЕ ОҚЫЛАТЫН ДҰҒА`}
         </UICell>
         <UICell
           onClick={() => {
@@ -48,7 +49,7 @@ const DuaPage = () => {
           }}
           isLink
         >
-          Мекке Мүкәррама дұғалары
+          {t`Мекке Мүкәррама дұғалары`}
         </UICell>
         <UICell
           accent
@@ -57,7 +58,7 @@ const DuaPage = () => {
           }}
           isLink
         >
-          Минада оқылатын дұғалар
+          {t`Минада оқылатын дұғалар`}
         </UICell>
         <UICell
           onClick={() => {
@@ -65,7 +66,7 @@ const DuaPage = () => {
           }}
           isLink
         >
-          арафат дұғалары
+          {t`арафат дұғалары`}
         </UICell>
         <UICell
           accent
@@ -74,7 +75,7 @@ const DuaPage = () => {
             showPlayerModal()
           }}
         >
-          Мұздалифа уақфасында оқылатын дұға
+          {t`Мұздалифа уақфасында оқылатын дұға`}
         </UICell>
         <UICell
           onClick={() => {
@@ -82,7 +83,7 @@ const DuaPage = () => {
             showPlayerModal()
           }}
         >
-          Шайтанға тас лақтырарда оқылатын дұға
+          {t`Шайтанға тас лақтырарда оқылатын дұға`}
         </UICell>
         <UICell
           accent
@@ -91,7 +92,7 @@ const DuaPage = () => {
             showPlayerModal()
           }}
         >
-          Құрбандық шаларда оқылатын дұға
+          {t`Құрбандық шаларда оқылатын дұға`}
         </UICell>
         <UICell
           onClick={() => {
@@ -99,7 +100,7 @@ const DuaPage = () => {
             showPlayerModal()
           }}
         >
-          Шаш аларда оқылатын дұға
+          {t`Шаш аларда оқылатын дұға`}
         </UICell>
         <UICell
           accent
@@ -108,7 +109,7 @@ const DuaPage = () => {
           }}
           isLink
         >
-          Мәдина мүнәууара дұғалары
+          {t`Мәдина мүнәууара дұғалары`}`
         </UICell>
       </div>
     </>

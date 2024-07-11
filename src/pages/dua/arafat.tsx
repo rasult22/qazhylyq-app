@@ -2,7 +2,12 @@ import { useNavigate } from 'react-router-dom'
 import ModuleHeader from '../../modules/header/module-header'
 import UICell from '../../ui/cell/ui-cell'
 import { useSystem } from '../../store/system'
-import { arafat_arrival, arafat, arafat_to_muzdalifa } from '../../audios/arafat'
+import {
+  arafat_arrival,
+  arafat,
+  arafat_to_muzdalifa
+} from '../../audios/arafat'
+import { t } from 'ttag'
 
 const DuaArafatPage = () => {
   const navigate = useNavigate()
@@ -22,27 +27,24 @@ const DuaArafatPage = () => {
             setCurrentPrayer(arafat_arrival)
             showPlayerModal()
           }}
-          level={99}
         >
-          Арафатқа барғанда оқылатын дұға
+          {t`Арафатқа барғанда оқылатын дұға`}
         </UICell>
         <UICell
           onClick={() => {
             setCurrentPrayer(arafat)
             showPlayerModal()
           }}
-          level={9}
         >
-          Арафат дұғасы
+          {t`Арафат дұғасы`}
         </UICell>
         <UICell
           onClick={() => {
             setCurrentPrayer(arafat_to_muzdalifa)
             showPlayerModal()
           }}
-          level={8}
         >
-          Арафаттан Мұздалифаға барар кезде оқылатын дұға
+          {t`Арафаттан Мұздалифаға барар кезде оқылатын дұға`}
         </UICell>
       </div>
     </>

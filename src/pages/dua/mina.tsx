@@ -7,6 +7,7 @@ import {
   mina_arrival,
   mina_to_arafat
 } from '../../audios/mina'
+import { t } from 'ttag'
 
 const DuaMinaPage = () => {
   const navigate = useNavigate()
@@ -26,27 +27,24 @@ const DuaMinaPage = () => {
             setCurrentPrayer(mina_arrival)
             showPlayerModal()
           }}
-          level={99}
         >
-          Минаға жеткенде оқылатын дұға
+          {t`Минаға жеткенде оқылатын дұға`}
         </UICell>
         <UICell
           onClick={() => {
             setCurrentPrayer(mina_to_arafat)
             showPlayerModal()
           }}
-          level={9}
         >
-          Минадан Арафатқа шығар кезде оқылатын дұға
+          {t`Минадан Арафатқа шығар кезде оқылатын дұға`}
         </UICell>
         <UICell
           onClick={() => {
             setCurrentPrayer(mina_after_muzdalifa)
             showPlayerModal()
           }}
-          level={8}
         >
-          Мұздалифадан кейін Минада оқылатын дұға
+          {t`Мұздалифадан кейін Минада оқылатын дұға`}
         </UICell>
       </div>
     </>

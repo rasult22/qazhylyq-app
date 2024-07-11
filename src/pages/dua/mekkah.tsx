@@ -12,6 +12,7 @@ import {
   at_multazam,
   hadisha_salem
 } from '../../audios/mekkah'
+import { t } from 'ttag'
 
 const DuaMekkahPage = () => {
   const { setCurrentPrayer, showPlayerModal } = useSystem()
@@ -31,72 +32,64 @@ const DuaMekkahPage = () => {
             setCurrentPrayer(mekkah_enter)
             showPlayerModal()
           }}
-          level={99}
         >
-          Мекке Мүкәррамаға кірерде оқылатын дұға
+          {t`Мекке Мүкәррамаға кірерде оқылатын дұға`}
         </UICell>
         <UICell
           onClick={() => {
             setCurrentPrayer(al_haram_enter)
             showPlayerModal()
           }}
-          level={9}
         >
-          әл-Харамға кірерде оқылатын дұға
+          {t`әл-Харамға кірерде оқылатын дұға`}
         </UICell>
         <UICell
           onClick={() => {
             setCurrentPrayer(see_kaabah_muaz)
             showPlayerModal()
           }}
-          level={8}
         >
-          Қағба муаззаманы көргенде оқылатын дұға
+          {t`Қағба муаззаманы көргенде оқылатын дұға`}
         </UICell>
         <UICell
           onClick={() => {
             setCurrentPrayer(al_haram_exit)
             showPlayerModal()
           }}
-          level={7}
         >
-          әл-Харамнан шығарда оқылатын дұға
+          {t`әл-Харамнан шығарда оқылатын дұға`}
         </UICell>
         <UICell
           onClick={() => {
             setCurrentPrayer(at_multazam)
             showPlayerModal()
           }}
-          level={6}
         >
-          Мүлтазамда оқылатын дұға
+          {t`Мүлтазамда оқылатын дұға`}
         </UICell>
         <UICell
           onClick={() => {
             setCurrentPrayer(hadisha_salem)
             showPlayerModal()
           }}
-          level={5}
         >
-          Хадиша анамызға сәлем беру
+          {t`Хадиша анамызға сәлем беру`}
         </UICell>
         <UICell
           onClick={() => {
             setCurrentPrayer(zhannat_salem)
             showPlayerModal()
           }}
-          level={5}
         >
-          Жәннәт ул-мұғаллаға сәлем беру
+          {t`Жәннәт ул-мұғаллаға сәлем беру`}
         </UICell>
         <UICell
           onClick={() => {
             setCurrentPrayer(bye_kaahbah_muaz)
             showPlayerModal()
           }}
-          level={5}
         >
-          ҚАҒБА МУАЗЗАМАМЕН ҚОШТАСАРДА ОҚЫЛАТЫН ДҰҒА
+          {t`ҚАҒБА МУАЗЗАМАМЕН ҚОШТАСАРДА ОҚЫЛАТЫН ДҰҒА`}
         </UICell>
       </div>
     </>
