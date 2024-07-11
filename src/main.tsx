@@ -7,6 +7,7 @@ import { createRoot } from 'react-dom/client'
 import ModuleBottomNav from './modules/bottom-nav/module-bottom-nav'
 import ModulePlayerModal from './modules/player-modal/module-player-modal'
 import AnimatedRoutes from './AnimatedRoutes'
+import ModuleOnboard from './modules/onboard/module-onboard'
 
 createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
@@ -17,6 +18,7 @@ createRoot(document.getElementById('root') as HTMLElement).render(
           <ModuleBottomNav></ModuleBottomNav>
         </div>
         <ModulePlayerModal />
+        <ModuleOnboard />
       </BrowserRouter>
     </>
   </React.StrictMode>
