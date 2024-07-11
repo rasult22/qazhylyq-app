@@ -172,10 +172,6 @@ msgstr ""
 msgid "ҚАЙТУ"
 msgstr ""
 
-#: src/modules/main/module-main.tsx:99
-msgid "Таупқа бастау дұғасы"
-msgstr ""
-
 #: src/modules/main/module-main.tsx:111
 msgid "Тауап намазынан кейін оқылатын дұға"
 msgstr ""
@@ -333,3 +329,7 @@ msgstr "ساعيدىڭ التىنشى اينالىمىندا وقىلاتىن د
 #: src/audios/mountain.ts:185
 msgid "САҒИДЫҢ ЖЕТІНШІ  АЙНАЛЫМЫНДА ОҚЫЛАТЫН ДҰҒА"
 msgstr "ساعيدىڭ جەتىنشى اينالىمىندا وقىلاتىن دۇعا"
+
+#: src/modules/main/module-main.tsx:99
+msgid "Тауапқа бастау дұғасы"
+msgstr ""

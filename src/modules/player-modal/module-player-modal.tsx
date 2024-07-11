@@ -1,3 +1,4 @@
+/* disable ttag */
 import left from './svg/left.svg'
 import AudioPlayer from 'react-h5-audio-player'
 import 'react-h5-audio-player/lib/styles.css'
@@ -13,6 +14,7 @@ const ModulePlayerModal: React.FC = () => {
   const [fontNumber, setFontNumber] = useState(0)
   const [fontNumber2, setFontNumber2] = useState(0)
   const speeds = [0.5, 0.8, 1, 1.3, 1.7, 2, 2.5]
+  const locale = localStorage.getItem('locale')
 
   const changeSpeed = useCallback(() => {
     const index = speeds.findIndex((x) => x === playbackSpeed)
@@ -107,7 +109,15 @@ const ModulePlayerModal: React.FC = () => {
             }}
             className="my-2 leading-[120%] w-full relative text-[#202020] min-h-[245px] text-[15px] leading-[20px] overflow-auto bg-[#D9D9D9] shadow-inner rounded-[10px]  p-4 text-left max-h-[75vh]"
           >
-            {currentPrayer ? currentPrayer.translation_text : ''}
+            {currentPrayer
+              ? locale === 'kk-KZ'
+                ? currentPrayer.translation_text
+                : locale === 'ru-RU'
+                ? currentPrayer.translation_text_ru
+                : locale === 'tt-KZ'
+                ? currentPrayer.translation_text_tt
+                : locale + ' is a unsupported locale'
+              : 'empty'}
           </div>
           <div className="absolute right-3 -bottom-3 items-center flex bg-white p-1 rounded-full border border-[#ECEAEA]">
             <IconMinus
