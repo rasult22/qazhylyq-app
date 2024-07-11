@@ -14,7 +14,9 @@ import {
 import { useSystem } from '../../store/system'
 import circles from '../../audios/circles'
 import { t } from 'ttag'
+import { useNavigate } from 'react-router-dom'
 const ModuleMain: React.FC = () => {
+  const navigate = useNavigate()
   const { showPlayerModal, setCurrentPrayer, completedIds, addCompleteId } =
     useSystem()
 
@@ -65,7 +67,11 @@ const ModuleMain: React.FC = () => {
       </div>
       <div className="px-4">
         <div className="flex space-x-[11px] items-stretch">
-          <UIButton onClick={() => showPlayerModal()}>
+          <UIButton
+            onClick={() => {
+              navigate('/qazhylyq-app/info')
+            }}
+          >
             <svg
               width="20"
               height="20"
