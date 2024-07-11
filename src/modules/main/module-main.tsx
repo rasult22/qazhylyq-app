@@ -62,7 +62,7 @@ const ModuleMain: React.FC = () => {
           />
         </svg>
       </div>
-      <div className="px-6">
+      <div className="px-4">
         <div className="flex space-x-[11px] items-stretch">
           <UIButton onClick={() => showPlayerModal()}>
             <svg
@@ -85,7 +85,7 @@ const ModuleMain: React.FC = () => {
               setCurrentPrayer(tavaf_begin)
               showPlayerModal()
             }}
-            className="w-full"
+            className="w-full normal-case"
           >
             Таупқа бастау дұғасы
           </UIButton>
@@ -95,57 +95,57 @@ const ModuleMain: React.FC = () => {
             setCurrentPrayer(tavaf_end)
             showPlayerModal()
           }}
-          className="mt-[18px] w-full"
+          className="mt-[18px] w-full normal-case"
         >
-          Тауап намазынан кейін оқы. дұға
+          Тауап намазынан кейін оқылатын дұға
         </UIButton>
       </div>
-      <div className="relative flex justify-center pt-10 pb-10">
-        <img src={arrows} alt="" />
+      <div className="relative flex justify-center pt-10 pb-10 mt-5">
+        <img className="w-[361px]" src={arrows} alt="" />
         <UIButton
           onClick={() => {
             setCurrentPrayer(sham_and_yemen)
             showPlayerModal()
           }}
-          className="w-[65%] absolute top-[28px] left-[80px]"
+          className="w-[80%] max-w-[320px] max-h-[70px] absolute top-[10px] left-[49px] normal-case"
         >
-          Шам және Йемен
+          Йемен бұрышы және Хажар ул-әсуад арасында оқылатын дұға
         </UIButton>
         <UIButton
           onClick={() => {
             setCurrentPrayer(yemen_and_hajar)
             showPlayerModal()
           }}
-          className="w-[75%] absolute top-[85px] right-[60px]"
+          className="w-[80%] absolute top-[80px] right-[45px] normal-case"
         >
-          Йемен және Хажар ул-әсуад
+          Шам бұрышы және Йемен бұрышы арасында оқылатын дұға
         </UIButton>
         <UIButton
           onClick={() => {
             setCurrentPrayer(iraq_and_sham)
             showPlayerModal()
           }}
-          className="w-[75%] absolute bottom-[142px] right-[45px]"
+          className="w-[75%] absolute bottom-[137px] right-[45px] normal-case"
         >
-          Ирак-Шам
+          Ирак бұрышы мен Шам бұрышы арасында оқылатын дұға
         </UIButton>
         <UIButton
           onClick={() => {
             setCurrentPrayer(ibrahim)
             showPlayerModal()
           }}
-          className="w-[75%] absolute bottom-[85px] right-[40px]"
+          className="w-[75%] absolute bottom-[75px] right-[40px] normal-case"
         >
-          Ибраһим мақамы
+          Ибраһим мақамы тұсында оқылатын дұға
         </UIButton>
         <UIButton
           onClick={() => {
             setCurrentPrayer(multazam)
             showPlayerModal()
           }}
-          className="w-[75%] absolute bottom-[30px] right-[40px]"
+          className="w-[75%] absolute bottom-[25px] right-[40px] normal-case"
         >
-          МҮЛТӘЗӘМ
+          Мүлтәзамда оқылатын дұға
         </UIButton>
       </div>
     </div>
