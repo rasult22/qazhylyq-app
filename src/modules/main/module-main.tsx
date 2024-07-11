@@ -14,23 +14,52 @@ import {
 import { useSystem } from '../../store/system'
 import circles from '../../audios/circles'
 const ModuleMain: React.FC = () => {
-  const { showPlayerModal, setCurrentPrayer } = useSystem()
+  const { showPlayerModal, setCurrentPrayer, completedIds, addCompleteId } =
+    useSystem()
 
   const onCircleClick = (n: number) => {
     setCurrentPrayer(circles[n])
+    if (circles[n - 1]) {
+      if (completedIds.includes(circles[n - 1].id)) {
+        addCompleteId(circles[n].id)
+      }
+    } else {
+      addCompleteId(circles[n].id)
+    }
     showPlayerModal()
   }
   return (
     <div>
       <div className="mt-[-110%]">
         <svg height="1130" width="100%">
-          <Circle7 onClick={() => onCircleClick(6)} />
-          <Circle6 onClick={() => onCircleClick(5)} />
-          <Circle5 onClick={() => onCircleClick(4)} />
-          <Circle4 onClick={() => onCircleClick(3)} />
-          <Circle3 onClick={() => onCircleClick(2)} />
-          <Circle2 onClick={() => onCircleClick(1)} />
-          <Circle1 onClick={() => onCircleClick(0)} />
+          <Circle7
+            completed={completedIds.includes(circles[6].id)}
+            onClick={() => onCircleClick(6)}
+          />
+          <Circle6
+            completed={completedIds.includes(circles[5].id)}
+            onClick={() => onCircleClick(5)}
+          />
+          <Circle5
+            completed={completedIds.includes(circles[4].id)}
+            onClick={() => onCircleClick(4)}
+          />
+          <Circle4
+            completed={completedIds.includes(circles[3].id)}
+            onClick={() => onCircleClick(3)}
+          />
+          <Circle3
+            completed={completedIds.includes(circles[2].id)}
+            onClick={() => onCircleClick(2)}
+          />
+          <Circle2
+            completed={completedIds.includes(circles[1].id)}
+            onClick={() => onCircleClick(1)}
+          />
+          <Circle1
+            completed={completedIds.includes(circles[0].id)}
+            onClick={() => onCircleClick(0)}
+          />
         </svg>
       </div>
       <div className="px-6">
