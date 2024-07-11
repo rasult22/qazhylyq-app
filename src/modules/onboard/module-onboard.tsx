@@ -1,8 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import logo from './logo.png'
 import { motion, AnimatePresence } from 'framer-motion'
+import { t, useLocale } from 'ttag'
 
 const ModuleOnboard: React.FC = () => {
+  const locale = localStorage.getItem('locale') || 'kk-KZ'
+  useLocale(locale)
+
   const [isOpen, setIsOpen] = useState(true)
   useEffect(() => {
     setTimeout(() => {
@@ -24,8 +28,8 @@ const ModuleOnboard: React.FC = () => {
               src={logo}
               alt="Module Onboard"
             />
-            <h1 className="text-[24px] leading-[28px] text-[#B19576] uppercase font-bold mb-4">
-              Қажылық және <br /> ұмра дұғалары
+            <h1 className="text-[24px] max-w-[320px] px-6 text-center leading-[28px] text-[#B19576] uppercase font-bold mb-4">
+              {t`Қажылық және ұмра дұғалары`}
             </h1>
           </motion.div>
         )}

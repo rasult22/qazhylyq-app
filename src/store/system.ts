@@ -3,6 +3,8 @@ import { Prayer } from '../audios/circles'
 export const useSystem = create<System>((set) => ({
   playerModalIsOpen: false,
   currentPrayer: undefined,
+  langSelectorIsOpen: false,
+  showLangSelector: () => set({ langSelectorIsOpen: true }),
   completedIds: [],
   addCompleteId: (id) =>
     set((state) => {
@@ -17,6 +19,8 @@ export const useSystem = create<System>((set) => ({
 }))
 
 type System = {
+  langSelectorIsOpen: boolean
+  showLangSelector: () => void
   completedIds: string[]
   addCompleteId: (id: string) => void
   playerModalIsOpen: boolean

@@ -3,6 +3,7 @@ import TopBtn from './top-btn'
 import BottomBtn from './bottom-btn'
 import ArrowUpLong from './svgs/arrow-up-long'
 import ArrowUp from './svgs/arrow-up'
+import { t } from 'ttag'
 
 import {
   green_area,
@@ -78,7 +79,7 @@ const ModuleMountain: React.FC = () => {
       />
       <div className="flex space-x-[16px] text-[#7E7E7E] relative px-8">
         <span className="absolute text-[#7E7E7E] uppercase -left-[40px] -rotate-90 bottom-[15vh]">
-          Жасыл шамдар
+          {t`Жасыл шамдар`}
         </span>
         {items.map((x) => {
           return (
@@ -148,7 +149,7 @@ const LongBtn: React.FC<{
         } absolute h-[20%] top-[10%]`}
         />
         <span className="absolute top-[40%] -rotate-90 text-center">
-          {direction === 'TOP' ? 'БАРУ' : 'ҚАЙТУ'}
+          {direction === 'TOP' ? t`БАРУ` : t`ҚАЙТУ`}
         </span>
         <div
           tabIndex={0}

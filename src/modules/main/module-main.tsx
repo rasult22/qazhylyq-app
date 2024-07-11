@@ -13,6 +13,7 @@ import {
 } from '../../audios/buttons'
 import { useSystem } from '../../store/system'
 import circles from '../../audios/circles'
+import { t } from 'ttag'
 const ModuleMain: React.FC = () => {
   const { showPlayerModal, setCurrentPrayer, completedIds, addCompleteId } =
     useSystem()
@@ -87,7 +88,7 @@ const ModuleMain: React.FC = () => {
             }}
             className="w-full normal-case"
           >
-            Таупқа бастау дұғасы
+            {t`Таупқа бастау дұғасы`}
           </UIButton>
         </div>
         <UIButton
@@ -97,7 +98,7 @@ const ModuleMain: React.FC = () => {
           }}
           className="mt-[18px] w-full normal-case"
         >
-          Тауап намазынан кейін оқылатын дұға
+          {t`Тауап намазынан кейін оқылатын дұға`}
         </UIButton>
       </div>
       <div className="relative flex justify-center pt-10 pb-10 mt-5">
@@ -109,7 +110,7 @@ const ModuleMain: React.FC = () => {
           }}
           className="w-[80%] max-w-[320px] max-h-[70px] absolute top-[10px] left-[49px] normal-case"
         >
-          Йемен бұрышы және Хажар ул-әсуад арасында оқылатын дұға
+          {t`Йемен бұрышы және Хажар ул-әсуад арасында оқылатын дұға`}
         </UIButton>
         <UIButton
           onClick={() => {
@@ -118,7 +119,7 @@ const ModuleMain: React.FC = () => {
           }}
           className="w-[80%] absolute top-[80px] right-[45px] normal-case"
         >
-          Шам бұрышы және Йемен бұрышы арасында оқылатын дұға
+          {t`Шам бұрышы және Йемен бұрышы арасында оқылатын дұға`}
         </UIButton>
         <UIButton
           onClick={() => {
@@ -127,7 +128,7 @@ const ModuleMain: React.FC = () => {
           }}
           className="w-[75%] absolute bottom-[137px] right-[45px] normal-case"
         >
-          Ирак бұрышы мен Шам бұрышы арасында оқылатын дұға
+          {t`Ирак бұрышы мен Шам бұрышы арасында оқылатын дұға`}
         </UIButton>
         <UIButton
           onClick={() => {
@@ -136,7 +137,7 @@ const ModuleMain: React.FC = () => {
           }}
           className="w-[75%] absolute bottom-[75px] right-[40px] normal-case"
         >
-          Ибраһим мақамы тұсында оқылатын дұға
+          {t`Ибраһим мақамы тұсында оқылатын дұға`}
         </UIButton>
         <UIButton
           onClick={() => {
@@ -145,7 +146,7 @@ const ModuleMain: React.FC = () => {
           }}
           className="w-[75%] absolute bottom-[25px] right-[40px] normal-case"
         >
-          Мүлтәзамда оқылатын дұға
+          {t`Мүлтәзамда оқылатын дұға`}
         </UIButton>
       </div>
     </div>
@@ -192,7 +193,7 @@ const Circle1: React.FC<{ completed?: boolean; onClick?: () => void }> = ({
           fill={completed ? 'white' : '#A2815D'}
           textAnchor="middle"
         >
-          1-айналым
+          1-{t`айналым`}
         </text>
       </g>
     </>
@@ -227,7 +228,7 @@ const Circle2: React.FC<{ completed?: boolean; onClick?: () => void }> = ({
           fill={completed ? 'white' : '#A2815D'}
           textAnchor="middle"
         >
-          2-айналым
+          2-{t`айналым`}
         </text>
       </g>
     </>
@@ -262,7 +263,7 @@ const Circle3: React.FC<{ completed?: boolean; onClick?: () => void }> = ({
           fill={completed ? 'white' : '#A2815D'}
           textAnchor="middle"
         >
-          3-айналым
+          3-{t`айналым`}
         </text>
       </g>
     </>
@@ -297,7 +298,7 @@ const Circle4: React.FC<{ completed?: boolean; onClick?: () => void }> = ({
           fill={completed ? 'white' : '#A2815D'}
           textAnchor="middle"
         >
-          4-айналым
+          4-{t`айналым`}
         </text>
       </g>
     </>
@@ -332,7 +333,7 @@ const Circle5: React.FC<{ completed?: boolean; onClick?: () => void }> = ({
           fill={completed ? 'white' : '#A2815D'}
           textAnchor="middle"
         >
-          5-айналым
+          5-{t`айналым`}
         </text>
       </g>
     </>
@@ -367,7 +368,7 @@ const Circle6: React.FC<{ completed?: boolean; onClick?: () => void }> = ({
           fill={completed ? 'white' : '#A2815D'}
           textAnchor="middle"
         >
-          6-айналым
+          6-{t`айналым`}
         </text>
       </g>
     </>
@@ -402,7 +403,7 @@ const Circle7: React.FC<{ completed?: boolean; onClick?: () => void }> = ({
           fill={completed ? 'white' : '#A2815D'}
           textAnchor="middle"
         >
-          7-айналым
+          7-{t`айналым`}
         </text>
       </g>
     </>
