@@ -13,6 +13,14 @@ export const useSystem = create<System>((set) => ({
         completedIds: [...state.completedIds, id]
       }
     }),
+  duaCompletedIds: [],
+  addDuaCompleteId: (id) =>
+    set((state) => {
+      return {
+        ...state,
+        duaCompletedIds: [...state.duaCompletedIds, id]
+      }
+    }),
   setCurrentPrayer: (p) => set({ currentPrayer: p }),
   showPlayerModal: () => set({ playerModalIsOpen: true }),
   closePlayerModal: () => set({ playerModalIsOpen: false })
@@ -21,11 +29,17 @@ export const useSystem = create<System>((set) => ({
 type System = {
   langSelectorIsOpen: boolean
   showLangSelector: () => void
+
   completedIds: string[]
   addCompleteId: (id: string) => void
+
+  duaCompletedIds: string[]
+  addDuaCompleteId: (id: string) => void
+
   playerModalIsOpen: boolean
   showPlayerModal: () => void
   closePlayerModal: () => void
+
   currentPrayer?: Prayer
   setCurrentPrayer: (p: Prayer) => void
 }

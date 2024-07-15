@@ -12,14 +12,21 @@ import {
 import { t } from 'ttag'
 
 const DuaPage = () => {
-  const { showPlayerModal, setCurrentPrayer } = useSystem()
+  const {
+    showPlayerModal,
+    setCurrentPrayer,
+    duaCompletedIds,
+    addDuaCompleteId
+  } = useSystem()
   const navigate = useNavigate()
   return (
     <>
       <div className="px-4 space-y-4 pt-4 pb-[90px]">
         <UICell
           accent
+          completed={duaCompletedIds.includes(travel_begin.id)}
           onClick={() => {
+            addDuaCompleteId(travel_begin.id)
             setCurrentPrayer(travel_begin)
             showPlayerModal()
           }}
@@ -27,7 +34,9 @@ const DuaPage = () => {
           {t`тәлбия`}
         </UICell>
         <UICell
+          completed={duaCompletedIds.includes(travel_begin.id)}
           onClick={() => {
+            addDuaCompleteId(travel_begin.id)
             setCurrentPrayer(travel_begin)
             showPlayerModal()
           }}
@@ -36,7 +45,9 @@ const DuaPage = () => {
         </UICell>
         <UICell
           accent
+          completed={duaCompletedIds.includes(when_entering_car.id)}
           onClick={() => {
+            addDuaCompleteId(when_entering_car.id)
             setCurrentPrayer(when_entering_car)
             showPlayerModal()
           }}
@@ -44,6 +55,7 @@ const DuaPage = () => {
           {t`КӨЛІККЕ МІНЕРДЕ ОҚЫЛАТЫН ДҰҒА`}
         </UICell>
         <UICell
+          completed={duaCompletedIds.includes('/dua/mekkah')}
           onClick={() => {
             navigate('/qazhylyq-app/dua/mekkah')
           }}
@@ -53,6 +65,7 @@ const DuaPage = () => {
         </UICell>
         <UICell
           accent
+          completed={duaCompletedIds.includes('/dua/mina')}
           onClick={() => {
             navigate('/qazhylyq-app/dua/mina')
           }}
@@ -61,6 +74,7 @@ const DuaPage = () => {
           {t`Минада оқылатын дұғалар`}
         </UICell>
         <UICell
+          completed={duaCompletedIds.includes('/dua/arafat')}
           onClick={() => {
             navigate('/qazhylyq-app/dua/arafat')
           }}
@@ -70,7 +84,9 @@ const DuaPage = () => {
         </UICell>
         <UICell
           accent
+          completed={duaCompletedIds.includes(at_muzdalifa.id)}
           onClick={() => {
+            addDuaCompleteId(at_muzdalifa.id)
             setCurrentPrayer(at_muzdalifa)
             showPlayerModal()
           }}
@@ -78,7 +94,9 @@ const DuaPage = () => {
           {t`Мұздалифа уақфасында оқылатын дұға`}
         </UICell>
         <UICell
+          completed={duaCompletedIds.includes(throwing_stone_shaitan.id)}
           onClick={() => {
+            addDuaCompleteId(throwing_stone_shaitan.id)
             setCurrentPrayer(throwing_stone_shaitan)
             showPlayerModal()
           }}
@@ -87,7 +105,9 @@ const DuaPage = () => {
         </UICell>
         <UICell
           accent
+          completed={duaCompletedIds.includes(qurban.id)}
           onClick={() => {
+            addDuaCompleteId(qurban.id)
             setCurrentPrayer(qurban)
             showPlayerModal()
           }}
@@ -95,7 +115,9 @@ const DuaPage = () => {
           {t`Құрбандық шаларда оқылатын дұға`}
         </UICell>
         <UICell
+          completed={duaCompletedIds.includes(hairhut.id)}
           onClick={() => {
+            addDuaCompleteId(hairhut.id)
             setCurrentPrayer(hairhut)
             showPlayerModal()
           }}
@@ -104,6 +126,7 @@ const DuaPage = () => {
         </UICell>
         <UICell
           accent
+          completed={duaCompletedIds.includes('/dua/madina')}
           onClick={() => {
             navigate('/qazhylyq-app/dua/madina')
           }}
