@@ -10,7 +10,6 @@ export const useSystem = create<System>((set) => ({
   addCompleteId: (id) =>
     set((state) => {
       return {
-        ...state,
         completedIds: [...state.completedIds, id]
       }
     }),
@@ -18,7 +17,6 @@ export const useSystem = create<System>((set) => ({
   addDuaCompleteId: (id) =>
     set((state) => {
       return {
-        ...state,
         duaCompletedIds: [...state.duaCompletedIds, id]
       }
     }),
