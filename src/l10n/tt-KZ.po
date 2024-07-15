@@ -6,11 +6,11 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: src/modules/onboard/module-onboard.tsx:32
+#: src/modules/onboard/module-onboard.tsx:29
 msgid "Қажылық және ұмра дұғалары"
 msgstr "قاجىلىق جانە ۇمرا دۇعالارى"
 
-#: src/pages/info/index.tsx:17
+#: src/pages/info/index.tsx:35
 msgid "Тіл ауыстыру"
 msgstr "ءتىل اۋىستىرۋ"
 
@@ -83,23 +83,10 @@ msgstr "ءمادينا مۇناۋۋاراعا كىرەردە وقىلاتىن د
 msgid "Пайғамбарымызға (с.а.у.) сәлем беру"
 msgstr "پايعامبارىمىزعا (س.ا.ۋ.) سالەم بەرۋ"
 
-#: src/pages/dua/madina.tsx:52
-msgid "Әбу Бәкірге  (р.а.) сәлем беру"
-msgstr "ءابۋ باكىرگە (ر.ا.) سالەم بەرۋ"
-
-#: src/pages/dua/madina.tsx:60
-msgid "Омарға  (р.а.) сәлем беру"
-msgstr "ومارعا (ر.ا.) سالەم بەرۋ"
-
 #: src/audios/medina.ts:191
 #: src/pages/dua/madina.tsx:68
 msgid "Бақи жұртына сәлем беру"
 msgstr "باقي جۇرتىنا سالەم بەرۋ"
-
-#: src/audios/medina.ts:232
-#: src/pages/dua/madina.tsx:76
-msgid "Османға  (р.а.) сәлем беру"
-msgstr "وسمانعا (ر.ا.) سالەم بەرۋ"
 
 #: src/audios/medina.ts:267
 #: src/pages/dua/madina.tsx:84
@@ -163,14 +150,6 @@ msgstr "مۇزداليفادان كەيىن مينادا وقىلاتىن دۇع
 #: src/modules/mountain/module-mountain.tsx:82
 msgid "Жасыл шамдар"
 msgstr "جاسىل شامدار"
-
-#: src/modules/mountain/module-mountain.tsx:152
-msgid "Бару"
-msgstr "بارۋ"
-
-#: src/modules/mountain/module-mountain.tsx:152
-msgid "Қайту"
-msgstr "قايتۋ"
 
 #: src/modules/main/module-main.tsx:111
 msgid "Тауап намазынан кейін оқылатын дұға"
@@ -263,10 +242,12 @@ msgid "КӨЛІККЕ МІНЕРДЕ ОҚЫЛАТЫН ДҰҒА"
 msgstr "كولىككە مىنەردە وقىلاتىن دۇعا"
 
 #: src/audios/medina.ts:130
+#: src/pages/dua/madina.tsx:52
 msgid "Әбу Бәкірге (р.а.) сәлем беру"
 msgstr "ءابۋ باكىرگە (ر.ا.) سالەم بەرۋ"
 
 #: src/audios/medina.ts:161
+#: src/pages/dua/madina.tsx:60
 msgid "Омарға (р.а.) сәлем беру"
 msgstr "ومارعا (ر.ا.) سالەم بەرۋ"
 
@@ -333,3 +314,20 @@ msgstr "ساعيدىڭ جەتىنشى اينالىمىندا وقىلاتىن د
 #: src/modules/main/module-main.tsx:99
 msgid "Тауапқа бастау дұғасы"
 msgstr "تاۋاپقا باستاۋ دۇعاسى"
+
+#: src/audios/medina.ts:232
+#: src/pages/dua/madina.tsx:76
+msgid "Османға (р.а.) сәлем беру"
+msgstr "وسمانعا (ر.ا.) سالەم بەرۋ"
+
+#: src/modules/mountain/module-mountain.tsx:152
+msgid "БАРУ"
+msgstr "بارۋ"
+
+#: src/modules/mountain/module-mountain.tsx:152
+msgid "ҚАЙТУ"
+msgstr "قايتۋ"
+
+#: src/pages/info/index.tsx:29
+msgid "Тауапқа бастамас бұрын, Хажар ул-әсуад тұсында жүрекпен: «Уа, Алла! Сені әлмисақтан қабылдадым. Дүниеге келіп, Сенің мейіріміңмен Сені тағы қабылдадым. Ал, енді мейірімің мен жомарттығыңның арқасында Сенің үйіңе келдім. Хажар ул-әсуадтың ішінде сақталған уәдем мен жүрегімдегі уәдемді  салыстырып, уәдемді жаңартуға келдім. Бисмилләһи, Аллаһу әкбар!» деп сәлем береді. Сонан соң тауапқа бастау дұғасын оқиды."
+msgstr "تاۋاپقا باستاماس بۇرىن، حاجار ۋل-ءاسۋاد تۇسىندا جۇرەكپەن: «ۋا، اللا! سەنى الميساقتان قابىلدادىم. دۇنيەگە كەلىپ، سەنىڭ مەيىرىمىڭمەن سەنى تاعى قابىلدادىم. ال، ەندى مەيىرىمىڭ مەن جومارتتىعىڭنىڭ ارقاسىندا سەنىڭ ۇيىڭە كەلدىم. حاجار ۋل-ءاسۋادتىڭ ىشىندە ساقتالعان ۋادەم مەن جۇرەگىمدەگى ۋادەمدى سالىستىرىپ، ۋادەمدى جاڭارتۋعا كەلدىم. ءبيسميللاھي، اللاھۋ اكبار!» دەپ سالەم بەرەدى.  سونان سوڭ تاۋاپقا باستاۋ دۇعاسىن وقيدى."
