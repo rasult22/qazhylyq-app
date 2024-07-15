@@ -127,7 +127,7 @@ export const prophet_salaam = {
 export const abubakr_salaam = {
   id: 'abubakr_salaam',
   audio_url: abubakr_salaam_audio,
-  title: t`Әбу Бәкірге  (р.а.) сәлем беру`,
+  title: t`Әбу Бәкірге (р.а.) сәлем беру`,
   title_ru: 'Приветствие Абу Бакра  (р.а.)',
   title_tt: `ءابۋ باكىرگە (ر.ا.) سالەم بەرۋ`,
   prayer_text: `اَلسَّلَامُ‭ ‬عَلَيْكَ‭ ‬يَا‭ ‬اَبَا‭ ‬بَكْرٍ‭ ‬الصِّدِّيقَ‭ ‬رَضِىَ‭ ‬اللهُ‭ ‬عَنْهُ
@@ -158,7 +158,7 @@ export const abubakr_salaam = {
 export const umar_salaam = {
   id: 'umar_salaam',
   audio_url: umar_salaam_audio,
-  title: t`Омарға  (р.а.) сәлем беру`,
+  title: t`Омарға (р.а.) сәлем беру`,
   title_ru: 'Приветствие Умара (р.а.)',
   title_tt: `ومارعا (ر.ا.) سالەم بەرۋ`,
   prayer_text: `اَلسَّلَامُ‭ ‬عَلَيْكَ‭ ‬يَا‭ ‬عُمَرُ‭ ‬الْفَارُوقُ‭ ‬رَضِىَ‭ ‬اللهُ‭ ‬عَنْهُ
@@ -229,7 +229,7 @@ export const baqi_salaam = {
 export const usman_salaam = {
   id: 'usman_salaam',
   audio_url: usman_salaam_audio,
-  title: t`Хазірет Османға  (р.а.) сәлем беру`,
+  title: t`Османға (р.а.) сәлем беру`,
   title_ru: 'Приветствие Усмана (р.а.)',
   title_tt: `وسمانعا (ر.ا.) سالەم بەرۋ`,
   prayer_text: `اَلسَّلَامُ‭ ‬عَلَيْكَ‭ ‬يَا‭ ‬عُثْمَانُ‭ ‬بْنِ‭ ‬عَفَّانَ‭ ‬رَضِىَ‭ ‬اللهُ‭ ‬عَنْهُ،

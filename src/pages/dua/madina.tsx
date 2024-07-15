@@ -49,7 +49,7 @@ const DuaMadinaPage = () => {
             showPlayerModal()
           }}
         >
-          {t`Хазірет Әбу Бәкірге  (р.а.) сәлем беру`}
+          {t`Әбу Бәкірге (р.а.) сәлем беру`}
         </UICell>
         <UICell
           onClick={() => {
@@ -57,7 +57,7 @@ const DuaMadinaPage = () => {
             showPlayerModal()
           }}
         >
-          {t`Хазірет Омарға  (р.а.) сәлем беру`}
+          {t`Омарға (р.а.) сәлем беру`}
         </UICell>
         <UICell
           onClick={() => {
@@ -73,7 +73,7 @@ const DuaMadinaPage = () => {
             showPlayerModal()
           }}
         >
-          {t`Хазірет Османға  (р.а.) сәлем беру`}
+          {t`Османға (р.а.) сәлем беру`}
         </UICell>
         <UICell
           onClick={() => {
