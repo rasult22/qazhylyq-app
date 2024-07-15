@@ -5,6 +5,7 @@ export const useSystem = create<System>((set) => ({
   currentPrayer: undefined,
   langSelectorIsOpen: false,
   showLangSelector: () => set({ langSelectorIsOpen: true }),
+  hideLangSelector: () => set({ langSelectorIsOpen: false }),
   completedIds: [],
   addCompleteId: (id) =>
     set((state) => {
@@ -29,6 +30,7 @@ export const useSystem = create<System>((set) => ({
 type System = {
   langSelectorIsOpen: boolean
   showLangSelector: () => void
+  hideLangSelector: () => void
 
   completedIds: string[]
   addCompleteId: (id: string) => void
