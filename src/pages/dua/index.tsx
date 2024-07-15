@@ -7,7 +7,8 @@ import {
   throwing_stone_shaitan,
   when_entering_car,
   hairhut,
-  at_muzdalifa
+  at_muzdalifa,
+  talbiya
 } from '../../audios/list'
 import { t } from 'ttag'
 
@@ -24,10 +25,10 @@ const DuaPage = () => {
       <div className="px-4 space-y-4 pt-4 pb-[90px]">
         <UICell
           accent
-          completed={duaCompletedIds.includes(travel_begin.id)}
+          completed={duaCompletedIds.includes(talbiya.id)}
           onClick={() => {
-            addDuaCompleteId(travel_begin.id)
-            setCurrentPrayer(travel_begin)
+            addDuaCompleteId(talbiya.id)
+            setCurrentPrayer(talbiya)
             showPlayerModal()
           }}
         >

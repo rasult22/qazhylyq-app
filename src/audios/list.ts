@@ -4,7 +4,20 @@ import when_entering_car_audio from '../../assets/when_entering_car.mp3'
 import throwing_stone_shaitan_audio from '../../assets/throwing_stone_shaitan.mp3'
 import hairhut_audio from '../../assets/haircut.mp3'
 import at_muzdalifa_audio from '../../assets/at_muzdalifa.mp4'
+import talbiya_audio from '../../assets/talbiya.mp4'
 import { t } from 'ttag'
+
+export const talbiya = {
+  id: 'talbiya',
+  audio_url: talbiya_audio,
+  title: t`ТӘЛБИЯ`,
+  title_ru: 'ТАЛЬБИЯ',
+  title_tt: `ءتالبيا`,
+  prayer_text: `لَبَّيْكَ اَللّٰهُمَّ لَبَّيْكَ، لَبَّيْكَ لَا شَرِيكَ لَكَ لَبَّيْكَ، اِنَّ الْحَمْدَ وَ النِّعْمَةَ لَكَ وَ الْمُلْكَ، لَا شَرِيكَ لَكَ.`,
+  translation_text: `Уа, Алла! Шақыруыңды қабыл алып келіп тұрмын. Әміріңе бой ұсынып, әміріңді орындауға келдім. Сенің еш серігің жоқ. Барлық мадақ пен нығмет, шүбәсіз, Саған тән, мүлік те Сенікі. Сенің еш серігің жоқ. `,
+  translation_text_ru: `Вот я перед тобой, о Аллах, нет у Тебя сотоварища, вот я перед Тобой. Поистине, хвала Тебе, и милость принадлежит Тебе и владычество, нет у Тебя сотоварища!`,
+  translation_text_tt: `ۋا، اللا! شاقىرۋىڭدى قابىل الىپ كەلىپ تۇرمىن. امىرىڭە بوي ۇسىنىپ، ءامىرىڭدى ورىنداۋعا كەلدىم. سەنىڭ ەش سەرىگىڭ جوق. بارلىق ماداق پەن نىعمەت، ءشۇباسىز، ساعان ءتان، مۇلىك تە سەنىكى. سەنىڭ ەش سەرىگىڭ جوق.`
+}
 
 export const at_muzdalifa = {
   id: 'at_muzdalifa',

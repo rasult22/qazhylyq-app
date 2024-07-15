@@ -28,48 +28,48 @@ msgstr "ارافات دۇعاسى"
 msgid "Арафаттан Мұздалифаға барар кезде оқылатын дұға"
 msgstr "ارافاتتان مۇزداليفاعا بارار كەزدە وقىلاتىن دۇعا"
 
-#: src/pages/dua/index.tsx:27
+#: src/pages/dua/index.tsx:35
 msgid "тәлбия"
 msgstr "ءتالبيا"
 
-#: src/audios/list.ts:67
-#: src/pages/dua/index.tsx:35
+#: src/audios/list.ts:80
+#: src/pages/dua/index.tsx:45
 msgid "САПАРҒА ШЫҒАРДА ОҚЫЛАТЫН ДҰҒА"
 msgstr "ساپارعا شىعاردا وقىلاتىن دۇعا"
 
-#: src/pages/dua/index.tsx:52
+#: src/pages/dua/index.tsx:65
 msgid "Мекке Мүкәррама дұғалары"
 msgstr "مەككە مۇكارراما دۇعالارى"
 
-#: src/pages/dua/index.tsx:61
+#: src/pages/dua/index.tsx:75
 msgid "Минада оқылатын дұғалар"
 msgstr "مينادا وقىلاتىن دۇعالار"
 
-#: src/pages/dua/index.tsx:69
+#: src/pages/dua/index.tsx:84
 msgid "арафат дұғалары"
 msgstr "ارافات دۇعالارى"
 
-#: src/audios/list.ts:12
-#: src/pages/dua/index.tsx:78
+#: src/audios/list.ts:25
+#: src/pages/dua/index.tsx:95
 msgid "Мұздалифа уақфасында оқылатын дұға"
 msgstr "مۇزداليفا ۋاقفاسىندا وقىلاتىن دۇعا"
 
-#: src/audios/list.ts:99
-#: src/pages/dua/index.tsx:86
+#: src/audios/list.ts:112
+#: src/pages/dua/index.tsx:105
 msgid "Шайтанға тас лақтырарда оқылатын дұға"
 msgstr "شايتانعا تاس لاقتىراردا وقىلاتىن دۇعا"
 
-#: src/audios/list.ts:51
-#: src/pages/dua/index.tsx:95
+#: src/audios/list.ts:64
+#: src/pages/dua/index.tsx:116
 msgid "Құрбандық шаларда оқылатын дұға"
 msgstr "قۇرباندىق شالاردا وقىلاتىن دۇعا"
 
-#: src/audios/list.ts:37
-#: src/pages/dua/index.tsx:103
+#: src/audios/list.ts:50
+#: src/pages/dua/index.tsx:126
 msgid "Шаш аларда оқылатын дұға"
 msgstr "شاش الاردا وقىلاتىن دۇعا"
 
-#: src/pages/dua/index.tsx:112
+#: src/pages/dua/index.tsx:136
 msgid "Мәдина мүнәууара дұғалары"
 msgstr "ءمادينا ءمۇناۋۋارا دۇعالارى"
 
@@ -236,8 +236,8 @@ msgstr "6-اينالىم"
 msgid "7-айналым"
 msgstr "7-اينالىم"
 
-#: src/audios/list.ts:83
-#: src/pages/dua/index.tsx:44
+#: src/audios/list.ts:96
+#: src/pages/dua/index.tsx:56
 msgid "КӨЛІККЕ МІНЕРДЕ ОҚЫЛАТЫН ДҰҒА"
 msgstr "كولىككە مىنەردە وقىلاتىن دۇعا"
 
@@ -331,3 +331,7 @@ msgstr "قايتۋ"
 #: src/pages/info/index.tsx:29
 msgid "Тауапқа бастамас бұрын, Хажар ул-әсуад тұсында жүрекпен: «Уа, Алла! Сені әлмисақтан қабылдадым. Дүниеге келіп, Сенің мейіріміңмен Сені тағы қабылдадым. Ал, енді мейірімің мен жомарттығыңның арқасында Сенің үйіңе келдім. Хажар ул-әсуадтың ішінде сақталған уәдем мен жүрегімдегі уәдемді  салыстырып, уәдемді жаңартуға келдім. Бисмилләһи, Аллаһу әкбар!» деп сәлем береді. Сонан соң тауапқа бастау дұғасын оқиды."
 msgstr "تاۋاپقا باستاماس بۇرىن، حاجار ۋل-ءاسۋاد تۇسىندا جۇرەكپەن: «ۋا، اللا! سەنى الميساقتان قابىلدادىم. دۇنيەگە كەلىپ، سەنىڭ مەيىرىمىڭمەن سەنى تاعى قابىلدادىم. ال، ەندى مەيىرىمىڭ مەن جومارتتىعىڭنىڭ ارقاسىندا سەنىڭ ۇيىڭە كەلدىم. حاجار ۋل-ءاسۋادتىڭ ىشىندە ساقتالعان ۋادەم مەن جۇرەگىمدەگى ۋادەمدى سالىستىرىپ، ۋادەمدى جاڭارتۋعا كەلدىم. ءبيسميللاھي، اللاھۋ اكبار!» دەپ سالەم بەرەدى.  سونان سوڭ تاۋاپقا باستاۋ دۇعاسىن وقيدى."
+
+#: src/audios/list.ts:13
+msgid "ТӘЛБИЯ"
+msgstr "ءتالبيا"

@@ -28,53 +28,53 @@ msgstr "Дуа во время стояния на Арафате"
 msgid "Арафаттан Мұздалифаға барар кезде оқылатын дұға"
 msgstr "Дуа по пути от Арафата к Муздалифе"
 
-#: src/pages/dua/index.tsx:27
+#: src/pages/dua/index.tsx:35
 msgid "тәлбия"
 msgstr "Тальбия"
 
-#: src/audios/list.ts:67
-#: src/pages/dua/index.tsx:35
+#: src/audios/list.ts:80
+#: src/pages/dua/index.tsx:45
 msgid "САПАРҒА ШЫҒАРДА ОҚЫЛАТЫН ДҰҒА"
 msgstr "Дуа, читаемая при поездке"
 
-#: src/audios/list.ts:83
-#: src/pages/dua/index.tsx:44
+#: src/audios/list.ts:96
+#: src/pages/dua/index.tsx:56
 msgid "КӨЛІККЕ МІНЕРДЕ ОҚЫЛАТЫН ДҰҒА"
 msgstr "Дуа, которая читается при посадке в транспорт"
 
-#: src/pages/dua/index.tsx:52
+#: src/pages/dua/index.tsx:65
 msgid "Мекке Мүкәррама дұғалары"
 msgstr "Дуа читаемые в Мекке мукаррама"
 
-#: src/pages/dua/index.tsx:61
+#: src/pages/dua/index.tsx:75
 msgid "Минада оқылатын дұғалар"
 msgstr "Дуа читаемые в Мине"
 
-#: src/pages/dua/index.tsx:69
+#: src/pages/dua/index.tsx:84
 msgid "арафат дұғалары"
 msgstr "Дуа Арафат"
 
-#: src/audios/list.ts:12
-#: src/pages/dua/index.tsx:78
+#: src/audios/list.ts:25
+#: src/pages/dua/index.tsx:95
 msgid "Мұздалифа уақфасында оқылатын дұға"
 msgstr "Дуа во время стояния на Муздалифе"
 
-#: src/audios/list.ts:99
-#: src/pages/dua/index.tsx:86
+#: src/audios/list.ts:112
+#: src/pages/dua/index.tsx:105
 msgid "Шайтанға тас лақтырарда оқылатын дұға"
 msgstr "Дуа при побивании шайтана камнями"
 
-#: src/audios/list.ts:51
-#: src/pages/dua/index.tsx:95
+#: src/audios/list.ts:64
+#: src/pages/dua/index.tsx:116
 msgid "Құрбандық шаларда оқылатын дұға"
 msgstr "Дуа во время жертвоприношения"
 
-#: src/audios/list.ts:37
-#: src/pages/dua/index.tsx:103
+#: src/audios/list.ts:50
+#: src/pages/dua/index.tsx:126
 msgid "Шаш аларда оқылатын дұға"
 msgstr "Дуа при обривании головы"
 
-#: src/pages/dua/index.tsx:112
+#: src/pages/dua/index.tsx:136
 msgid "Мәдина мүнәууара дұғалары"
 msgstr "Дуа которые читаются в Медине"
 
@@ -331,3 +331,7 @@ msgstr "Дуа для седьмого шавта Са‘я"
 #: src/pages/info/index.tsx:29
 msgid "Тауапқа бастамас бұрын, Хажар ул-әсуад тұсында жүрекпен: «Уа, Алла! Сені әлмисақтан қабылдадым. Дүниеге келіп, Сенің мейіріміңмен Сені тағы қабылдадым. Ал, енді мейірімің мен жомарттығыңның арқасында Сенің үйіңе келдім. Хажар ул-әсуадтың ішінде сақталған уәдем мен жүрегімдегі уәдемді  салыстырып, уәдемді жаңартуға келдім. Бисмилләһи, Аллаһу әкбар!» деп сәлем береді. Сонан соң тауапқа бастау дұғасын оқиды."
 msgstr "Прежде чем отправится в таваф, с сердцем приветствует Хаджар уль-Асуад: «О. Аллах! Принял тебя с давних пор. Родившись, снова принял Тебя по милости твоей, Тебя с твоей добротой. Теперь, благодаря твоей доброте и щедрости пришел к Тебе. Внутри Хаджара уль-Асуада сдержанное обещание и обещание в моем сердце. Я пришел, чтобы сравнить и возобновить свое обещание. Бисмиллах, Аллаху Акбар!». Затем читает молитву перед началом тавафа."
+
+#: src/audios/list.ts:13
+msgid "ТӘЛБИЯ"
+msgstr "Тальбия"
