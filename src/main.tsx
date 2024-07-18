@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './App.css'
 import './index.css'
 import { BrowserRouter } from 'react-router-dom'
@@ -14,6 +14,7 @@ import { useLocale } from 'ttag'
 
 import totosheLang from './l10n/tt-KZ.po.json'
 import russianLang from './l10n/ru-RU.po.json'
+import { Locale, useSystem } from './store/system'
 
 addLocale('ru-RU', russianLang)
 addLocale('tt-KZ', totosheLang)
@@ -21,7 +22,10 @@ addLocale('tt-KZ', totosheLang)
 const App: React.FC = () => {
   const locale = localStorage.getItem('locale') || 'kk-KZ'
   useLocale(locale)
-
+  const { setLocale } = useSystem()
+  useEffect(() => {
+    setLocale(locale as Locale)
+  }, [])
   return (
     <BrowserRouter>
       <AnimatedRoutes />

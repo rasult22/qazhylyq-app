@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
 import UIButtonFull from '../../ui/button/ui-btn-full'
 import { motion, AnimatePresence } from 'framer-motion'
-import { useSystem } from '../../store/system'
+import { Locale, useSystem } from '../../store/system'
 import { useLocale } from 'ttag'
 
 const ModuleLangSelect: React.FC = () => {
   const initLangSelected = localStorage.getItem('init_lang_selected')
-  const { langSelectorIsOpen, hideLangSelector } = useSystem()
+  const { langSelectorIsOpen, hideLangSelector, setLocale } = useSystem()
 
   const langs = [
     { name: 'Қазақша', val: 'kk-KZ' },
@@ -32,6 +32,7 @@ const ModuleLangSelect: React.FC = () => {
                     }
                     localStorage.setItem('locale', l.val)
                     useLocale(l.val)
+                    setLocale(l.val as Locale)
                     hideLangSelector()
                   }}
                   key={l.val}
