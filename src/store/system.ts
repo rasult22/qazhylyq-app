@@ -2,6 +2,9 @@ import { create } from 'zustand'
 import { Prayer } from '../audios/circles'
 export const useSystem = create<System>((set) => ({
   playerModalIsOpen: false,
+  infoModalIsOpen: false,
+  showInfoModal: () => set({ infoModalIsOpen: true }),
+  closeInfoModal: () => set({ infoModalIsOpen: false }),
   currentPrayer: undefined,
   langSelectorIsOpen: false,
   showLangSelector: () => set({ langSelectorIsOpen: true }),
@@ -42,4 +45,8 @@ type System = {
 
   currentPrayer?: Prayer
   setCurrentPrayer: (p: Prayer) => void
+
+  infoModalIsOpen: boolean
+  showInfoModal: () => void
+  closeInfoModal: () => void
 }

@@ -1,5 +1,6 @@
 import { ReactElement } from 'react'
 import ModuleMain from './modules/main/module-main'
+import ModuleInfoModal from './modules/info-modal/module-info-modal'
 import { motion } from 'framer-motion'
 
 function App(): ReactElement {
@@ -21,6 +22,7 @@ function App(): ReactElement {
       className="pb-[79px]"
     >
       <ModuleMain />
+      <ModuleInfoModal></ModuleInfoModal>
     </motion.div>
   )
 }

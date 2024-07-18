@@ -14,11 +14,14 @@ import {
 import { useSystem } from '../../store/system'
 import circles from '../../audios/circles'
 import { t } from 'ttag'
-import { useNavigate } from 'react-router-dom'
 const ModuleMain: React.FC = () => {
-  const navigate = useNavigate()
-  const { showPlayerModal, setCurrentPrayer, completedIds, addCompleteId } =
-    useSystem()
+  const {
+    showPlayerModal,
+    showInfoModal,
+    setCurrentPrayer,
+    completedIds,
+    addCompleteId
+  } = useSystem()
 
   const onCircleClick = (n: number) => {
     setCurrentPrayer(circles[n])
@@ -69,7 +72,7 @@ const ModuleMain: React.FC = () => {
         <div className="flex space-x-[11px] items-stretch">
           <UIButton
             onClick={() => {
-              navigate('/qazhylyq-app/info')
+              showInfoModal()
             }}
           >
             <svg
