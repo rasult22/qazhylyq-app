@@ -20,11 +20,18 @@ const ModulePlayerModal: React.FC = () => {
     const index = speeds.findIndex((x) => x === playbackSpeed)
     const speed = speeds[index + 1] || speeds[0]
 
-    if (playerRef.current) {
-      ;(playerRef.current as any).audio.current.playbackRate = speed
-      setPlaybackSpeed(speed)
-    }
+    applySpeed(speed)
   }, [playerRef, speeds, setPlaybackSpeed])
+
+  const applySpeed = useCallback(
+    (speed: number) => {
+      if (playerRef.current) {
+        ;(playerRef.current as any).audio.current.playbackRate = speed
+        setPlaybackSpeed(speed)
+      }
+    },
+    [playerRef, speeds, setPlaybackSpeed]
+  )
 
   useEffect(() => {
     if (playerModalIsOpen) {
@@ -65,9 +72,9 @@ const ModulePlayerModal: React.FC = () => {
         <div className="relative">
           <div
             style={{
-              fontSize: 15 + fontNumber
+              fontSize: 23 + fontNumber
             }}
-            className="mt-2 leading-[150%] overflow-auto w-full text-[#202020] min-h-[245px] text-[15px] bg-[#D9D9D9] shadow-inner rounded-[10px]  p-4 text-right max-h-[70vh]"
+            className="mt-2 leading-[200%] overflow-auto w-full text-[#202020] min-h-[60vh] text-[15px] bg-[#D9D9D9] shadow-inner rounded-[10px]  p-4 text-right max-h-[65vh]"
           >
             {currentPrayer ? gettext(currentPrayer.prayer_text) : ''}
           </div>
@@ -90,6 +97,11 @@ const ModulePlayerModal: React.FC = () => {
 
         <div className="py-4 relative">
           <AudioPlayer
+            onPlay={() => {
+              const index = speeds.findIndex((x) => x === playbackSpeed)
+              const speed = speeds[index]
+              applySpeed(speed)
+            }}
             ref={playerRef}
             showSkipControls={false}
             autoPlay={false}
@@ -105,9 +117,9 @@ const ModulePlayerModal: React.FC = () => {
         <div className="relative">
           <div
             style={{
-              fontSize: 15 + fontNumber2
+              fontSize: 18 + fontNumber2
             }}
-            className="my-2 leading-[120%] w-full relative text-[#202020] min-h-[245px] text-[15px] leading-[20px] overflow-auto bg-[#D9D9D9] shadow-inner rounded-[10px]  p-4 text-left max-h-[75vh]"
+            className="my-2 leading-[140%] w-full relative text-[#202020] min-h-[245px] text-[15px] overflow-auto bg-[#D9D9D9] shadow-inner rounded-[10px]  p-4 text-left max-h-[75vh]"
           >
             {currentPrayer
               ? locale === 'kk-KZ'

@@ -10,21 +10,21 @@ msgstr ""
 msgid "Қажылық және ұмра дұғалары"
 msgstr "Дуа для Хаджа и Умры"
 
-#: src/pages/info/index.tsx:35
+#: src/pages/info/index.tsx:39
 msgid "Тіл ауыстыру"
 msgstr "Сменить язык"
 
 #: src/audios/arafat.ts:8
-#: src/pages/dua/arafat.tsx:31
+#: src/pages/dua/arafat.tsx:63
 msgid "Арафатқа барғанда оқылатын дұға"
 msgstr "Дуа при поднятии на Арафат"
 
 #: src/audios/arafat.ts:22
-#: src/pages/dua/arafat.tsx:39
+#: src/pages/dua/arafat.tsx:73
 msgid "Арафат дұғасы"
 msgstr "Дуа во время стояния на Арафате"
 
-#: src/pages/dua/arafat.tsx:47
+#: src/pages/dua/arafat.tsx:83
 msgid "Арафаттан Мұздалифаға барар кезде оқылатын дұға"
 msgstr "Дуа по пути от Арафата к Муздалифе"
 
@@ -79,91 +79,91 @@ msgid "Мәдина мүнәууара дұғалары"
 msgstr "Дуа которые читаются в Медине"
 
 #: src/audios/medina.ts:14
-#: src/pages/dua/madina.tsx:36
+#: src/pages/dua/madina.tsx:72
 msgid "Мәдина мүнәууараға кірерде оқылатын дұға"
 msgstr "Дуа при входе в Медину"
 
 #: src/audios/medina.ts:28
-#: src/pages/dua/madina.tsx:44
+#: src/pages/dua/madina.tsx:82
 msgid "Пайғамбарымызға (с.а.у.) сәлем беру"
 msgstr "Приветствие Пророку (с.а.в.)"
 
 #: src/audios/medina.ts:130
-#: src/pages/dua/madina.tsx:52
+#: src/pages/dua/madina.tsx:92
 msgid "Әбу Бәкірге (р.а.) сәлем беру"
 msgstr "Приветствие Абу Бакра (р.а.)"
 
 #: src/audios/medina.ts:161
-#: src/pages/dua/madina.tsx:60
+#: src/pages/dua/madina.tsx:102
 msgid "Омарға (р.а.) сәлем беру"
 msgstr "Приветствие Умара (р.а.)"
 
 #: src/audios/medina.ts:191
-#: src/pages/dua/madina.tsx:68
+#: src/pages/dua/madina.tsx:112
 msgid "Бақи жұртына сәлем беру"
 msgstr "Дуа на кладбище Баки"
 
 #: src/audios/medina.ts:232
-#: src/pages/dua/madina.tsx:76
+#: src/pages/dua/madina.tsx:122
 msgid "Османға (р.а.) сәлем беру"
 msgstr "Приветствие Усмана (р.а.)"
 
 #: src/audios/medina.ts:267
-#: src/pages/dua/madina.tsx:84
+#: src/pages/dua/madina.tsx:132
 msgid "Ұхұд шейіттеріне сәлем беру"
 msgstr "Приветствие павшим в битве при Ухуде"
 
 #: src/audios/medina.ts:316
-#: src/pages/dua/madina.tsx:92
+#: src/pages/dua/madina.tsx:142
 msgid "Пайғамбарымызбен (с.а.у.) қоштасардағы дұға"
 msgstr "Дуа при прощании с Пророком (с.а.в.)"
 
-#: src/pages/dua/mekkah.tsx:36
+#: src/pages/dua/mekkah.tsx:74
 msgid "Мекке Мүкәррамаға кірерде оқылатын дұға"
 msgstr "Дуа, читаемая при входе в Мекку мукаррама"
 
-#: src/pages/dua/mekkah.tsx:44
+#: src/pages/dua/mekkah.tsx:84
 msgid "әл-Харамға кірерде оқылатын дұға"
 msgstr "Дуа, читаемая при входе мечеть аль-Харам"
 
 #: src/audios/mekkah.ts:100
-#: src/pages/dua/mekkah.tsx:52
+#: src/pages/dua/mekkah.tsx:94
 msgid "Қағба муаззаманы көргенде оқылатын дұға"
 msgstr "Дуа читаемая при взгляде на Кааба муаззаму"
 
-#: src/pages/dua/mekkah.tsx:60
+#: src/pages/dua/mekkah.tsx:105
 msgid "әл-Харамнан шығарда оқылатын дұға"
 msgstr "Дуа читаемая при выходе из мечети аль-Харам"
 
 #: src/audios/mekkah.ts:49
-#: src/pages/dua/mekkah.tsx:68
+#: src/pages/dua/mekkah.tsx:115
 msgid "Мүлтазамда оқылатын дұға"
 msgstr "Дуа у Мультазама"
 
 #: src/audios/mekkah.ts:14
-#: src/pages/dua/mekkah.tsx:76
+#: src/pages/dua/mekkah.tsx:125
 msgid "Хадиша анамызға сәлем беру"
 msgstr "Приветствие Хадидже (р.анха)"
 
 #: src/audios/mekkah.ts:115
-#: src/pages/dua/mekkah.tsx:84
+#: src/pages/dua/mekkah.tsx:135
 msgid "Жәннәт ул-мұғаллаға сәлем беру"
 msgstr "Приветствие Джаннат уль-муалля"
 
-#: src/pages/dua/mekkah.tsx:92
+#: src/pages/dua/mekkah.tsx:145
 msgid "ҚАҒБА МУАЗЗАМАМЕН ҚОШТАСАРДА ОҚЫЛАТЫН ДҰҒА"
 msgstr "Дуа при прощании с Каабой"
 
-#: src/pages/dua/mina.tsx:31
+#: src/pages/dua/mina.tsx:62
 msgid "Минаға жеткенде оқылатын дұға"
 msgstr "Дуа по прибытии в Мину"
 
-#: src/pages/dua/mina.tsx:39
+#: src/pages/dua/mina.tsx:72
 msgid "Минадан Арафатқа шығар кезде оқылатын дұға"
 msgstr "Дуа по пути от Мины к Арафату"
 
 #: src/audios/mina.ts:25
-#: src/pages/dua/mina.tsx:47
+#: src/pages/dua/mina.tsx:82
 msgid "Мұздалифадан кейін Минада оқылатын дұға"
 msgstr "Дуа после Муздалифы в Мине"
 
@@ -179,44 +179,44 @@ msgstr "Туда"
 msgid "ҚАЙТУ"
 msgstr "Обратно"
 
-#: src/modules/main/module-main.tsx:99
+#: src/modules/main/module-main.tsx:102
 msgid "Тауапқа бастау дұғасы"
 msgstr "Дуа перед началом тауафа"
 
-#: src/modules/main/module-main.tsx:111
+#: src/modules/main/module-main.tsx:114
 msgid "Тауап намазынан кейін оқылатын дұға"
 msgstr "Дуа после намаза-тауафа"
 
-#: src/modules/main/module-main.tsx:136
+#: src/modules/main/module-main.tsx:139
 msgid "Йемен бұрышы және Хажар ул-әсуад арасында оқылатын дұға"
 msgstr "Дуа читаемая между Рукн Йемани и Рукн Хаджару’ль-Асвад"
 
-#: src/modules/main/module-main.tsx:125
+#: src/modules/main/module-main.tsx:128
 msgid "Шам бұрышы және Йемен бұрышы арасында оқылатын дұға"
 msgstr "Дуа читаемая между Рукн Шами и Рукн Йемани"
 
 #: src/audios/buttons.ts:77
-#: src/modules/main/module-main.tsx:147
+#: src/modules/main/module-main.tsx:150
 msgid "Ирак бұрышы мен Шам бұрышы арасында оқылатын дұға"
 msgstr "Дуа читаемая между Рукн Ираки и Рукн Шами"
 
 #: src/audios/buttons.ts:89
-#: src/modules/main/module-main.tsx:158
+#: src/modules/main/module-main.tsx:161
 msgid "Ибраһим мақамы тұсында оқылатын дұға"
 msgstr "Дуа читаемая на уровне Макам Ибрахима"
 
 #: src/audios/buttons.ts:104
-#: src/modules/main/module-main.tsx:169
+#: src/modules/main/module-main.tsx:172
 msgid "Мүлтәзамда оқылатын дұға"
 msgstr "Дуа читаемая на уровне Мультазама"
 
-#: src/modules/main/module-main.tsx:216
-#: src/modules/main/module-main.tsx:251
-#: src/modules/main/module-main.tsx:286
-#: src/modules/main/module-main.tsx:321
-#: src/modules/main/module-main.tsx:356
-#: src/modules/main/module-main.tsx:391
-#: src/modules/main/module-main.tsx:426
+#: src/modules/main/module-main.tsx:219
+#: src/modules/main/module-main.tsx:254
+#: src/modules/main/module-main.tsx:289
+#: src/modules/main/module-main.tsx:324
+#: src/modules/main/module-main.tsx:359
+#: src/modules/main/module-main.tsx:394
+#: src/modules/main/module-main.tsx:429
 msgid "айналым"
 msgstr "круг"
 
@@ -328,10 +328,18 @@ msgstr "Дуа для шестого шавта Са‘я"
 msgid "САҒИДЫҢ ЖЕТІНШІ  АЙНАЛЫМЫНДА ОҚЫЛАТЫН ДҰҒА"
 msgstr "Дуа для седьмого шавта Са‘я"
 
-#: src/pages/info/index.tsx:29
+#: src/modules/info-modal/module-info-modal.tsx:29
 msgid "Тауапқа бастамас бұрын, Хажар ул-әсуад тұсында жүрекпен: «Уа, Алла! Сені әлмисақтан қабылдадым. Дүниеге келіп, Сенің мейіріміңмен Сені тағы қабылдадым. Ал, енді мейірімің мен жомарттығыңның арқасында Сенің үйіңе келдім. Хажар ул-әсуадтың ішінде сақталған уәдем мен жүрегімдегі уәдемді  салыстырып, уәдемді жаңартуға келдім. Бисмилләһи, Аллаһу әкбар!» деп сәлем береді. Сонан соң тауапқа бастау дұғасын оқиды."
 msgstr "Прежде чем отправится в таваф, с сердцем приветствует Хаджар уль-Асуад: «О. Аллах! Принял тебя с давних пор. Родившись, снова принял Тебя по милости твоей, Тебя с твоей добротой. Теперь, благодаря твоей доброте и щедрости пришел к Тебе. Внутри Хаджара уль-Асуада сдержанное обещание и обещание в моем сердце. Я пришел, чтобы сравнить и возобновить свое обещание. Бисмиллах, Аллаху Акбар!». Затем читает молитву перед началом тавафа."
 
 #: src/audios/list.ts:13
 msgid "ТӘЛБИЯ"
 msgstr "Тальбия"
+
+#: src/modules/mountain/bottom-btn.tsx:27
+msgid "Сафа"
+msgstr "Сафа"
+
+#: src/modules/mountain/top-btn.tsx:25
+msgid "Мәруа"
+msgstr "Маруа"

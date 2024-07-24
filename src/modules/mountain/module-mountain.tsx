@@ -20,6 +20,8 @@ import { useSystem } from '../../store/system'
 const ModuleMountain: React.FC = () => {
   const { showPlayerModal, setCurrentPrayer, completedIds, addCompleteId } =
     useSystem()
+  const locale = localStorage.getItem('locale')
+
   const items = [
     {
       id: '1_TOP',
@@ -78,7 +80,11 @@ const ModuleMountain: React.FC = () => {
         }}
       />
       <div className="flex space-x-[16px] text-[#7E7E7E] relative px-8">
-        <span className="absolute text-[#7E7E7E] uppercase -left-[40px] -rotate-90 bottom-[15vh]">
+        <span
+          className={`absolute text-[#7E7E7E] uppercase ${
+            locale === 'tt-KZ' ? '-left-[15px]' : '-left-[40px]'
+          } -rotate-90 bottom-[15vh]`}
+        >
           {t`Жасыл шамдар`}
         </span>
         {items.map((x) => {
