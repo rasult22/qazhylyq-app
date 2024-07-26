@@ -36,7 +36,7 @@ const ModuleMain: React.FC = () => {
   }
   return (
     <div>
-      <div className="mt-[-110%]">
+      <div className="mt-[-120%]">
         <svg height="1130" width="100%">
           <Circle7
             completed={completedIds.includes(circles[6].id)}
@@ -114,6 +114,7 @@ const ModuleMain: React.FC = () => {
           {t`Тауап намазынан кейін оқылатын дұға`}
         </UIButton>
       </div>
+      <div className="border border-dashed h-[1px] my-10"></div>
       <div className="relative flex justify-center pt-10 pb-10 mt-5">
         <img className="w-[361px]" src={arrows} alt="" />
         <UIButton
@@ -189,7 +190,8 @@ const Circle1: React.FC<{ completed?: boolean; onClick?: () => void }> = ({
           onClick={() => {
             onClick()
           }}
-          className="drop-shadow-custom active:opacity-[0.8] transition-opacity"
+          style={{ filter: 'drop-shadow(1px 2px 3px rgba(0, 0, 0, 0.4))' }}
+          className=" active:opacity-[0.8] transition-opacity"
           cx="50%"
           cy="50%"
           r="100"
@@ -233,7 +235,8 @@ const Circle2: React.FC<{ completed?: boolean; onClick?: () => void }> = ({
           onClick={() => {
             onClick()
           }}
-          className="drop-shadow-custom active:opacity-[0.8] transition-opacity"
+          style={{ filter: 'drop-shadow(1px 2px 3px rgba(0, 0, 0, 0.4))' }}
+          className=" active:opacity-[0.8] transition-opacity"
           cx="50%"
           cy="50%"
           r="170"
@@ -268,7 +271,8 @@ const Circle3: React.FC<{ completed?: boolean; onClick?: () => void }> = ({
           onClick={() => {
             onClick()
           }}
-          className="drop-shadow-custom active:opacity-[0.8] transition-opacity"
+          style={{ filter: 'drop-shadow(1px 2px 3px rgba(0, 0, 0, 0.4))' }}
+          className=" active:opacity-[0.8] transition-opacity"
           cx="50%"
           cy="50%"
           r="240"
@@ -303,7 +307,8 @@ const Circle4: React.FC<{ completed?: boolean; onClick?: () => void }> = ({
           onClick={() => {
             onClick()
           }}
-          className="drop-shadow-custom active:opacity-[0.8] transition-opacity"
+          style={{ filter: 'drop-shadow(1px 2px 3px rgba(0, 0, 0, 0.4))' }}
+          className=" active:opacity-[0.8] transition-opacity"
           cx="50%"
           cy="50%"
           r="310"
@@ -338,7 +343,8 @@ const Circle5: React.FC<{ completed?: boolean; onClick?: () => void }> = ({
           onClick={() => {
             onClick()
           }}
-          className="drop-shadow-custom active:opacity-[0.8] transition-opacity"
+          style={{ filter: 'drop-shadow(1px 2px 3px rgba(0, 0, 0, 0.4))' }}
+          className=" active:opacity-[0.8] transition-opacity"
           cx="50%"
           cy="50%"
           r="380"
@@ -373,7 +379,8 @@ const Circle6: React.FC<{ completed?: boolean; onClick?: () => void }> = ({
           onClick={() => {
             onClick()
           }}
-          className="drop-shadow-custom active:opacity-[0.8] transition-opacity"
+          style={{ filter: 'drop-shadow(1px 2px 3px rgba(0, 0, 0, 0.4))' }}
+          className=" active:opacity-[0.8] transition-opacity"
           cx="50%"
           cy="50%"
           r="450"
@@ -408,7 +415,8 @@ const Circle7: React.FC<{ completed?: boolean; onClick?: () => void }> = ({
           onClick={() => {
             onClick()
           }}
-          className="drop-shadow-custom active:opacity-[0.8] transition-opacity"
+          style={{ filter: 'drop-shadow(1px 2px 3px rgba(0, 0, 0, 0.4))' }}
+          className=" active:opacity-[0.8] transition-opacity"
           cx="50%"
           cy="50%"
           r="520"

@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">qazhylyq-app</string>
+    <string name="title_activity_main">qazhylyq-app</string>
+    <string name="package_name">qazhylyq.kz.app</string>
+    <string name="custom_url_scheme">qazhylyq.kz.app</string>
+</resources>

@@ -17,7 +17,7 @@ module.exports = {
         'inset-bottom': 'var(--inset-bottom)'
       },
       boxShadow: {
-        custom: 'box-shadow: 0px 5px 13.4px 0px rgba(0, 0, 0, 0.25);'
+        custom: '0px 0px 1px 0px rgba(0, 0, 0, 0.25);'
       }
     }
   }

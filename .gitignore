@@ -266,3 +266,8 @@ dist
 # End of https://www.toptal.com/developers/gitignore/api/node,jetbrains+all,visualstudiocode,macos
 
 /assets/audios
+
+/qazhylyq-release-key.jks
+
+*.cer
+*.mobileprovision
