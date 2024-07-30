@@ -49,10 +49,10 @@ const ModulePlayerModal: React.FC = () => {
           playerModalIsOpen
             ? 'translate-x-0 '
             : 'translate-y-full -bottom-[-100%]'
-        } fixed transition-transform duration-300 z-50 top-0 pt-inset-top w-full h-full bg-white px-6 overflow-auto`}
+        } fixed transition-transform duration-300 z-50 top-0 pt-inset-top w-full h-full bg-white overflow-auto`}
       >
         {/* HEADER */}
-        <div className="flex bg-white z-[5] sticky top-0 justify-between  py-4">
+        <div className="px-6 flex bg-white z-[5] justify-between py-4">
           <div
             onClick={() => {
               if (playerRef.current) {
@@ -74,84 +74,86 @@ const ModulePlayerModal: React.FC = () => {
           <div className="opacity-0">left</div>
         </div>
         {/* HEADER ENDS */}
-        <div className="relative">
-          <div
-            style={{
-              fontSize: 23 + fontNumber
-            }}
-            className="mt-2 leading-[200%] overflow-auto w-full text-[#202020] min-h-[60vh] text-[15px] bg-[#D9D9D9] shadow-inner rounded-[10px]  p-4 text-right max-h-[65vh]"
-          >
-            {currentPrayer ? gettext(currentPrayer.prayer_text) : ''}
-          </div>
-          <div className="absolute right-3 -bottom-3 items-center flex bg-white p-1 rounded-full border border-[#ECEAEA]">
-            <IconMinus
-              onClick={() => {
-                let val = fontNumber - 1
-                setFontNumber(val < 0 ? 0 : val)
+        <div className="overflow-auto max-h-[92vh] pb-[10vh] px-6">
+          <div className="relative">
+            <div
+              style={{
+                fontSize: 23 + fontNumber
               }}
-            />
-            <div className="leading-[100%] mx-2">{fontNumber}</div>
-            <IconPlus
-              onClick={() => {
-                let val = fontNumber + 1
-                setFontNumber(val > 8 ? 8 : val)
-              }}
-            />
+              className="mt-2 leading-[200%] overflow-auto w-full text-[#202020] min-h-[60vh] text-[15px] bg-[#D9D9D9] shadow-inner rounded-[10px] px-4 pt-4 pb-8 text-right max-h-[65vh]"
+            >
+              {currentPrayer ? gettext(currentPrayer.prayer_text) : ''}
+            </div>
+            <div className="absolute right-3 -bottom-3 items-center flex bg-white p-1 rounded-full border border-[#ECEAEA]">
+              <IconMinus
+                onClick={() => {
+                  let val = fontNumber - 1
+                  setFontNumber(val < 0 ? 0 : val)
+                }}
+              />
+              <div className="leading-[100%] mx-2">{fontNumber}</div>
+              <IconPlus
+                onClick={() => {
+                  let val = fontNumber + 1
+                  setFontNumber(val > 8 ? 8 : val)
+                }}
+              />
+            </div>
           </div>
-        </div>
 
-        <div className="py-4 relative">
-          <AudioPlayer
-            onPlay={() => {
-              const index = speeds.findIndex((x) => x === playbackSpeed)
-              const speed = speeds[index]
-              applySpeed(speed)
-            }}
-            ref={playerRef}
-            showSkipControls={false}
-            autoPlay={false}
-            autoPlayAfterSrcChange={false}
-            src={currentPrayer ? currentPrayer.audio_url : ''}
-          />
-          <div className="flex absolute bottom-8 right-4 text-[#202020] text-[20px]">
-            <button onClick={() => changeSpeed()}>
-              {playbackSpeed.toFixed(1)}x
-            </button>
-          </div>
-        </div>
-        <div className="relative">
-          <div
-            style={{
-              fontSize: 18 + fontNumber2
-            }}
-            className={`
-        ${locale === 'tt-KZ' ? 'text-right' : ''}
-               my-2 leading-[140%] w-full relative text-[#202020] min-h-[245px] text-[15px] overflow-auto bg-[#D9D9D9] shadow-inner rounded-[10px]  p-4 text-left max-h-[75vh]`}
-          >
-            {currentPrayer
-              ? locale === 'kk-KZ'
-                ? currentPrayer.translation_text
-                : locale === 'ru-RU'
-                ? currentPrayer.translation_text_ru
-                : locale === 'tt-KZ'
-                ? currentPrayer.translation_text_tt
-                : locale + ' is a unsupported locale'
-              : 'empty'}
-          </div>
-          <div className="absolute right-3 -bottom-3 items-center flex bg-white p-1 rounded-full border border-[#ECEAEA]">
-            <IconMinus
-              onClick={() => {
-                let val = fontNumber2 - 1
-                setFontNumber2(val < 0 ? 0 : val)
+          <div className="py-4 relative">
+            <AudioPlayer
+              onPlay={() => {
+                const index = speeds.findIndex((x) => x === playbackSpeed)
+                const speed = speeds[index]
+                applySpeed(speed)
               }}
+              ref={playerRef}
+              showSkipControls={false}
+              autoPlay={false}
+              autoPlayAfterSrcChange={false}
+              src={currentPrayer ? currentPrayer.audio_url : ''}
             />
-            <div className="leading-[100%] mx-2">{fontNumber2}</div>
-            <IconPlus
-              onClick={() => {
-                let val = fontNumber2 + 1
-                setFontNumber2(val > 8 ? 8 : val)
+            <div className="flex absolute bottom-8 right-4 text-[#202020] text-[20px]">
+              <button onClick={() => changeSpeed()}>
+                {playbackSpeed.toFixed(1)}x
+              </button>
+            </div>
+          </div>
+          <div className="relative">
+            <div
+              style={{
+                fontSize: 18 + fontNumber2
               }}
-            />
+              className={`
+          ${locale === 'tt-KZ' ? 'text-right' : ''}
+                my-2 leading-[140%] w-full relative text-[#202020] min-h-[245px] text-[15px] overflow-auto bg-[#D9D9D9] shadow-inner rounded-[10px] px-4 pt-4 pb-8 text-left max-h-[75vh]`}
+            >
+              {currentPrayer
+                ? locale === 'kk-KZ'
+                  ? currentPrayer.translation_text
+                  : locale === 'ru-RU'
+                  ? currentPrayer.translation_text_ru
+                  : locale === 'tt-KZ'
+                  ? currentPrayer.translation_text_tt
+                  : locale + ' is a unsupported locale'
+                : 'empty'}
+            </div>
+            <div className="absolute right-3 -bottom-3 items-center flex bg-white p-1 rounded-full border border-[#ECEAEA]">
+              <IconMinus
+                onClick={() => {
+                  let val = fontNumber2 - 1
+                  setFontNumber2(val < 0 ? 0 : val)
+                }}
+              />
+              <div className="leading-[100%] mx-2">{fontNumber2}</div>
+              <IconPlus
+                onClick={() => {
+                  let val = fontNumber2 + 1
+                  setFontNumber2(val > 8 ? 8 : val)
+                }}
+              />
+            </div>
           </div>
         </div>
       </div>
