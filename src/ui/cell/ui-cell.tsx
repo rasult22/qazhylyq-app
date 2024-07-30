@@ -15,21 +15,26 @@ const UICell: React.FC<UICellProps> = ({
   className,
   isLink = false
 }) => {
+  const locale = localStorage.getItem('locale')
   return (
     <button
-      className={`${
-        completed
-          ? 'bg-[#76B177] text-white'
-          : accent
-          ? 'bg-[#A2815D] text-white'
-          : 'bg-[#D4C4B3] text-[#5E5E5E]'
-      } flex items-center uppercase w-full text-left shadow-lg active:opacity-[0.9] transition-all active:scale-[1.01] font-bold py-[14px] px-5 rounded-[16px] ${className}`}
+      className={`
+        ${locale === 'tt-KZ' ? 'justify-end space-x-2' : 'text-left'}
+        ${
+          completed
+            ? 'bg-[#76B177] text-white'
+            : accent
+            ? 'bg-[#A2815D] text-white'
+            : 'bg-[#D4C4B3] text-[#5E5E5E]'
+        } flex items-center uppercase w-full shadow-lg active:opacity-[0.9] transition-all active:scale-[1.01] font-bold py-[14px] px-5 rounded-[16px] ${className}`}
       onClick={onClick}
     >
-      {children}
+      <span>{children}</span>
       {isLink ? (
         <svg
-          className="ml-auto"
+          className={`
+            ${locale === 'tt-KZ' ? '' : 'ml-auto'}
+            `}
           width="8"
           height="16"
           viewBox="0 0 8 16"

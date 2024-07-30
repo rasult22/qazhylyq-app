@@ -44,7 +44,8 @@ const ModulePlayerModal: React.FC = () => {
   return (
     <>
       <div
-        className={`${
+        className={`
+        ${
           playerModalIsOpen
             ? 'translate-x-0 '
             : 'translate-y-full -bottom-[-100%]'
@@ -63,7 +64,11 @@ const ModulePlayerModal: React.FC = () => {
           >
             <img src={left} alt="" />
           </div>
-          <div className="text-[#7E7E7E] font-semibold uppercase">
+          <div
+            className={`
+            ${locale === 'tt-KZ' ? 'text-right' : ''}
+            text-[#7E7E7E] font-semibold uppercase`}
+          >
             {currentPrayer ? gettext(currentPrayer.title) : ''}
           </div>
           <div className="opacity-0">left</div>
@@ -119,7 +124,9 @@ const ModulePlayerModal: React.FC = () => {
             style={{
               fontSize: 18 + fontNumber2
             }}
-            className="my-2 leading-[140%] w-full relative text-[#202020] min-h-[245px] text-[15px] overflow-auto bg-[#D9D9D9] shadow-inner rounded-[10px]  p-4 text-left max-h-[75vh]"
+            className={`
+        ${locale === 'tt-KZ' ? 'text-right' : ''}
+               my-2 leading-[140%] w-full relative text-[#202020] min-h-[245px] text-[15px] overflow-auto bg-[#D9D9D9] shadow-inner rounded-[10px]  p-4 text-left max-h-[75vh]`}
           >
             {currentPrayer
               ? locale === 'kk-KZ'
