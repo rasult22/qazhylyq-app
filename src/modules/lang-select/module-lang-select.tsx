@@ -11,7 +11,7 @@ const ModuleLangSelect: React.FC = () => {
   const langs = [
     { name: 'Қазақша', val: 'kk-KZ' },
     { name: 'Русский', val: 'ru-RU' },
-    { name: 'Төтөше', val: 'tt-KZ' }
+    { name: 'Төтеше', val: 'tt-KZ' }
   ]
   return (
     <>

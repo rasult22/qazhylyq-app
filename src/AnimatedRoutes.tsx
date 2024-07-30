@@ -20,14 +20,14 @@ const AnimatedRoutes: React.FC = () => {
     <>
       <AnimatePresence>
         <Routes location={location} key={location.pathname}>
-          <Route path="/qazhylyq-app" element={<App />} />
-          <Route path="/qazhylyq-app/mountain" element={<MountainPage />} />
-          <Route path="/qazhylyq-app/dua" element={<DuaPage />} />
-          <Route path="/qazhylyq-app/dua/mekkah" element={<DuaMekkahPage />} />
-          <Route path="/qazhylyq-app/dua/mina" element={<DuaMinaPage />} />
-          <Route path="/qazhylyq-app/dua/arafat" element={<DuaArafatPage />} />
-          <Route path="/qazhylyq-app/dua/madina" element={<DuaMadinaPage />} />
-          <Route path="/qazhylyq-app/info" element={<InfoPage />} />
+          <Route path="/" element={<App />} />
+          <Route path="/mountain" element={<MountainPage />} />
+          <Route path="/dua" element={<DuaPage />} />
+          <Route path="/dua/mekkah" element={<DuaMekkahPage />} />
+          <Route path="/dua/mina" element={<DuaMinaPage />} />
+          <Route path="/dua/arafat" element={<DuaArafatPage />} />
+          <Route path="/dua/madina" element={<DuaMadinaPage />} />
+          <Route path="/info" element={<InfoPage />} />
         </Routes>
       </AnimatePresence>
     </>

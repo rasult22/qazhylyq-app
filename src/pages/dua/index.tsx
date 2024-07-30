@@ -58,7 +58,7 @@ const DuaPage = () => {
         <UICell
           completed={duaCompletedIds.includes('/dua/mekkah')}
           onClick={() => {
-            navigate('/qazhylyq-app/dua/mekkah')
+            navigate('/dua/mekkah')
           }}
           isLink
         >
@@ -68,7 +68,7 @@ const DuaPage = () => {
           accent
           completed={duaCompletedIds.includes('/dua/mina')}
           onClick={() => {
-            navigate('/qazhylyq-app/dua/mina')
+            navigate('/dua/mina')
           }}
           isLink
         >
@@ -77,7 +77,7 @@ const DuaPage = () => {
         <UICell
           completed={duaCompletedIds.includes('/dua/arafat')}
           onClick={() => {
-            navigate('/qazhylyq-app/dua/arafat')
+            navigate('/dua/arafat')
           }}
           isLink
         >
@@ -129,7 +129,7 @@ const DuaPage = () => {
           accent
           completed={duaCompletedIds.includes('/dua/madina')}
           onClick={() => {
-            navigate('/qazhylyq-app/dua/madina')
+            navigate('/dua/madina')
           }}
           isLink
         >

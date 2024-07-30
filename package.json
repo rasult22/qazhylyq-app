@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-    "generate-assets": "npx capacitor-assets generate",
+    "generate-assets": "npx capacitor-assets generate --ios && npx capacitor-assets generate --android",
     "l10n-parse": "npx ttag po2json src/l10n/ru-RU.po > src/l10n/ru-RU.po.json && npx ttag po2json src/l10n/tt-KZ.po > src/l10n/tt-KZ.po.json",
     "l10n-update": "pnpm run lang-tt && pnpm run lang-ru",
     "lang-tt": "npx ttag update src/l10n/tt-KZ.po src/",

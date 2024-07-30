@@ -55,7 +55,7 @@ const DuaMadinaPage = () => {
     <>
       <ModuleHeader
         onClick={() => {
-          navigate('/qazhylyq-app/dua', {
+          navigate('/dua', {
             replace: true
           })
         }}

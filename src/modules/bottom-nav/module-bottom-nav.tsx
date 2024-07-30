@@ -6,7 +6,7 @@ const ModuleBottomNav: React.FC = () => {
     <>
       <div className="bg-[#fff] pb-inset-bottom text-[#858C94] rounded-t-lg shadow-custom border-t w-[100vw] flex items-center justify-between px-[36px] py-[13px]">
         <NavLink
-          to="/qazhylyq-app/"
+          to="/"
           className={({ isActive }) => {
             return isActive
               ? 'bg-[#A2815D] transition-all rounded-full text-white'
@@ -18,7 +18,7 @@ const ModuleBottomNav: React.FC = () => {
           </div>
         </NavLink>
         <NavLink
-          to="/qazhylyq-app/mountain"
+          to="/mountain"
           className={({ isActive }) => {
             return isActive ? 'bg-[#A2815D] rounded-full text-white' : ''
           }}
@@ -28,7 +28,7 @@ const ModuleBottomNav: React.FC = () => {
           </div>
         </NavLink>
         <NavLink
-          to="/qazhylyq-app/dua"
+          to="/dua"
           className={({ isActive }) => {
             return isActive ? 'bg-[#A2815D] rounded-full text-white' : ''
           }}
@@ -38,7 +38,7 @@ const ModuleBottomNav: React.FC = () => {
           </div>
         </NavLink>
         <NavLink
-          to="/qazhylyq-app/info"
+          to="/info"
           className={({ isActive }) => {
             return isActive ? 'bg-[#A2815D] rounded-full text-white' : ''
           }}
