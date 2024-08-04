@@ -117,17 +117,7 @@ const ModuleMain: React.FC = () => {
       <div className="border border-dashed h-[1px] my-10"></div>
       <div className="relative flex justify-center pt-10 pb-10 mt-5">
         <img className="w-[361px]" src={arrows} alt="" />
-        <UIButton
-          completed={completedIds.includes(sham_and_yemen.id)}
-          onClick={() => {
-            addCompleteId(sham_and_yemen.id)
-            setCurrentPrayer(sham_and_yemen)
-            showPlayerModal()
-          }}
-          className="w-[85%] max-w-[320px] max-h-[70px] absolute top-[10px] left-[49px] normal-case"
-        >
-          {t`Шам бұрышы және Йемен бұрышы арасында оқылатын дұға`}
-        </UIButton>
+
         <UIButton
           completed={completedIds.includes(yemen_and_hajar.id)}
           onClick={() => {
@@ -135,9 +125,20 @@ const ModuleMain: React.FC = () => {
             setCurrentPrayer(yemen_and_hajar)
             showPlayerModal()
           }}
-          className="w-[80%] absolute top-[80px] right-[45px] normal-case"
+          className="w-[85%] max-w-[320px] max-h-[70px] absolute top-[10px] left-[49px] normal-case"
         >
           {t`Йемен бұрышы және Хажар ул-әсуад арасында оқылатын дұға`}
+        </UIButton>
+        <UIButton
+          completed={completedIds.includes(sham_and_yemen.id)}
+          onClick={() => {
+            addCompleteId(sham_and_yemen.id)
+            setCurrentPrayer(sham_and_yemen)
+            showPlayerModal()
+          }}
+          className="w-[80%] absolute top-[80px] right-[45px] normal-case"
+        >
+          {t`Шам бұрышы және Йемен бұрышы арасында оқылатын дұға`}
         </UIButton>
         <UIButton
           completed={completedIds.includes(iraq_and_sham.id)}
