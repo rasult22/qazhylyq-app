@@ -8,6 +8,7 @@ specifiers:
   '@capacitor/core': ^5.7.3
   '@capacitor/device': ^5.0.7
   '@capacitor/ios': ^5.7.3
+  '@fontsource/open-sans': ^5.0.28
   '@heroicons/react': ^2.0.15
   '@tailwindcss/forms': ^0.5.3
   '@types/node': 18.13.0
@@ -45,6 +46,7 @@ dependencies:
   '@capacitor/core': 5.7.3
   '@capacitor/device': 5.0.7_@capacitor+core@5.7.3
   '@capacitor/ios': 5.7.3_@capacitor+core@5.7.3
+  '@fontsource/open-sans': 5.0.28
   capacitor-plugin-safe-area: 2.0.6_@capacitor+core@5.7.3
   framer-motion: 11.0.14_biqbaboplfbrettd7655fr4n2y
   postcss-px-to-viewport-8-plugin: 1.2.5
@@ -2094,6 +2096,10 @@ packages:
     resolution: {integrity: sha512-gMsVel9D7f2HLkBma9VbtzZRehRogVRfbr++f06nL2vnCGCNlzOD+/MUov/F4p8myyAHspEhVobgjpX64q5m6A==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
+
+  /@fontsource/open-sans/5.0.28:
+    resolution: {integrity: sha512-hBvJHY76pJT/JynGUB5EXWhnzjYfLdcMn655J5p1v9lTT9HdQSy+keq2KPVXO2Htlg998BBa3p6u/jlrZ6w0kg==}
+    dev: false
 
   /@heroicons/react/2.1.1_react@18.2.0:
     resolution: {integrity: sha512-JyyN9Lo66kirbCMuMMRPtJxtKJoIsXKS569ebHGGRKbl8s4CtUfLnyKJxteA+vIKySocO4s1SkTkGS4xtG/yEA==}

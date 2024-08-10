@@ -1,6 +1,16 @@
 import React, { useEffect } from 'react'
 import './App.css'
 import './index.css'
+import '@fontsource/open-sans' // Defaults to weight 400
+import '@fontsource/open-sans/500.css' // Defaults to weight 400
+import '@fontsource/open-sans/600.css' // Defaults to weight 400
+import '@fontsource/open-sans/700.css' // Defaults to weight 400
+import '@fontsource/open-sans/800.css' // Defaults to weight 400
+import '@fontsource/open-sans/cyrillic-400.css' // Defaults to weight 400
+import '@fontsource/open-sans/cyrillic-500.css' // Defaults to weight 400
+import '@fontsource/open-sans/cyrillic-600.css' // Defaults to weight 400
+import '@fontsource/open-sans/cyrillic-700.css' // Defaults to weight 400
+import '@fontsource/open-sans/cyrillic-800.css' // Defaults to weight 400
 import { BrowserRouter } from 'react-router-dom'
 import { createRoot } from 'react-dom/client'
 import { addLocale } from 'ttag'

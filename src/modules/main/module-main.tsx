@@ -125,7 +125,7 @@ const ModuleMain: React.FC = () => {
             setCurrentPrayer(yemen_and_hajar)
             showPlayerModal()
           }}
-          className="w-[85%] max-w-[320px] max-h-[70px] absolute top-[10px] left-[49px] normal-case"
+          className="w-[85%] max-w-[320px] max-h-[70px] absolute top-[20px] left-[49px] normal-case"
         >
           {t`Йемен бұрышы және Хажар ул-әсуад арасында оқылатын дұға`}
         </UIButton>
@@ -136,7 +136,7 @@ const ModuleMain: React.FC = () => {
             setCurrentPrayer(sham_and_yemen)
             showPlayerModal()
           }}
-          className="w-[80%] absolute top-[80px] right-[45px] normal-case"
+          className="w-[80%] absolute top-[110px] right-[45px] normal-case"
         >
           {t`Шам бұрышы және Йемен бұрышы арасында оқылатын дұға`}
         </UIButton>
@@ -147,7 +147,7 @@ const ModuleMain: React.FC = () => {
             setCurrentPrayer(iraq_and_sham)
             showPlayerModal()
           }}
-          className="w-[75%] absolute bottom-[137px] right-[45px] normal-case"
+          className="w-[75%] absolute bottom-[177px] right-[45px] normal-case"
         >
           {t`Ирак бұрышы мен Шам бұрышы арасында оқылатын дұға`}
         </UIButton>
@@ -158,7 +158,7 @@ const ModuleMain: React.FC = () => {
             setCurrentPrayer(ibrahim)
             showPlayerModal()
           }}
-          className="w-[75%] absolute bottom-[75px] right-[40px] normal-case"
+          className="w-[75%] absolute bottom-[98px] right-[45px] normal-case"
         >
           {t`Ибраһим мақамы тұсында оқылатын дұға`}
         </UIButton>
@@ -169,7 +169,7 @@ const ModuleMain: React.FC = () => {
             setCurrentPrayer(multazam)
             showPlayerModal()
           }}
-          className="w-[75%] absolute bottom-[20px] right-[40px] normal-case"
+          className="w-[75%] absolute bottom-[30px] right-[45px] normal-case"
         >
           {t`Мүлтәзамда оқылатын дұға`}
         </UIButton>
